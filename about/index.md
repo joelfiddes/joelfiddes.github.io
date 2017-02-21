@@ -27,4 +27,6 @@ I aim to combine field measurements, climate datasets and modelling tools to sol
 - Field measurements in tough locations.
 - From sensors to decision making.
 
-<a href="https://drive.google.com/open?id=0B5IDVy7OycK5V2N3V2xBQWJnRjg">Access full CV</a>
+<a href="https://drive.google.com/open?id=0B5IDVy7OycK5WW1JM2tCWndPcUU">Short CV</a>
+<a href="https://drive.google.com/open?id=0B5IDVy7OycK5MThHcUlyUDQxcDQ">Full CV</a>
+
