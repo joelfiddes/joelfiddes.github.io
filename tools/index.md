@@ -127,11 +127,12 @@ SNOWPACK is a multi-purpose snow and land-surface model, which focusses on a det
 ### The basics
 
 - Linux
-- Git/Github version control and repository
-- Jekyll / Markdown for docs and sites
 - Bash scripting for making stuff run
 - Awk lightning fast data manipulation
 - R data analysis and geospatial functions
+- Various geospatial tools and libraries
 - Python for building stuff and pandas data tools
 - Sublime, less, joe editors
 - Sql (mysql/postgres) databases
+- Git/Github version control and repository
+- Jekyll / Markdown for docs and sites
