@@ -7,7 +7,7 @@ excerpt: "A SEED project funded by the State Secretariat for Education, Research
 tags: []
 ---
 
-###SUMMARY
+### SUMMARY
 
 Afghanistan is significantly vulnerable to mountain based natural hazards of multiple forms. Landslides,
 avalanches, floods and drought all generate large costs in lives and infrastructure annually (UNEP 2011). In
@@ -17,7 +17,7 @@ the hydrological cycle, particularly in its phase in the cryosphere is therefore
 livelihoods and infrastructure both in mountain regions and downstream communities (Beekma and Fiddes
 2011).
 
-###OBJECTIVES
+### OBJECTIVES
 
 1. Provide basic training on data management, field monitoring and modelling methods to two young
 Afghan scientists from Kabul University.
