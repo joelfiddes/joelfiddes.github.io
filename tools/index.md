@@ -123,3 +123,15 @@ SNOWPACK is a multi-purpose snow and land-surface model, which focusses on a det
 
 #### Code/Packages
 <a href="https://models.slf.ch/p/snowpack/" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> SLF </a>
+
+### The basics
+
+- Linux
+- Git/Github version control and repository
+- Jekyll / Markdown for docs and sites
+- Bash scripting for making stuff run
+- Awk lightning fast data manipulation
+- R data analysis and geospatial functions
+- Python for building stuff and pandas data tools
+- Sublime, less, joe editors
+- Sql (mysql/postgres) databases
