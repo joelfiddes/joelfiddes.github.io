@@ -92,7 +92,7 @@ Global sensor networks (GSN) is a software middleware designed to facilitate the
 Open support platform for environmental research (OSPER) built around GSN that enables management and storage of online sensor data and metadata management.
 
 <a href="https://www.osper.ch" class="author-social" target="_blank"><i class="fa fa-fw fa-database"></i> Web platform</a>
-<a href="http://montblanc.slf.ch:22001/gsnweb/app/index.html#/plot?onlyPublic=false&sensors=imis_wfj_2&sensor=imis_nen_3&parameters=ta,hs1&rowNumber=100" class="author-social" target="_blank"><i class="fa fa-fw fa-bar-chart"></i> Current snow depth and air temperature at the Weissfluhjoch, Davos, 2540m asl</a>
+<a href="http://www.osper.ch/#/plot?onlyPublic=false&group=wfj&sensors=wfj_vf_imis&parameters=hs1,ta&rowNumber=100" class="author-social" target="_blank"><i class="fa fa-fw fa-bar-chart"></i> Current snow depth and air temperature at the Weissfluhjoch, Davos, 2540m asl</a>
 
 ---
 
