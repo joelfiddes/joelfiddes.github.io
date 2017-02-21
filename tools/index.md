@@ -15,7 +15,7 @@ image:
 <!--Tools I developed, contributed to or use in my work-->
 Here are tools I use in my work, either authored by me, contributions to development or just a user. They are all available under opensource licensing, documented by publications and with nice open communities behind them.
 
-###TOPOSUB
+### TOPOSUB
 
 R package for landscape clustering and land-surface modelling
 
@@ -34,35 +34,35 @@ TopoSUB is a R project for sampling the most important aspects of land surface h
 </figure>
 </div>
 
-####Code/packages
+#### Code/packages
 
 <a href="https://github.com/joelfiddes/toposub" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github </a>
 <a href="https://github.com/JBrenn/TopoSUB" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github  (R-package)</a>
 
 
-####References
+#### References
 <a href="http://dx.doi.org/10.5194/gmd-5-1245-2012" class="author-social" target="_blank"><i class="fa-file-text-o"></i>  Fiddes, J. & Gruber, S. 2012: TopoSUB: a tool for efficient large area numerical modelling in complex topography at sub-grid scales, Geoscientific Model Development, 5, 1245–1257,10.5194/gmd-5-1245-2012.</a>
 <a href="http://dx.doi.org/10.5194/tc-9-411-2015" class="author-social" target="_blank"><i class="fa-file-text-o"></i> Fiddes, J., Endrizzi, S., and Gruber, S.: Large-area land surface simulations in heterogeneous terrain driven by global data sets: application to mountain permafrost, The Cryosphere, 9, 411-426, doi:10.5194/tc-9-411-2015, 2015.</a>
 
 ---
 
-###TOPOSCALE
+### TOPOSCALE
 TopoSCALE is a downscaling tool for atmospheric (3D) model output in complex terrain. The method makes use of an interpolation of pressure-level data according to topographic height of the subgrid. An elevation and topography correction is used to downscale short-wave radiation. Long-wave radiation is downscaled by deriving a cloud-component of all-sky emissivity at grid level and using downscaled temperature and relative humidity fields to describe variability with elevation. Precipitation is downscaled with a simple non-linear lapse and optionally disaggregated using a climatology approach.
 
 
-####Code/packages
+#### Code/packages
 
 <a href="https://github.com/joelfiddes/toposcale" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github </a>
 
 
-####References
+#### References
 
 <a href="http://dx.doi.org/10.5194/gmd-7-387-2014" class="author-social" target="_blank"><i class="fa-file-text-o"></i>   Fiddes, J. & Gruber, S. 2014: TopoSCALE v.1.0: downscaling gridded climate data in complex terrain, Geoscientific Model Development, 7, 387-405, doi:10.5194/gmd-7-387-2014.</a>
 <a href="http://dx.doi.org/10.5194/tc-9-411-2015" class="author-social" target="_blank"><i class="fa-file-text-o"></i> Fiddes, J., Endrizzi, S., and Gruber, S.: Large-area land surface simulations in heterogeneous terrain driven by global data sets: application to mountain permafrost, The Cryosphere, 9, 411-426, doi:10.5194/tc-9-411-2015, 2015.</a>
 
 ---
 
-###GEOTOP
+### GEOTOP
 
 GEOtop is a distributed model of the mass and energy balance of the
 hydrological cycle, which is applicable to simulations in continuum in
@@ -70,25 +70,25 @@ small catchments. GEOtop deals with the effects of topography on the
 interaction between energy balance and hydrological cycle with peculiar
 solutions.
 
-####Code/packages
+#### Code/packages
 <a href="http://abouthydrology.blogspot.it/2015/02/geotop-essentials.html" class="author-social" target="_blank"><i class="fa-file-text-o"></i> Documentation</a>
 <a href="https://github.com/geotopmodel/geotop" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github </a>
 
 
-####References
+#### References
 Endrizzi, S., Gruber, S., Dall'Amico, M., and Rigon, R. 2014: GEOtop 2.0: simulating the combined energy and water balance at and below the land surface accounting for soil freezing, snow cover and terrain effects, Geosci. Model Dev., 7, 2831-2857,
 <a href="http://dx.doi.org/10.5194/gmd-7-2831-2014">10.5194/gmd-7-2831-2014</a>
 
 ---
 
-###GSN
+### GSN
 Global sensor networks (GSN) is a software middleware designed to facilitate the deployment and programming of sensor networks.
 
 <a href="https://github.com/cryos-epfl/gsn" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github </a>
 
 ---
 
-###OSPER
+### OSPER
 Open support platform for environmental research (OSPER) built around GSN that enables management and storage of online sensor data and metadata management.
 
 <a href="https://www.osper.ch" class="author-social" target="_blank"><i class="fa fa-fw fa-database"></i> Web platform</a>
@@ -96,7 +96,7 @@ Open support platform for environmental research (OSPER) built around GSN that e
 
 ---
 
-###METEOIO
+### METEOIO
 The MeteoIO library aims at making data access easy and safe for numerical simulations in environmental sciences requiring general meteorological data. MeteoIO's main design goals are:
 
 - providing data format/protocol independent data access
@@ -106,19 +106,19 @@ The MeteoIO library aims at making data access easy and safe for numerical simul
 - enabling unattended use from an IO point of view
 - offering high modularity
 
-####Reference
+#### Reference
 MeteoIO in Bavay, M. and Egger, T., "MeteoIO 2.4.2: a preprocessing library for meteorological data", Geosci. Model Dev., 7, 3135-3151, doi:10.5194/gmd-7-3135-2014, 2014.
 
-####Code/Packages
+#### Code/Packages
 
 <a href="https://models.slf.ch/p/meteoio/" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> SLF </a>
 
 ---
 
-###SNOWPACK
+### SNOWPACK
 SNOWPACK is a multi-purpose snow and land-surface model, which focusses on a detailed description of the mass and energy exchange between the snow, the atmosphere and optionally with the vegetation cover and the soil. It also includes a detailed treatment of mass and energy fluxes within these media.
 
-####References
+#### References
 
-####Code/Packages
+#### Code/Packages
 <a href="https://models.slf.ch/p/snowpack/" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> SLF </a>
