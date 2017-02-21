@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Joel Fiddes</title>
+<generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2017-02-21T08:45:11+01:00</updated>
+<id>/</id>
+<author>
+  <name>Joel Fiddes</name>
+  <uri>/</uri>
+  <email>joelfiddes@gmail.com</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[Data and monitoring tools for improved water resource management [2016]]]></title>
+  <link rel="alternate" type="text/html" href="/seedafghan-post/" />
+  <id>/seedafghan-post</id>
+  <updated>2016-02-01T00:00:00-00:00</updated>
+  <published>2016-01-01T00:00:00+01:00</published>
+  
+  <author>
+    <name>Joel Fiddes</name>
+    <uri></uri>
+    <email>joelfiddes@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h3 id=&quot;summary&quot;&gt;SUMMARY&lt;/h3&gt;
+
+&lt;p&gt;Afghanistan is significantly vulnerable to mountain based natural hazards of multiple forms. Landslides,
+avalanches, floods and drought all generate large costs in lives and infrastructure annually (UNEP 2011). In
+particular, high dependency on seasonal snow-melt ties available water resources intimately to variation in
+the accumulated winter snow-pack (Vuyovich and Jacob 2011). Monitoring and forecasting key variables of
+the hydrological cycle, particularly in its phase in the cryosphere is therefore of great importance to
+livelihoods and infrastructure both in mountain regions and downstream communities (Beekma and Fiddes
+2011).&lt;/p&gt;
+
+&lt;h3 id=&quot;objectives&quot;&gt;OBJECTIVES&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Provide basic training on data management, field monitoring and modelling methods to two young
+Afghan scientists from Kabul University.&lt;/li&gt;
+  &lt;li&gt;Initiate a collaborative scoping study led by young scientists to catalogue and quality check available
+data from hydro-meteorological networks as well as relevant global sources.&lt;/li&gt;
+  &lt;li&gt;Conduct a pilot modelling study demonstrating a proof-of-concept of how existing data resources
+can be used together with state of the art modelling techniques to quantify key environmental
+parameters. We will use the seasonal snow-pack as an example that is significant as both a crucial
+water resource and natural hazard (novel results to be published).&lt;/li&gt;
+  &lt;li&gt;Develop a proposal for internal UNEP fund to up-scale this work in line with ongoing regionalprogrammes. Key focus will be capacity building and establishment of long-term monitoring sites to
+generate unique datasets with which to increase knowledge of the hydrology of the Hindu Kush.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/seedafghan-post/&quot;&gt;Data and monitoring tools for improved water resource management [2016]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;Joel Fiddes&lt;/a&gt; on January 01, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Open support platform for environmental research [2014-2017]]]></title>
+  <link rel="alternate" type="text/html" href="/OSPER/" />
+  <id>/OSPER</id>
+  <updated>2016-02-01T00:00:00-00:00</updated>
+  <published>2014-11-01T00:00:00+01:00</published>
+  
+  <author>
+    <name>Joel Fiddes</name>
+    <uri></uri>
+    <email>joelfiddes@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;a href=&quot;https://www.osper.ch&quot; class=&quot;btn btn-success&quot;&gt;OSPER data platform&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/OSPER/&quot;&gt;Open support platform for environmental research [2014-2017]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;Joel Fiddes&lt;/a&gt; on November 01, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Indian Himalayas Climate Adaptation Programme [2014-2015]]]></title>
+  <link rel="alternate" type="text/html" href="/IHCAP-permafrost/" />
+  <id>/IHCAP-permafrost</id>
+  <updated>2016-02-01T00:00:00-00:00</updated>
+  <published>2014-09-01T00:00:00+02:00</published>
+  
+  <author>
+    <name>Joel Fiddes</name>
+    <uri></uri>
+    <email>joelfiddes@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Application of methods for downscaling model inputs from global reanalysis datasets (Fiddes and Gruber 2014) together with efficient methods of applying high resolution numerical models at regional scales (Fiddes and Gruber 2012) to simulate land surface products, in the Indian Himalayas.&lt;/p&gt;
+
+&lt;p&gt;Physically based models can be useful for simulation of the energy and water balance in remote mountain regions where observational data is not available for more empirical methods. Such simulations are particularly useful in assessment of a range of crucial land surface processes, related to water supply and natural hazards. Key challenges in using such models are: (1) supplying appropriate scale model drivers, (2) improving efficiency for large area simulation, and (3) model evaluation and possible debiasing in data sparse regions. This study implements new methods which address (1) and (2) in a data sparse region of the Himalaya. Specific focus is placed on (3), development of methods with which to evaluate (and simple debiasing) of model simulations when conventional data is sparse.&lt;/p&gt;
+
+&lt;h3 id=&quot;methods&quot;&gt;METHODS&lt;/h3&gt;
+&lt;p&gt;\item Downscale atmospheric reanalysis data (ERA-Interim) to high resolution DEM scale (ASTER 30~m) according to \cite{Fiddes2014}.
+\item Subgrid method which samples topographic heterogeneity to make a lumped model for highly efficient large area simulation \citep{Fiddes2012}.
+\item Numerical modelling of surface parameters (2002-2012) using GeoTOP, a distributed hydrological model with coupled water and energy balance \citep{Endrizzi2013}.
+\item Evaluate and debias results in data poor areas.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;a href=&quot;/images/ihcap_study.png&quot;&gt;&lt;img src=&quot;/images/ihcap_study.png&quot; /&gt;&lt;/a&gt;
+
+    &lt;figcaption&gt;Study regions and example of the downscaling schemes simulated permafrost distribution, coinciding well with a rock glacier at its lower margin.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;/images/ihcap.png&quot;&gt;&lt;img src=&quot;/images/ihcap.png&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Study regions and example of the downscaling schemes simulated permafrost distribution, coinciding well with a rock glacier at its lower margin.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;working-with&quot;&gt;WORKING WITH&lt;/h3&gt;
+&lt;p&gt;University of Zurich/Fribourg Research Group on Environment and Climate: Impacts, Risks and Adaptation&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://eclim-research.ch/&quot; class=&quot;btn btn-success&quot;&gt;Group website&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;REFERENCES&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/0B5IDVy7OycK5UGJVcnFfN2IyMlE/view?usp=sharing&quot; class=&quot;author-social&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa-file-text-o&quot;&gt;&lt;/i&gt;  A poster presented at the IGS conference in Kathmandu March 2015  &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://dx.doi.org/10.5194/tc-9-411-2015&quot; class=&quot;author-social&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa-file-text-o&quot;&gt;&lt;/i&gt; Allen, S. K., Fiddes J., Linsbauer, A., Randhawa, S.S., Salzmann, N. 2016: Indo-Swiss partnership initiates first local permafrost studies in the Indian Himalaya.
+Current Science (submitted).&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.ihcap.in&quot; class=&quot;btn btn-success&quot;&gt;Project website&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/IHCAP-permafrost/&quot;&gt;Indian Himalayas Climate Adaptation Programme [2014-2015]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;Joel Fiddes&lt;/a&gt; on September 01, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Snow and Ice monitoring Programme, Afghanistan [2010-2011]]]></title>
+  <link rel="alternate" type="text/html" href="/snowIce/" />
+  <id>/snowIce</id>
+  <updated>2016-02-01T00:00:00-00:00</updated>
+  <published>2010-12-01T00:00:00+01:00</published>
+  
+  <author>
+    <name>Joel Fiddes</name>
+    <uri></uri>
+    <email>joelfiddes@gmail.com</email>
+  </author>
+  <content type="html">
+    
+
+    &lt;p&gt;&lt;a href=&quot;/snowIce/&quot;&gt;Snow and Ice monitoring Programme, Afghanistan [2010-2011]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;Joel Fiddes&lt;/a&gt; on December 01, 2010.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Subgrid modelling in complex topography [2009-2013]]]></title>
+  <link rel="alternate" type="text/html" href="/cryosub/" />
+  <id>/cryosub</id>
+  <updated>2016-02-01T00:00:00-00:00</updated>
+  <published>2009-05-01T00:00:00+02:00</published>
+  
+  <author>
+    <name>Joel Fiddes</name>
+    <uri></uri>
+    <email>joelfiddes@gmail.com</email>
+  </author>
+  <content type="html">
+    
+
+    &lt;p&gt;&lt;a href=&quot;/cryosub/&quot;&gt;Subgrid modelling in complex topography [2009-2013]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;Joel Fiddes&lt;/a&gt; on May 01, 2009.&lt;/p&gt;
+  </content>
+</entry>
+
+</feed>
