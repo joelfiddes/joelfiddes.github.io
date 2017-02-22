@@ -14,7 +14,7 @@ image:
 I aim to combine field measurements, climate datasets and modelling tools to solve real-world problems related to climate change and its impact in mountain and other remote regions. I have experience in academic and applied sectors. Currently (2014--2017) I am working at the <a href="http://www.slf.ch">SLF</a> in Davos developing datasystems for online research data. 
 
 ## SHORT BIO
-- PhD Subgrid numerical land surface modelling, UZH.
+- PhD Subgrid numerical land surface modelling, University of Zurich.
 - MSc Environment and Development, University of Edinburgh.
 - BSc Environmental sciences, University of Aberdeen.
 
