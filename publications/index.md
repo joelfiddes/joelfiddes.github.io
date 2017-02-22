@@ -27,7 +27,7 @@ Current Science, 11, 3, 550-553. <a href="https://www.researchgate.net/profile/S
 ---
 
 ## NON-PEER REVIEWED
-
+- Fiddes, J. T. (2014). Subgrid Simulation of Land Surface Variables in Heterogeneous and Remote Environments: Application to Mountain Permafrost (Doctoral dissertation). <a href="http://www.library.ethz.ch/primo_library/libweb/action/display.do?tabs=detailsTab&ct=display&fn=search&doc=ebi01_prod010407703&indx=7&recIds=ebi01_prod010407703&recIdxs=6&elementId=6&renderMode=poppedOut&displayMode=full&frbrVersion=2&vid=DADS&&tab=default_tab&dscnt=0&vl(freeText0)=fiddes&dstmp=1487752542274">ETH library</a>.
 - Beekma, J. and Fiddes, J. 2011. Floods and droughts: The Afghan water paradox. Centre for Policy and Human Development, Afghanistan Human Development Report 2011. <a href="https://www.researchgate.net/profile/Jelle_Beekma/publication/263506848_Flood_and_drought_-_The_Afghan_water_paradox/links/0deec53b23ced1d13f000000.pdf">online version</a>
 - Keller, M., Hungerbuehler, G., Knecht, O., Sheikh, S., Beutel, J., Gubler, S., Fiddes, J. and Gruber, S. (2010). iAssist: rapid deployment and maintenance of tiny sensing systems. In Proceedings of the 8th ACM Conference on Embedded Networked Sensor Systems (pp. 401-402). ACM.
 - Fiddes, J. (2010). Climbs and expeditions: Asia, Afghanistan, Hindu Kush, Koh-i-Beefy. American Alpine Journal. 52, 84, pp.255. <a href="http://publications.americanalpineclub.org/articles/12201025500/Koh-i-Beefy-ca-5400m">online version</a> <a href="http://news.bbc.co.uk/2/hi/uk_news/scotland/8535351.stm">BBC article</a>
