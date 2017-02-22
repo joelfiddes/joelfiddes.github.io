@@ -30,12 +30,12 @@ Current Science, 11, 3, 550-553, <a href="https://www.researchgate.net/profile/S
 
 - Beekma, J. and Fiddes, J. 2011. Floods and droughts: The Afghan water paradox. Centre for Policy and Human Development, Afghanistan Human Development Report 2011. <a href="https://www.researchgate.net/profile/Jelle_Beekma/publication/263506848_Flood_and_drought_-_The_Afghan_water_paradox/links/0deec53b23ced1d13f000000.pdf">online version</a>
 - Keller, M., Hungerbuehler, G., Knecht, O., Sheikh, S., Beutel, J., Gubler, S., Fiddes, J. and Gruber, S. (2010). iAssist: rapid deployment and maintenance of tiny sensing systems. In Proceedings of the 8th ACM Conference on Embedded Networked Sensor Systems (pp. 401-402). ACM.
-- Fiddes, J. (2010). Climbs and expeditions: Asia, Afghanistan, Hindu Kush, Koh-i-Beefy. American Alpine Journal. 52, 84, pp.255. <a href="http://publications.americanalpineclub.org/articles/12201025500/Koh-i-Beefy-ca-5400m">online version</a> | <a href="http://news.bbc.co.uk/2/hi/uk_news/scotland/8535351.stm">BBC article</a>
-- Fiddes, J. (2007). Afghanistan: Implications Of Climate Change For Water Resources In The Kunduz River Basin in Climate Challenges: Bridging the Knowledge Gap. Mercy Corps Climate change unit. <a href="https://www.mercycorps.org/files/file1198714955.pdf">online version</a>
+- Fiddes, J. (2010). Climbs and expeditions: Asia, Afghanistan, Hindu Kush, Koh-i-Beefy. American Alpine Journal. 52, 84, pp.255. <a href="http://publications.americanalpineclub.org/articles/12201025500/Koh-i-Beefy-ca-5400m">online version</a>
+- Fiddes, J. (2007). Afghanistan: Implications Of Climate Change For Water Resources In The Kunduz River Basin in Climate Challenges: Bridging the Knowledge Gap.Mercy Corps Climate change unit. <a href="https://www.mercycorps.org/files/file1198714955.pdf">online version</a>
 
 ---
 
 ## TECHNICAL CONTRIBUTIONS
 
-- Thomas, V., Azizi, M. A., & Ghafoori, I. (2013). Water Rights and Conflict Resolution Processes in Afghanistan: The Case of the Sar-i-Pul Sub-basin. <a href="http://areu.org.af/publication/water-rights-and-conflict-resolution-processes-in-afghanistan-the-case-of-the-sar-i-pul-sub-basin/">online version</a>
-- Thomas, V., Mumtaz, W., & Azizi, M. A. (2012). Mind the Gap?: Local Practices and Institutional Reform for Water Allocation in Afghanistan’s Panj-Amu River Basin. Afghanistan Research and Evaluation Unit. <a href="http://areu.org.af/publication/mind-the-gap-local-practices-and-institutional-reforms-for-water-allocation-in-afghanistans-panj-amu-river-basin/">online version</a>
+- Thomas, V., Azizi, M. A., & Ghafoori, I. (2013). Water Rights and Conflict Resolution Processes in Afghanistan: The Case of the Sar-i-Pul Sub-basin.
+- Thomas, V., Mumtaz, W., & Azizi, M. A. (2012). Mind the Gap?: Local Practices and Institutional Reform for Water Allocation in Afghanistan’s Panj-Amu River Basin. Afghanistan Research and Evaluation Unit.
