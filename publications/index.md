@@ -14,7 +14,7 @@ image:
 
 ## PEER REVIEWED
 
-- Fiddes J., Linsbauer, A., Randhawa, S.S., Salzmann, N. 2016: Indo-Swiss partnership initiates first local permafrost studies in the Indian Himalaya.
+- Allen S.K., Fiddes J., Linsbauer, A., Randhawa, S.S., Salzmann, N. 2016: Indo-Swiss partnership initiates first local permafrost studies in the Indian Himalaya.
 Current Science, 11, 3, 550-553. <a href="https://www.researchgate.net/profile/Simon_Allen3/publication/305999744_Permafrost_studies_in_Kullu_district_Himachal_Pradesh/links/57a9b15708aef300152a09a4.pdf">Researchgate</a>
 - Fiddes, J., Endrizzi, S., and Gruber, S.: Large-area land surface simulations in heterogeneous terrain driven by global data sets: application to mountain permafrost, The Cryosphere, 9, 411-426, doi:10.5194/tc-9-411-2015, 2015. <a href="http://dx.doi.org/10.5194/tc-9-411-2015">10.5194/tc-9-411-2015</a>
 - Fiddes, J. &amp; Gruber, S. 2014: TopoSCALE v.1.0: downscaling gridded climate data in complex terrain, Geoscientific Model Development, 7, 387-405, <a href="http://dx.doi.org/10.5194/gmd-7-387-2014">10.5194/gmd-7-387-2014</a>
