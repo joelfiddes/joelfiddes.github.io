@@ -26,7 +26,7 @@ R package for landscape clustering and land-surface modelling
 TopoSUB is a R project for sampling the most important aspects of land surface heterogeneity through a lumped scheme, allowing for the application of numerical land surface models (LSMs), like e.g. GEOtop, over large areas in mountain regions or other heterogeneous environments (Fiddes et al. 2012). The project was initiated by Joel Fiddes, the source code is available via the toposub GitHub sitory.
 
 
-<figure style="width: 400px">
+<figure style="width: 600px">
   <img src="{{ site.url }}{{ site.baseurl }}/images/toposub_samples.png" alt="">
   <figcaption>A simplified example of multidimensional sampling used by TopoSUB. The heterogeneous subgrid is grouped into samples S1-5 according to three dimensions P1-3 which define the parameter space (3-D cube). Colour represents sample membership, shade of colour symbolises within sample variation with respect to P1-3. This method generalises to higher sample numbers, more highly resolved subgrids and higher orders of dimensionality.</figcaption>
 </figure> 
