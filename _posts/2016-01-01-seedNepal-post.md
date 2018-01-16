@@ -27,7 +27,7 @@ The field campaign to establish a long-term permafrost monitoring site in Langta
 These measurements will be used in the future to validate the modelled permafrost distribution for the region. The current estimate of permafrost distribution in this region based on simple modelling approaches and mapping of terrain indicators suggests permafrost is likely to occur down to around 4300 m a.s.l. 
 Immediately following the field campaign, the 2-day combined workshop “Field techniques and data tools for monitoring high mountain environments” was hosted at Kathmandu University. XX participants joined, coming from Kathmandu University, Tribhuvan University, ICIMOD, Kabul University, Ministry of Energy and Water, Government of Afghanistan, and United Nations Environment Programme. The workshop contained a mixture of lectures, practical exercises, and open discussion. In regards to permafrost, the participants were tasked with implementing the key steps in a work-flow designed to give a first validated estimate of permafrost distribution, and assessing related hazard potential
 
-{% include gallery caption="This is a sample gallery with **Markdown support**." %}
+# {% include gallery caption="This is a sample gallery with **Markdown support**." %}
 
 
 
