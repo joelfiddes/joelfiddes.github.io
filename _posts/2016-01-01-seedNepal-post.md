@@ -11,11 +11,11 @@ gallery:
     alt: "placeholder image 1"
     title: "Image 1 title caption"
   - url: /images/nepal2016/steeprock.JPG
-    image_path: /images/nepal2016/laptop.JPG
+    image_path: /images/nepal2016/steeprock.JPG
     alt: "placeholder image 1"
     title: "Image 1 title caption"
-  - url: /images/nepal2016/worshop.JPG
-    image_path: /images/nepal2016/laptop.JPG
+  - url: /images/nepal2016/workshop.JPG
+    image_path: /images/nepal2016/workshop.JPG
     alt: "placeholder image 1"
     title: "Image 1 title caption"
 ---
