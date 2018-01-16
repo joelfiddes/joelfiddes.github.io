@@ -34,6 +34,11 @@ TopoSUB is a R project for sampling the most important aspects of land surface h
 </figure>
 </div>
 
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/images/toposub_samples.png" alt="">
+  <figcaption>A simplified example of multidimensional sampling used by TopoSUB. The heterogeneous subgrid is grouped into samples S 1-5 according to three dimensions P 1-3 which define the parameter space (3-D cube). Colour represents sample membership, shade of colour symbolises within sample variation with respect to p 1-3. This method generalises to higher sample numbers, more highly resolved subgrids and higher orders of dimensionality.</figcaption>
+</figure> 
+
 #### Code/packages
 
 <a href="https://github.com/joelfiddes/toposub" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github </a>
