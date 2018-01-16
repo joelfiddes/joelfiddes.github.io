@@ -11,7 +11,7 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-I aim to combine field measurements, climate datasets and modelling tools to solve real-world problems related to climate change and its impact in mountain and other remote regions. I have experience in academic and applied sectors. Currently (2014--2017) I am working at the <a href="http://www.slf.ch">SLF</a> in Davos developing datasystems for online research data. 
+I aim to combine field measurements, climate datasets and modelling tools to solve real-world problems related to climate change and its impact in mountain and other remote regions. I have experience in academic and applied sectors. Currently [2017-2018] I have a research grant from the Swiss National Science Foundation and working on assimilating satellite data into numerical models.
 
 ## SHORT BIO
 - PhD Subgrid numerical land surface modelling, University of Zurich.

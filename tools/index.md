@@ -80,12 +80,12 @@ Endrizzi, S., Gruber, S., Dall'Amico, M., and Rigon, R. 2014: GEOtop 2.0: simula
 <a href="http://dx.doi.org/10.5194/gmd-7-2831-2014">10.5194/gmd-7-2831-2014</a>
 
 ---
-
+<!--
 ### GSN
 Global sensor networks (GSN) is a software middleware designed to facilitate the deployment and programming of sensor networks.
 
 <a href="https://github.com/cryos-epfl/gsn" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github </a>
-
+-->
 ---
 
 ### OSPER
