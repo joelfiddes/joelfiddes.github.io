@@ -29,7 +29,7 @@ These measurements will be used in the future to validate the modelled permafros
 Immediately following the field campaign, the 2-day combined workshop “Field techniques and data tools for monitoring high mountain environments” was hosted at Kathmandu University. 23 participants joined, coming from Kathmandu University, Tribhuvan University, ICIMOD, Kabul University, Ministry of Energy and Water, Government of Afghanistan, and United Nations Environment Programme. The workshop contained a mixture of lectures, practical exercises, and open discussion. In regards to permafrost, the participants were tasked with implementing the key steps in a work-flow designed to give a first validated estimate of permafrost distribution, and assessing related hazard potential
 
 
-<figure style="width: 1200px">
+<figure>
   <img src="{{ site.url }}{{ site.baseurl }}/images/nepal2016/yala_overview.png" alt="">
   <figcaption>Logger deployments at Yala, upper Langtang valley.</figcaption>
 </figure> 
