@@ -49,6 +49,15 @@ TopoSUB is a R project for sampling the most important aspects of land surface h
 ### TOPOSCALE
 TopoSCALE is a downscaling tool for atmospheric (3D) model output in complex terrain. The method makes use of an interpolation of pressure-level data according to topographic height of the subgrid. An elevation and topography correction is used to downscale short-wave radiation. Long-wave radiation is downscaled by deriving a cloud-component of all-sky emissivity at grid level and using downscaled temperature and relative humidity fields to describe variability with elevation. Precipitation is downscaled with a simple non-linear lapse and optionally disaggregated using a climatology approach.
 
+<div style="text-align: center">
+<figure>
+    <a href="/images/toposub_samples.png"><img src="/images/tscale.png" width="200" height="300"></a>
+<div style="text-align: justify">
+    <figcaption>A schematic of the TopoSCALE method..</figcaption>
+    </div>
+</figure>
+</div>
+
 
 #### Code/packages
 
