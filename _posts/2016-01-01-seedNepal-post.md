@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Data and monitoring tools for improved water resource management [2016]"
-modified: 2016-02-01
+title: "Permafrost monitoring project Nepal [2016]"
+modified: 2016-1o-01
 share: false
 excerpt: "A SEED project funded by the State Secretariat for Education, Research and Innovation/ ETH "
 tags: []
