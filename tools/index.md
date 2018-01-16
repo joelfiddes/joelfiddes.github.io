@@ -53,7 +53,7 @@ TopoSCALE is a downscaling tool for atmospheric (3D) model output in complex ter
 <figure>
     <a href="/images/toposub_samples.png"><img src="/images/tscale.png" width="200" height="300"></a>
 <div style="text-align: justify">
-    <figcaption>A schematic of the TopoSCALE method..</figcaption>
+    <figcaption>A schematic of the TopoSCALE method.</figcaption>
     </div>
 </figure>
 </div>
