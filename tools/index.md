@@ -25,18 +25,10 @@ R package for landscape clustering and land-surface modelling
 
 TopoSUB is a R project for sampling the most important aspects of land surface heterogeneity through a lumped scheme, allowing for the application of numerical land surface models (LSMs), like e.g. GEOtop, over large areas in mountain regions or other heterogeneous environments (Fiddes et al. 2012). The project was initiated by Joel Fiddes, the source code is available via the toposub GitHub sitory.
 
-<div style="text-align: center">
-<figure>
-    <a href="/images/toposub_samples.png"><img src="/images/toposub_samples.png" width="200" height="300"></a>
-<div style="text-align: justify">
-    <figcaption>A simplified example of multidimensional sampling used by TopoSUB. The heterogeneous subgrid is grouped into samples S 1-5 according to three dimensions P 1-3 which define the parameter space (3-D cube). Colour represents sample membership, shade of colour symbolises within sample variation with respect to p 1-3. This method generalises to higher sample numbers, more highly resolved subgrids and higher orders of dimensionality.</figcaption>
-    </div>
-</figure>
-</div>
 
 <figure>
   <img src="{{ site.url }}{{ site.baseurl }}/images/toposub_samples.png" alt="">
-  <figcaption>A simplified example of multidimensional sampling used by TopoSUB. The heterogeneous subgrid is grouped into samples S 1-5 according to three dimensions P 1-3 which define the parameter space (3-D cube). Colour represents sample membership, shade of colour symbolises within sample variation with respect to p 1-3. This method generalises to higher sample numbers, more highly resolved subgrids and higher orders of dimensionality.</figcaption>
+  <figcaption>A simplified example of multidimensional sampling used by TopoSUB. The heterogeneous subgrid is grouped into samples S1-5 according to three dimensions P1-3 which define the parameter space (3-D cube). Colour represents sample membership, shade of colour symbolises within sample variation with respect to P1-3. This method generalises to higher sample numbers, more highly resolved subgrids and higher orders of dimensionality.</figcaption>
 </figure> 
 
 #### Code/packages
@@ -54,15 +46,11 @@ TopoSUB is a R project for sampling the most important aspects of land surface h
 ### TOPOSCALE
 TopoSCALE is a downscaling tool for atmospheric (3D) model output in complex terrain. The method makes use of an interpolation of pressure-level data according to topographic height of the subgrid. An elevation and topography correction is used to downscale short-wave radiation. Long-wave radiation is downscaled by deriving a cloud-component of all-sky emissivity at grid level and using downscaled temperature and relative humidity fields to describe variability with elevation. Precipitation is downscaled with a simple non-linear lapse and optionally disaggregated using a climatology approach.
 
-<div style="text-align: center">
-<figure>
-    <a href="/images/toposub_samples.png"><img src="/images/tscale.png" width="200" height="300"></a>
-<div style="text-align: justify">
-    <figcaption>A schematic of the TopoSCALE method.</figcaption>
-    </div>
-</figure>
-</div>
 
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/images/tscale.png" alt="">
+  <figcaption>A schematic of the TopoSCALE method.</figcaption>
+</figure> 
 
 #### Code/packages
 
