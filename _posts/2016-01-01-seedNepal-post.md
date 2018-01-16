@@ -9,19 +9,16 @@ gallery:
   - url: /images/nepal2016/laptop.JPG
     image_path: /images/nepal2016/laptop.JPG
     alt: "Reading out loggers"
-    title: "Image 1 title caption"
+    title: "Reading out loggers"
   - url: /images/nepal2016/steeprock.JPG
     image_path: /images/nepal2016/steeprock.JPG
     alt: "Installing rockwall logger"
-    title: "Image 1 title caption"
+    title: "Installing rockwall logger"
   - url: /images/nepal2016/workshop.JPG
     image_path: /images/nepal2016/workshop.JPG
-    alt: "placeholder image 1"
+    alt: "Workshop on permafrost related hazards"
     title: "Workshop on permafrost related hazards"
-  - url: /images/nepal2016/avalanche.JPG
-    image_path: /images/nepal2016/avalanche.jpg
-    alt: "placeholder image 1"
-    title: "Workshop on permafrost related hazards"
+
 ---
 
 ### SUMMARY
@@ -37,8 +34,8 @@ Immediately following the field campaign, the 2-day combined workshop “Field t
 
 ### OUTPUTS
 The field campaign was a major success, with new instrumentation installed and baseline terrain mapping completed (see Annex I). The four young local scientists were heavily engaged in all activities, which included:
-Installation of temperature loggers on rock faces and on debris slopes
-Terrestrial and aerial photogrammetry (from a UAV) to derive surface topography
-High precision GPS benchmark measurements to establish terrain movement
+- Installation of temperature loggers on rock faces and on debris slopes
+- Terrestrial and aerial photogrammetry (from a UAV) to derive surface topography
+- High precision GPS benchmark measurements to establish terrain movement
 
-{% include gallery caption="This is a sample gallery with **Markdown support**." %}
+{% include gallery  %}
