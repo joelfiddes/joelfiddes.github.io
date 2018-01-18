@@ -20,6 +20,7 @@ I aim to combine field measurements, climate datasets and modelling tools to sol
 
 
 ## RESEARCH FOCUS
+- High mountain processes under a changing climate.
 - Application of numerical land surface models in remote areas.
 - Subgrid processes.
 - Downscaling global climate datasets in complex terrain.
