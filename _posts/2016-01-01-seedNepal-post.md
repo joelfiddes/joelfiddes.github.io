@@ -21,6 +21,14 @@ gallery:
 
 ---
 
+## Aims
+Permafrost is an emerging field of research in the Himalaya, led by ICIMOD. However there is no local-scale permafrost modelling in Nepal. Some surface temperature data exists, but no strategic or systematic measurement. The main aims of this project were therefore:
+
+- Establish the initial basis for a long-term permafrost monitoring site in Nepal.
+- Together with ICIMOD and based on PERMOS protocols developed in CH, agree on strict protocol for installation of ground surface temperature loggers for consistency across sites (Pakistan, India, Nepal).
+- Strengthen local scientific capacity and build long-term collaborations through
+a joint Swiss--Nepalese measurement campaign and science exchange workshop.
+
 ### SUMMARY
 
 The field campaign to establish a long-term permafrost monitoring site in Langtang Valley, Nepal, was conducted from October 8 – 20, 2016.  Three experts from Switzerland joined the expedition (Allen, Fiddes, Mueller), with two masters-level students joining from Kathmandu University (Reeju Shrestha, Aman Thapa). In addition, with support provided by the external partner ICIMOD, a student from Tribhuvan University joined (Shraddha Dhakal), and a young scientist from ICIMOD joined in a supporting role (Gunjan Silwal).
