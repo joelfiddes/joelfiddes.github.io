@@ -20,6 +20,15 @@ gallery:
     title: "Workshop on permafrost related hazards"
 
 ---
+## People
+- UZH
+- SLF
+- ICIMOD
+- UNEP
+
+## Funding
+- ETH Global SEED fund
+- ICIMOD
 
 ## Aims
 Permafrost is an emerging field of research in the Himalaya, led by ICIMOD. However there is no local-scale permafrost modelling in Nepal. Some surface temperature data exists, but no strategic or systematic measurement. The main aims of this project were therefore:
