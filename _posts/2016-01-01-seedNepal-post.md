@@ -20,7 +20,7 @@ gallery:
     title: "Workshop on permafrost related hazards"
 
 ---
-## People
+## Partners
 - UZH
 - SLF
 - ICIMOD
