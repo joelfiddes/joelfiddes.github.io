@@ -31,18 +31,15 @@ water resource and natural hazard (novel results to be published).
 generate unique datasets with which to increase knowledge of the hydrology of the Hindu Kush.
 
 
-/home/joel/src/jekyll/joelfiddes.github.io/images/seedAfg2016/Rplot001.jpeg
-/home/joel/src/jekyll/joelfiddes.github.io/images/seedAfg2016/sca.jpg
-
 <figure>
   <img src="{{ site.url }}{{ site.baseurl }}/images/seedAfg2016/sca.jpg" alt="">
-  <figcaption>Mean SCA (%) 2013-2014 computed from 8-day MODIS snowcover product
+  <figcaption>Figure 1: Mean SCA (%) 2013-2014 computed from 8-day MODIS snowcover product
 (MOD10A2). Percentage refers to percentage of time each pixel is snow covered. 1=always snow
 covered, 0=never snow covered.</figcaption>
 </figure> 
 
 <figure>
   <img src="{{ site.url }}{{ site.baseurl }}/images/seedAfg2016/Rplot001.jpeg" alt="">
-  <figcaption>Plots of snow depth (cm), air temperature (degC) and accumulated precipitation (mm) at
+  <figcaption>Figure 2: Plots of snow depth (cm), air temperature (degC) and accumulated precipitation (mm) at
 three snow stations of MEW.</figcaption>
 </figure> 
