@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Data and monitoring tools for improved water resource management [2016]"
+title: "Data and monitoring tools for improved water resource management Afghanistan [2016]"
 modified: 2016-02-01
 share: false
 excerpt: "A SEED project funded by the State Secretariat for Education, Research and Innovation/ ETH "
@@ -29,3 +29,20 @@ parameters. We will use the seasonal snow-pack as an example that is significant
 water resource and natural hazard (novel results to be published).
 4. Develop a proposal for internal UNEP fund to up-scale this work in line with ongoing regionalprogrammes. Key focus will be capacity building and establishment of long-term monitoring sites to
 generate unique datasets with which to increase knowledge of the hydrology of the Hindu Kush.
+
+
+/home/joel/src/jekyll/joelfiddes.github.io/images/seedAfg2016/Rplot001.jpeg
+/home/joel/src/jekyll/joelfiddes.github.io/images/seedAfg2016/sca.jpg
+
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/images/seedAfg2016/sca.jpg" alt="">
+  <figcaption>Mean SCA (%) 2013-2014 computed from 8-day MODIS snowcover product
+(MOD10A2). Percentage refers to percentage of time each pixel is snow covered. 1=always snow
+covered, 0=never snow covered.</figcaption>
+</figure> 
+
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/images/seedAfg2016/Rplot001.jpeg" alt="">
+  <figcaption>Plots of snow depth (cm), air temperature (degC) and accumulated precipitation (mm) at
+three snow stations of MEW.</figcaption>
+</figure> 
