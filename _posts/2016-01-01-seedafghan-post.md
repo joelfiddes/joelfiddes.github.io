@@ -41,5 +41,5 @@ covered, 0=never snow covered.</figcaption>
 <figure>
   <img src="{{ site.url }}{{ site.baseurl }}/images/seedAfg2016/Rplot001.jpeg" alt="">
   <figcaption>Figure 2: Plots of snow depth (cm), air temperature (degC) and accumulated precipitation (mm) at
-three snow stations of MEW.</figcaption>
+three snow stations of MEW. Calibration errors demonstated nicely for precip and snow height (negative values).</figcaption>
 </figure> 
