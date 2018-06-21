@@ -33,6 +33,10 @@ Current Science, 11, 3, 550-553. <a href="https://www.researchgate.net/profile/S
 - Fiddes, J. (2010). Climbs and expeditions: Asia, Afghanistan, Hindu Kush, Koh-i-Beefy. American Alpine Journal. 52, 84, pp.255. <a href="http://publications.americanalpineclub.org/articles/12201025500/Koh-i-Beefy-ca-5400m">online version</a> <a href="http://news.bbc.co.uk/2/hi/uk_news/scotland/8535351.stm">BBC article</a>
 - Fiddes, J. (2007). Afghanistan: Implications Of Climate Change For Water Resources In The Kunduz River Basin in Climate Challenges: Bridging the Knowledge Gap. Mercy Corps Climate change unit. <a href="https://www.mercycorps.org/files/file1198714955.pdf">online version</a>
 
+## PRESENTATIONS
+- Fiddes et al. <a href="https://drive.google.com/open?id=14dgIKXuFeolflEps48OyjHCrMoNF2ECn"> A mountain permafrost toolkit for remote regions, Polar 2018.</a>
+- Fiddes, J <a href="https://drive.google.com/open?id=1UoNcrGR394R7KBbIvctk6YN_tUiQDpEw">online version</a>
+- Fiddes et al. <a href="https://drive.google.com/open?id=14dgIKXuFeolflEps48OyjHCrMoNF2ECn"> A mountain permafrost toolkit for remote regions, SLF Kolloqium April 2018.</a>
 ---
 
 ## TECHNICAL CONTRIBUTIONS
