@@ -41,5 +41,8 @@ University of Zurich/Fribourg Research Group on Environment and Climate: Impacts
 <a href="http://dx.doi.org/10.5194/tc-9-411-2015" class="author-social" target="_blank"><i class="fa-file-text-o"></i> Allen, S. K., Fiddes J., Linsbauer, A., Randhawa, S.S., Salzmann, N. 2016: Indo-Swiss partnership initiates first local permafrost studies in the Indian Himalaya.
 Current Science (submitted).</a>
 
+<a href="https://timesofindia.indiatimes.com/city/chandigarh/scientists-studying-the-phenomenon-of-permafrost-in-himalayan-region/articleshow/57107108.cms" class="btn btn-success">Media: Times of India</a>
+
+<a href="http://www.ihcap.in/media/press/Pfrost-TOI-Article.pdf" class="btn btn-success">Media: Times of India Sunday Special</a>
 
 <a href="http://www.ihcap.in" class="btn btn-success">Project website</a>
