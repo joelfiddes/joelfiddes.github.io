@@ -21,10 +21,11 @@ gallery:
 
 ---
 ## Partners
-- UZH
+- UZH 
 - SLF
-- ICIMOD
+- ICIMOD [project page](http://www.icimod.org/?q=25599)
 - UNEP
+- 
 
 ## Funding
 - ETH Global SEED fund
