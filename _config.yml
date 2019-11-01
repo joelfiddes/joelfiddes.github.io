@@ -47,7 +47,7 @@ owner:
   email: joelfiddes@gmail.com
   disqus-shortname:
   twitter: #username
-  facebook: #username
+  facebook: joelfiddes #username
   google:
     plus: joelfiddes
     analytics:
@@ -79,3 +79,6 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Google services
 google_analytics: UA-92274188-1
+
+plugins:
+  - jekyll-google-photos
