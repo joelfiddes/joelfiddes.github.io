@@ -80,5 +80,5 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Google services
 google_analytics: UA-92274188-1
 
-plugins:
+plugins_dir:
   - jekyll-google-photos

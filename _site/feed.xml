@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">Joel Fiddes</title>
+<title type="text">mountainsense</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2017-02-21T08:45:11+01:00</updated>
+<updated>2019-11-01T15:44:28+01:00</updated>
 <id>/</id>
 <author>
   <name>Joel Fiddes</name>
@@ -14,7 +14,299 @@
 
 
 <entry>
-  <title type="html"><![CDATA[Data and monitoring tools for improved water resource management [2016]]]></title>
+  <title type="html"><![CDATA[Zarafshan river basin programme, Tajikistan:  [2018-2019]]]></title>
+  <link rel="alternate" type="text/html" href="/tajsnow/" />
+  <id>/tajsnow</id>
+  <updated>2018-04-14T00:00:00-00:00</updated>
+  <published>2018-04-01T00:00:00+02:00</published>
+  
+  <author>
+    <name>Joel Fiddes</name>
+    <uri></uri>
+    <email>joelfiddes@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h3 id=&quot;summary&quot;&gt;SUMMARY&lt;/h3&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://www.landell-mills.com/news/2016/7/19/improving-water-management-in-tajikistan-project-award&quot;&gt;Zarafshan river basin programme&lt;/a&gt; is a technical assistance project designed to build capacity in integrated water resources management in Tajikistan. Landell Mills Ltd. is lead working with Mott MacDonald as partner on the 42-month project, which is funded by the European Union and has a total value of over €4 million. The ZRB is a relatively dry basin (250-400 mm / year measured at stations up to 3000 m). With most precipitation occuring as snowfall during winter/ spring. Large valley glacier systems exist at the headwaters of the Zarafshan river at around 2800 m. Smaller cicrque glaciers occur throughout the basin.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/images/tajsnow/Overview_map.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;Map of Zarafshan basin and location in Tajikistan indicated in inset.Plot includes, GLIMS glacier outlines, hydrlogical and meteo stations of the Tajik national Hydromet service. Meteo station symbology increase in size according to precip totals (range 218-480 mm/year) and colour indicates mean annual air temperature variation (range -1.3 - +12.6 C), lighter shades being colder. .&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Within this project I am initiating a pilot in monitoring of snow based water resources. Specific objectives of this input are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Assess possibilities for field based measurements and develop a monitoring strategy (manual and/or automatic) to be implemented winter season 2018/19.&lt;/li&gt;
+  &lt;li&gt;Set up model/remote sensing based snow monitoring system.&lt;/li&gt;
+  &lt;li&gt;Develop a pilot snowmelt runoff forecasting system for 2019.&lt;/li&gt;
+  &lt;li&gt;Verify the forecasting in 2019 with streamflow data.&lt;/li&gt;
+  &lt;li&gt;Train the river basin working group with introduction to snow monitoring, and use of simple and process based models and remote sensing for forecasting.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/images/tajsnow/anzob_pass.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;View from Anzob pass region, south side of tunnel.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/images/tajsnow/notquitewmo.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;Manual pluviometer at Hydropost 84, upstream of Anzob, direction Anzob pass. Not quite WMO standard!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+
+  &lt;iframe src=&quot;https://www.youtube.com/embed/Hz3vouFuyuU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;!-- http://p3.snf.ch/project-165435 --&gt;
+&lt;!-- 
+
+
+
+&lt;figure class=&quot;third &quot;&gt;
+  
+    
+      &lt;a href=
+        
+          &quot;/images/nepal2016/laptop.JPG&quot;
+        
+        title=&quot;Reading out loggers&quot;
+      &gt;
+        &lt;img src=
+          
+            &quot;/images/nepal2016/laptop.JPG&quot;
+          
+          alt=&quot;Reading out loggers&quot;&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=
+        
+          &quot;/images/nepal2016/steeprock.JPG&quot;
+        
+        title=&quot;Installing rockwall logger&quot;
+      &gt;
+        &lt;img src=
+          
+            &quot;/images/nepal2016/steeprock.JPG&quot;
+          
+          alt=&quot;Installing rockwall logger&quot;&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=
+        
+          &quot;/images/nepal2016/workshop.JPG&quot;
+        
+        title=&quot;Workshop on permafrost related hazards&quot;
+      &gt;
+        &lt;img src=
+          
+            &quot;/images/nepal2016/workshop.JPG&quot;
+          
+          alt=&quot;Workshop on permafrost related hazards&quot;&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt; --&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/tajsnow/&quot;&gt;Zarafshan river basin programme, Tajikistan:  [2018-2019]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;mountainsense&lt;/a&gt; on April 01, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[WMO Global Cryosphere Watch dataportal [2017-2018]]]></title>
+  <link rel="alternate" type="text/html" href="/wmo_gcw/" />
+  <id>/wmo_gcw</id>
+  <updated>2018-01-16T00:00:00-00:00</updated>
+  <published>2017-09-01T00:00:00+02:00</published>
+  
+  <author>
+    <name>Joel Fiddes</name>
+    <uri></uri>
+    <email>joelfiddes@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h3 id=&quot;summary&quot;&gt;SUMMARY&lt;/h3&gt;
+
+&lt;p&gt;The World Meteorological Organization’s &lt;a href=&quot;http://globalcryospherewatch.org&quot;&gt;Global Cryosphere Watch&lt;/a&gt; is an international mechanism for supporting all key cryospheric in-situ and remote sensing observations. To meet the needs of WMO Members and partners in delivering services to users, the media, public, decision and policy makers. In order to fufill this role a global network of “CRYONET” stations has been established that report metadata to the GCW dataportal and provide means to access data using a decentralised model.&lt;/p&gt;
+
+&lt;p&gt;One of the most important milestones in achieving full interoperability between the GCW Data Portal and the individual CryoNet stations data centres is the ability to dynamically exchange metadata and data. Exchange of data and metadata is one of the most important benefits that GCW offers, and the interoperability of the GCW Data Portal must provide a software solution to address this.&lt;/p&gt;
+
+&lt;p&gt;To date 120 stations have been approved as CryoNet and Contributing stations of the GCW surface observing network; more than 50% of these are operated by universities and research organizations, which are not familiar with the WMO metadata and data exchange mechanisms and do not have the resources to adopt them. GCW adds value by being the “blackbox” whereby research scientists are not exposed to operational details (and costs) of WMO while WMO receives a standardised product and is not exposed to the true diversity of formats, standards etc. at the individual station level.&lt;/p&gt;
+
+&lt;p&gt;A demonstration project for coupling a small data-centre with the GCW Data Portal was initiated in 2015, in collaboration with the Swiss Federal Institute for Forest, Snow and Landscape Research (SLF). This demonstration project was successful in the dynamic sharing of metadata using the OAI-PMH protocol. The results achieved have provided a template for interoperability with data centres contributing to the GCW observing network. This presentation focuses on follow up interoperability software tool that enables stations to share data and metadata in diverse formats and standards to a single format based on the NetCDF common data model and utilising the CF convention. The specification for this interoperability package is as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;“Sit-on-top” solution, easily integrated into existing data-management
+practices.&lt;/li&gt;
+  &lt;li&gt;Convert data from some arbitrary file or database form to a standard output (ie.
+NetCDF CDM)&lt;/li&gt;
+  &lt;li&gt;Serve this data using standard protocols (ie. OpeNDAP).
+A GUI based metadata editor + server (OAI-PMH).&lt;/li&gt;
+  &lt;li&gt;Do this cheaply and easily implemented (no developer required on data-centres
+side).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We will present a prototype of this tool and how it could be a prototype for diverse data interoperability applications in the field of environmental monitoring.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/images/gcw/OSS.png&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;Schematic of the interoperability software package.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;!-- http://p3.snf.ch/project-165435 --&gt;
+&lt;!-- 
+
+
+
+&lt;figure class=&quot;third &quot;&gt;
+  
+    
+      &lt;a href=
+        
+          &quot;/images/nepal2016/laptop.JPG&quot;
+        
+        title=&quot;Reading out loggers&quot;
+      &gt;
+        &lt;img src=
+          
+            &quot;/images/nepal2016/laptop.JPG&quot;
+          
+          alt=&quot;Reading out loggers&quot;&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=
+        
+          &quot;/images/nepal2016/steeprock.JPG&quot;
+        
+        title=&quot;Installing rockwall logger&quot;
+      &gt;
+        &lt;img src=
+          
+            &quot;/images/nepal2016/steeprock.JPG&quot;
+          
+          alt=&quot;Installing rockwall logger&quot;&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=
+        
+          &quot;/images/nepal2016/workshop.JPG&quot;
+        
+        title=&quot;Workshop on permafrost related hazards&quot;
+      &gt;
+        &lt;img src=
+          
+            &quot;/images/nepal2016/workshop.JPG&quot;
+          
+          alt=&quot;Workshop on permafrost related hazards&quot;&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt; --&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/wmo_gcw/&quot;&gt;WMO Global Cryosphere Watch dataportal [2017-2018]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;mountainsense&lt;/a&gt; on September 01, 2017.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[TopoSAT: High resolution surface modelling of the Himalayan cryosphere with satellite data assimilation [2017-2018]]]></title>
+  <link rel="alternate" type="text/html" href="/SNF-post/" />
+  <id>/SNF-post</id>
+  <updated>2018-01-16T00:00:00-00:00</updated>
+  <published>2017-03-01T00:00:00+01:00</published>
+  
+  <author>
+    <name>Joel Fiddes</name>
+    <uri></uri>
+    <email>joelfiddes@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h3 id=&quot;summary&quot;&gt;SUMMARY&lt;/h3&gt;
+
+&lt;p&gt;The mountain cryosphere is undergoing significant changes globally, yet these changes are in many cases poorly constrained, particularly in remote regions where data is sparse. Effects of environmental change in mountain regions can generate significant impacts both locally and downstream, therefore dynamics of the cryosphere are important to quantify and monitor. The aim of this project is to assess to what extent we can improve the performance of a new high-resolution modelling scheme in data-poor mountain regions by using techniques to assimilate available observations (e.g. from satellite platforms). Additionally, we will systematically evaluate uncertainties in the modelling process, which will allow us to generate simulation-based probability distributions and communicate results in a more informative form than traditional deterministic methods. Our new scheme will be tested for the case of both permafrost and snowcover in: (A) ‘data-rich’ European Alps and (B) ‘data-poor’ Himalaya, in order to benchmark improvements in the new scheme, due to assimilation of observations. The end goal is a large-scale subgrid modelling scheme that is capable of assimilating available observations and quantifying uncertainty. This project will provide an important toolset to help improve our understanding of dynamics in the cryosphere of remote high-mountain regions. Finally, we will apply these new methods in two contrasting climate regimes in the Indian and Nepalese Himalaya to generate a first combined transient snowcover/permafrost map with strong potential for upscaling both regionally and globally. If successful, the techniques developed in this project could be usefully incorporated into the research and operational avalanche forecast model SNOWPACK at the WSL Institute for Snow and Avalanche Research (SLF) as well as form an important part of an international effort in modelling of the cryosphere at subgrid scales.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/images/swe_pix.png&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;swe_pix.pdf&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;!-- http://p3.snf.ch/project-165435 --&gt;
+&lt;!-- 
+
+
+
+&lt;figure class=&quot;third &quot;&gt;
+  
+    
+      &lt;a href=
+        
+          &quot;/images/nepal2016/laptop.JPG&quot;
+        
+        title=&quot;Reading out loggers&quot;
+      &gt;
+        &lt;img src=
+          
+            &quot;/images/nepal2016/laptop.JPG&quot;
+          
+          alt=&quot;Reading out loggers&quot;&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=
+        
+          &quot;/images/nepal2016/steeprock.JPG&quot;
+        
+        title=&quot;Installing rockwall logger&quot;
+      &gt;
+        &lt;img src=
+          
+            &quot;/images/nepal2016/steeprock.JPG&quot;
+          
+          alt=&quot;Installing rockwall logger&quot;&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=
+        
+          &quot;/images/nepal2016/workshop.JPG&quot;
+        
+        title=&quot;Workshop on permafrost related hazards&quot;
+      &gt;
+        &lt;img src=
+          
+            &quot;/images/nepal2016/workshop.JPG&quot;
+          
+          alt=&quot;Workshop on permafrost related hazards&quot;&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt; --&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/SNF-post/&quot;&gt;TopoSAT: High resolution surface modelling of the Himalayan cryosphere with satellite data assimilation [2017-2018]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;mountainsense&lt;/a&gt; on March 01, 2017.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Data and monitoring tools for improved water resource management Afghanistan [2016]]]></title>
   <link rel="alternate" type="text/html" href="/seedafghan-post/" />
   <id>/seedafghan-post</id>
   <updated>2016-02-01T00:00:00-00:00</updated>
@@ -51,7 +343,105 @@ water resource and natural hazard (novel results to be published).&lt;/li&gt;
 generate unique datasets with which to increase knowledge of the hydrology of the Hindu Kush.&lt;/li&gt;
 &lt;/ol&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/seedafghan-post/&quot;&gt;Data and monitoring tools for improved water resource management [2016]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;Joel Fiddes&lt;/a&gt; on January 01, 2016.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/images/seedAfg2016/sca.jpg&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;Figure 1: Mean SCA (%) 2013-2014 computed from 8-day MODIS snowcover product
+(MOD10A2). Percentage refers to percentage of time each pixel is snow covered. 1=always snow
+covered, 0=never snow covered.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/images/seedAfg2016/Rplot001.jpeg&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;Figure 2: Plots of snow depth (cm), air temperature (degC) and accumulated precipitation (mm) at
+three snow stations of MEW. Calibration errors demonstated nicely for precip and snow height (negative values).&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/seedafghan-post/&quot;&gt;Data and monitoring tools for improved water resource management Afghanistan [2016]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;mountainsense&lt;/a&gt; on January 01, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Permafrost monitoring project Nepal [2016]]]></title>
+  <link rel="alternate" type="text/html" href="/seedNepal-post/" />
+  <id>/seedNepal-post</id>
+  <updated>2018-01-16T00:00:00-00:00</updated>
+  <published>2016-01-01T00:00:00+01:00</published>
+  
+  <author>
+    <name>Joel Fiddes</name>
+    <uri></uri>
+    <email>joelfiddes@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h2 id=&quot;partners&quot;&gt;Partners&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;UZH&lt;/li&gt;
+  &lt;li&gt;SLF&lt;/li&gt;
+  &lt;li&gt;ICIMOD &lt;a href=&quot;http://www.icimod.org/?q=25599&quot;&gt;project page&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;UNEP&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;funding&quot;&gt;Funding&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;ETH Global SEED fund&lt;/li&gt;
+  &lt;li&gt;ICIMOD&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;aims&quot;&gt;Aims&lt;/h2&gt;
+&lt;p&gt;Permafrost is an emerging field of research in the Himalaya, led by ICIMOD. However there is no local-scale permafrost modelling in Nepal. Some surface temperature data exists, but no strategic or systematic measurement. The main aims of this project were therefore:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Establish the initial basis for a long-term permafrost monitoring site in Nepal.&lt;/li&gt;
+  &lt;li&gt;Together with ICIMOD and based on PERMOS protocols developed in CH, agree on strict protocol for installation of ground surface temperature loggers for consistency across sites (Pakistan, India, Nepal).&lt;/li&gt;
+  &lt;li&gt;Strengthen local scientific capacity and build long-term collaborations through
+a joint Swiss–Nepalese measurement campaign and science exchange workshop.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;summary&quot;&gt;SUMMARY&lt;/h3&gt;
+
+&lt;p&gt;The field campaign to establish a long-term permafrost monitoring site in Langtang Valley, Nepal, was conducted from October 8 – 20, 2016.  Three experts from Switzerland joined the expedition (Allen, Fiddes, Mueller), with two masters-level students joining from Kathmandu University (Reeju Shrestha, Aman Thapa). In addition, with support provided by the external partner ICIMOD, a student from Tribhuvan University joined (Shraddha Dhakal), and a young scientist from ICIMOD joined in a supporting role (Gunjan Silwal).&lt;/p&gt;
+
+&lt;p&gt;These measurements will be used in the future to validate the modelled permafrost distribution for the region. The current estimate of permafrost distribution in this region based on simple modelling approaches and mapping of terrain indicators suggests permafrost is likely to occur down to around 4300 m a.s.l.&lt;/p&gt;
+
+&lt;p&gt;Immediately following the field campaign, the 2-day combined workshop “Field techniques and data tools for monitoring high mountain environments” was hosted at Kathmandu University. 23 participants joined, coming from Kathmandu University, Tribhuvan University, ICIMOD, Kabul University, Ministry of Energy and Water, Government of Afghanistan, and United Nations Environment Programme. The workshop contained a mixture of lectures, practical exercises, and open discussion. In regards to permafrost, the participants were tasked with implementing the key steps in a work-flow designed to give a first validated estimate of permafrost distribution, and assessing related hazard potential&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/images/nepal2016/yala_overview.png&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;Logger deployments at Yala, upper Langtang valley.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;outputs&quot;&gt;OUTPUTS&lt;/h3&gt;
+&lt;p&gt;The field campaign was a good success, with new instrumentation installed and baseline terrain mapping completed. The four young local scientists were heavily engaged in all activities, which included:
+- Installation of temperature loggers on rock faces and on debris slopes
+- Terrestrial and aerial photogrammetry (from a UAV) to derive surface topography
+- High precision GPS benchmark measurements to establish terrain movement&lt;/p&gt;
+
+&lt;figure class=&quot;third &quot;&gt;
+  
+    
+      &lt;a href=&quot;/images/nepal2016/laptop.JPG&quot; title=&quot;Reading out loggers&quot;&gt;
+        &lt;img src=&quot;/images/nepal2016/laptop.JPG&quot; alt=&quot;Reading out loggers&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/images/nepal2016/steeprock.JPG&quot; title=&quot;Installing rockwall logger&quot;&gt;
+        &lt;img src=&quot;/images/nepal2016/steeprock.JPG&quot; alt=&quot;Installing rockwall logger&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/images/nepal2016/workshop.JPG&quot; title=&quot;Workshop on permafrost related hazards&quot;&gt;
+        &lt;img src=&quot;/images/nepal2016/workshop.JPG&quot; alt=&quot;Workshop on permafrost related hazards&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/seedNepal-post/&quot;&gt;Permafrost monitoring project Nepal [2016]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;mountainsense&lt;/a&gt; on January 01, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -60,7 +450,7 @@ generate unique datasets with which to increase knowledge of the hydrology of th
   <title type="html"><![CDATA[Open support platform for environmental research [2014-2017]]]></title>
   <link rel="alternate" type="text/html" href="/OSPER/" />
   <id>/OSPER</id>
-  <updated>2016-02-01T00:00:00-00:00</updated>
+  <updated>2017-02-01T00:00:00-00:00</updated>
   <published>2014-11-01T00:00:00+01:00</published>
   
   <author>
@@ -69,9 +459,12 @@ generate unique datasets with which to increase knowledge of the hydrology of th
     <email>joelfiddes@gmail.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;&lt;a href=&quot;https://www.osper.ch&quot; class=&quot;btn btn-success&quot;&gt;OSPER data platform&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://developwis.wsl.ch/osper/#!/map&quot; class=&quot;btn btn-success&quot;&gt;OSPER data platform&lt;/a&gt;
+&lt;a href=&quot;http://www.envidat.ch/&quot; class=&quot;btn btn-success&quot;&gt;ENVIDAT data portal&lt;/a&gt;
+&lt;a href=&quot;http://montblanc.slf.ch/DPS/&quot; class=&quot;btn btn-success&quot;&gt;Data processing system (DPS)&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/OSPER/&quot;&gt;Open support platform for environmental research [2014-2017]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;Joel Fiddes&lt;/a&gt; on November 01, 2014.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/OSPER/&quot;&gt;Open support platform for environmental research [2014-2017]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;mountainsense&lt;/a&gt; on November 01, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -94,10 +487,12 @@ generate unique datasets with which to increase knowledge of the hydrology of th
 &lt;p&gt;Physically based models can be useful for simulation of the energy and water balance in remote mountain regions where observational data is not available for more empirical methods. Such simulations are particularly useful in assessment of a range of crucial land surface processes, related to water supply and natural hazards. Key challenges in using such models are: (1) supplying appropriate scale model drivers, (2) improving efficiency for large area simulation, and (3) model evaluation and possible debiasing in data sparse regions. This study implements new methods which address (1) and (2) in a data sparse region of the Himalaya. Specific focus is placed on (3), development of methods with which to evaluate (and simple debiasing) of model simulations when conventional data is sparse.&lt;/p&gt;
 
 &lt;h3 id=&quot;methods&quot;&gt;METHODS&lt;/h3&gt;
-&lt;p&gt;\item Downscale atmospheric reanalysis data (ERA-Interim) to high resolution DEM scale (ASTER 30~m) according to \cite{Fiddes2014}.
-\item Subgrid method which samples topographic heterogeneity to make a lumped model for highly efficient large area simulation \citep{Fiddes2012}.
-\item Numerical modelling of surface parameters (2002-2012) using GeoTOP, a distributed hydrological model with coupled water and energy balance \citep{Endrizzi2013}.
-\item Evaluate and debias results in data poor areas.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Downscale atmospheric reanalysis data (ERA-Interim) to high resolution DEM scale (ASTER 30~m) according to Fiddes and Gruber 2014.&lt;/li&gt;
+  &lt;li&gt;Subgrid method which samples topographic heterogeneity to make a lumped model for highly efficient large area simulation Fiddes and Gruber 2012.&lt;/li&gt;
+  &lt;li&gt;Numerical modelling of surface parameters (2002-2012) using GeoTOP, a distributed hydrological model with coupled water and energy balance (Endrizzi et al 2013).
+-Evaluate and debias results in data poor areas.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;figure&gt;
     &lt;a href=&quot;/images/ihcap_study.png&quot;&gt;&lt;img src=&quot;/images/ihcap_study.png&quot; /&gt;&lt;/a&gt;
@@ -122,9 +517,59 @@ generate unique datasets with which to increase knowledge of the hydrology of th
 &lt;p&gt;&lt;a href=&quot;http://dx.doi.org/10.5194/tc-9-411-2015&quot; class=&quot;author-social&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa-file-text-o&quot;&gt;&lt;/i&gt; Allen, S. K., Fiddes J., Linsbauer, A., Randhawa, S.S., Salzmann, N. 2016: Indo-Swiss partnership initiates first local permafrost studies in the Indian Himalaya.
 Current Science (submitted).&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;https://timesofindia.indiatimes.com/city/chandigarh/scientists-studying-the-phenomenon-of-permafrost-in-himalayan-region/articleshow/57107108.cms&quot; class=&quot;btn btn-success&quot;&gt;Media: Times of India&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.ihcap.in/media/press/Pfrost-TOI-Article.pdf&quot; class=&quot;btn btn-success&quot;&gt;Media: Times of India Sunday Special&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;a href=&quot;http://www.ihcap.in&quot; class=&quot;btn btn-success&quot;&gt;Project website&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/IHCAP-permafrost/&quot;&gt;Indian Himalayas Climate Adaptation Programme [2014-2015]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;Joel Fiddes&lt;/a&gt; on September 01, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/IHCAP-permafrost/&quot;&gt;Indian Himalayas Climate Adaptation Programme [2014-2015]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;mountainsense&lt;/a&gt; on September 01, 2014.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Wakhan corridor expedition, Afghanistan [2011]]]></title>
+  <link rel="alternate" type="text/html" href="/wakhan2/" />
+  <id>/wakhan2</id>
+  <updated>2016-02-01T00:00:00-00:00</updated>
+  <published>2011-06-01T00:00:00+02:00</published>
+  
+  <author>
+    <name>Joel Fiddes</name>
+    <uri></uri>
+    <email>joelfiddes@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;The purpose of this project was to work with staff from the Afghan Ministry of Energy and Water (MEW) and provide training in snow surveys and deployments of sensors. We chose Wakhan Corridor due to previous experience and security reasons.&lt;/p&gt;
+
+&lt;figure class=&quot;third &quot;&gt;
+  
+    
+      &lt;a href=&quot;/images/wakhan2011/DSC_0287.JPG&quot; title=&quot;Up to high camp&quot;&gt;
+        &lt;img src=&quot;/images/wakhan2011/DSC_0287.JPG&quot; alt=&quot;Reading out loggers&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/images/wakhan2011/DSC_0309.JPG&quot; title=&quot;Snowpits&quot;&gt;
+        &lt;img src=&quot;/images/wakhan2011/DSC_0309.JPG&quot; alt=&quot;Installing rockwall logger&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/images/wakhan2011/P1000204.JPG&quot; title=&quot;Depth measurements&quot;&gt;
+        &lt;img src=&quot;/images/wakhan2011/P1000204.JPG&quot; alt=&quot;Workshop on permafrost related hazards&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;!-- &lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://photos.google.com/share/AF1QipP5O8tZRUDRBfSRe8zHjQyv0CiY8FFfhKGn9PDTRT8wJf3uucJFHwMLT7Khu0_21w?key=MVdkQllCa2tZU1dOZ0lESkd4WXBkWG5COVhwSk9B&amp;source=ctrlq.org&#39;&gt;&lt;img src=&#39;https://lh3.googleusercontent.com/MIvjMZd2R0qewVsD_Y-BG2NBqTW6n7CYCfwJ5ZrrKxfqyeq9Zrsx5BYkyzG2IruFYkfdD4gY8vCDTnGgs9sUJrK5lFln8-vlvG8aVTIuALkue-QOWFR12GAODoJWPQhGNnSr3753WZU&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt; --&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;/wakhan2/&quot;&gt;Wakhan corridor expedition, Afghanistan [2011]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;mountainsense&lt;/a&gt; on June 01, 2011.&lt;/p&gt;
   </content>
 </entry>
 
@@ -144,7 +589,34 @@ Current Science (submitted).&lt;/a&gt;&lt;/p&gt;
   <content type="html">
     
 
-    &lt;p&gt;&lt;a href=&quot;/snowIce/&quot;&gt;Snow and Ice monitoring Programme, Afghanistan [2010-2011]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;Joel Fiddes&lt;/a&gt; on December 01, 2010.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/snowIce/&quot;&gt;Snow and Ice monitoring Programme, Afghanistan [2010-2011]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;mountainsense&lt;/a&gt; on December 01, 2010.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Wakhan corridor expedition, Afghanistan [2009]]]></title>
+  <link rel="alternate" type="text/html" href="/wakhan/" />
+  <id>/wakhan</id>
+  <updated>2016-02-01T00:00:00-00:00</updated>
+  <published>2009-09-01T00:00:00+02:00</published>
+  
+  <author>
+    <name>Joel Fiddes</name>
+    <uri></uri>
+    <email>joelfiddes@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h3 id=&quot;some-impressions-from-the-trip&quot;&gt;Some impressions from the trip&lt;/h3&gt;
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/m6iH-3YRCxM?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;other-media&quot;&gt;Other media&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://publications.americanalpineclub.org/articles/12201025500/Koh-i-Beefy-ca-5400m&quot;&gt;  Publication in the American Alpine journal&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://news.bbc.co.uk/2/hi/uk_news/scotland/8535351.stm&quot;&gt;A BBC piece on the trip&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/wakhan/&quot;&gt;Wakhan corridor expedition, Afghanistan [2009]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;mountainsense&lt;/a&gt; on September 01, 2009.&lt;/p&gt;
   </content>
 </entry>
 
@@ -164,7 +636,7 @@ Current Science (submitted).&lt;/a&gt;&lt;/p&gt;
   <content type="html">
     
 
-    &lt;p&gt;&lt;a href=&quot;/cryosub/&quot;&gt;Subgrid modelling in complex topography [2009-2013]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;Joel Fiddes&lt;/a&gt; on May 01, 2009.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/cryosub/&quot;&gt;Subgrid modelling in complex topography [2009-2013]&lt;/a&gt; was originally published by Joel Fiddes at &lt;a href=&quot;&quot;&gt;mountainsense&lt;/a&gt; on May 01, 2009.&lt;/p&gt;
   </content>
 </entry>
 
