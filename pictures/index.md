@@ -10,4 +10,4 @@ image:
 
 ---
 
-{% gjekyll-google-photos https://goo.gl/photos/HUypV3Q4YXBjgSxdA 800 %}
+{% jekyll-google-photos https://goo.gl/photos/HUypV3Q4YXBjgSxdA 800 %}
