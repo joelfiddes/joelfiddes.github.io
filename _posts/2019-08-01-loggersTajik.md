@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Permafrost monitoring campaign Fan mountains, Tajikistan"
-modified: 2018-04-14
+modified: 2019-11-13
 share: false
-excerpt: "Permafrost Zerafshan
+excerpt: "Permafrost Zerafshan"
 tags: []
 gallery:
 
