@@ -16,7 +16,6 @@ image:
 
 
 - Fiddes, Joel, Kristoffer Aalstad, and Sebastian Westermann. 2019. “Hyper-Resolution Ensemble-Based Snow Reanalysis in Mountain Regions Using Clustering.” Hydrology and Earth System Sciences Discussions, May, 1–32. In press. <a href="https://www.hydrol-earth-syst-sci-discuss.net/hess-2019-37/">Discusion paper</a>
-
 - Bender, Esther , Joel Fiddes and Michael Lehning. 2019. Changes in climatology, snow cover and ground temperatures at high alpine locations, Front. Earth Sci. In review.
 - Allen S.K., Fiddes J., Linsbauer, A., Randhawa, S.S., Salzmann, N. 2016: Indo-Swiss partnership initiates first local permafrost studies in the Indian Himalaya.
 Current Science, 11, 3, 550-553. <a href="https://www.researchgate.net/profile/Simon_Allen3/publication/305999744_Permafrost_studies_in_Kullu_district_Himachal_Pradesh/links/57a9b15708aef300152a09a4.pdf">Researchgate</a>
@@ -31,9 +30,8 @@ Current Science, 11, 3, 550-553. <a href="https://www.researchgate.net/profile/S
 ---
 
 ## NON-PEER REVIEWED
-Mathias Bavay, Joel Fiddes, Charles Fierz, Michael Lehning, Fabiano Monti, Thomas Egger. THE METEOIO PRE-PROCESSING LIBRARY FOR OPERATIONAL APPLICATIONS. Proceedings, International Snow Science Workshop, Innsbruck, Austria, 2018
+- Mathias Bavay, Joel Fiddes, Charles Fierz, Michael Lehning, Fabiano Monti, Thomas Egger. THE METEOIO PRE-PROCESSING LIBRARY FOR OPERATIONAL APPLICATIONS. Proceedings, International Snow Science Workshop, Innsbruck, Austria, 2018
 <a href="http://arc.lib.montana.edu/snow-science/objects/ISSW2018_O08.2.pdf">Montana Library</a>.
-
 - Muccione, V, and Fiddes, J. “State of the Knowledge on Water Resources and Natural Hazards under Climate Change in Central Asia and South Caucasus.” Managing Disaster Risks and Water under Climate Change. 2019. <a href="https://www.dora.lib4ri.ch/wsl/islandora/object/wsl:21688.">WSL library</a>.
 - The Status and Role of the alpine Cryosphere in Central Asia (Book Chapter). Martin Hoelzle, Martina Barandun, Tobias Bolch, Joel Fiddes, Abror Gafurov, Veruska Muccione, Tomas Saks and Maria Shaghedanova in The Aral Sea Basin: Water for Sustainable Development in Central Asia eds.Stefanos Xenarios, Dietrich Schmidt-Vogt, Manzoor Qadir, Barbara Janusz-Pawletta, Iskandar Abdullaev, 2019, Routledge ISBN 9781138348882.
 <a href="https://tandfbis.s3-us-west-2.amazonaws.com/rt-files/docs/Open+Access+Chapters/9781138348882_oachapter08.pdf">Chapter 8 open access</a>.
@@ -55,6 +53,5 @@ Mathias Bavay, Joel Fiddes, Charles Fierz, Michael Lehning, Fabiano Monti, Thoma
 
 Muccione and Manon 2019. Nexus Brief: Climate Change & Environment x Climate-Cryosphere-Water Nexus in Central Asia. Zöi Network 
 <a href="https://issuu.com/zoienvironment/docs/nexusbrief-cryosphere-eng">online version</a>
-
 - Thomas, V., Azizi, M. A., & Ghafoori, I. (2013). Water Rights and Conflict Resolution Processes in Afghanistan: The Case of the Sar-i-Pul Sub-basin. <a href="http://areu.org.af/publication/water-rights-and-conflict-resolution-processes-in-afghanistan-the-case-of-the-sar-i-pul-sub-basin/">online version</a>
 - Thomas, V., Mumtaz, W., & Azizi, M. A. (2012). Mind the Gap?: Local Practices and Institutional Reform for Water Allocation in Afghanistan’s Panj-Amu River Basin. Afghanistan Research and Evaluation Unit. <a href="http://areu.org.af/publication/mind-the-gap-local-practices-and-institutional-reforms-for-water-allocation-in-afghanistans-panj-amu-river-basin/">online version</a>
