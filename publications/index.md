@@ -13,8 +13,6 @@ image:
 {% include _toc.html %}
 
 ## PEER REVIEWED
-
-
 - Fiddes, Joel, Kristoffer Aalstad, and Sebastian Westermann. 2019. “Hyper-Resolution Ensemble-Based Snow Reanalysis in Mountain Regions Using Clustering.” Hydrology and Earth System Sciences Discussions, May, 1–32. In press. <a href="https://www.hydrol-earth-syst-sci-discuss.net/hess-2019-37/">Discusion paper</a>
 - Bender, Esther , Joel Fiddes and Michael Lehning. 2019. Changes in climatology, snow cover and ground temperatures at high alpine locations, Front. Earth Sci. In review.
 - Allen S.K., Fiddes J., Linsbauer, A., Randhawa, S.S., Salzmann, N. 2016: Indo-Swiss partnership initiates first local permafrost studies in the Indian Himalaya.
