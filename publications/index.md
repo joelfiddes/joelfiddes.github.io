@@ -16,7 +16,6 @@ image:
 `2019`
 Fiddes, Joel, Kristoffer Aalstad, and Sebastian Westermann. 2019. “Hyper-Resolution Ensemble-Based Snow Reanalysis in Mountain Regions Using Clustering.” Hydrology and Earth System Sciences Discussions, May, 1–32. _In press._  <a href="https://www.hydrol-earth-syst-sci-discuss.net/hess-2019-37/">Discusion paper</a>
 
-`2019`
 Bender, Esther ,  Joel Fiddes and  Michael Lehning. 2019. Changes in climatology, snow cover and ground temperatures at high alpine locations, Front. Earth Sci. _In review._
 
 `2016`
@@ -48,7 +47,6 @@ Matthias Keller, Guido Hungerbuehler, Oliver Knecht, Suhel Sheikh, Jan Beutel, S
 `2019`
 Muccione, V, and Fiddes, J. “State of the Knowledge on Water Resources and Natural Hazards under Climate Change in Central Asia and South Caucasus.” Managing Disaster Risks and Water under Climate Change. 2019.  <a href="https://www.dora.lib4ri.ch/wsl/islandora/object/wsl:21688.">WSL library</a>
 
-`2019`
 The Status and Role of the alpine Cryosphere in Central Asia _(Book Chapter)_. Martin Hoelzle, Martina Barandun, Tobias Bolch, Joel Fiddes, Abror Gafurov, Veruska Muccione, Tomas Saks and Maria Shaghedanova _in_ The Aral Sea Basin: Water for Sustainable Development in Central Asia eds.Stefanos Xenarios, Dietrich Schmidt-Vogt, Manzoor Qadir, Barbara Janusz-Pawletta, Iskandar Abdullaev, 2019, Routledge ISBN 9781138348882.
 <a href="https://tandfbis.s3-us-west-2.amazonaws.com/rt-files/docs/Open+Access+Chapters/9781138348882_oachapter08.pdf">Chapter 8 open access</a>
 
