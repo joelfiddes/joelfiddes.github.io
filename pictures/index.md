@@ -14,7 +14,8 @@ image:
 <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
   data-link="https://goo.gl/photos/HUypV3Q4YXBjgSxdA"
   data-title="mountainsense"
-  data-description="188 new photos · Album by Joel Fiddes">
+  data-description="188 new photos · Album by Joel Fiddes"
+  data-delay="2">
   <object data="https://lh3.googleusercontent.com/w4Wrx-a6_UWA9s5wx8iFmCLs4C-EdCgFXVwPMzmA5_QXM4082XoBsf-DIXxtDQQ8LhxsGuTtyr-SjKfjA1wg6uRoT1s0W_Csx2IIoFhDm3WCPb-u6bg014MoKLky7TxfWrSx-Za1ctI=w1920-h1080"></object>
   <object data="https://lh3.googleusercontent.com/9a0Yyp5CMbYwb7bTjysKGopLrpP8f39mt7nKskrCLM2e3KhHbnMxfdf98jgmfXTlRjrNRrQ-eoIMUQsAbdHCfcJsff9bZ4nBrqy-7_zCphSbS35PUgiXp6XwHzTvOPxlLRGijSg6XXc=w1920-h1080"></object>
   <object data="https://lh3.googleusercontent.com/pgzsfM5Cd-QyiD_L-D7WKD7r_h5qvEP52WNmKVaDzG68uC3y-IX2d7j1QOOYMtUSZEXmW1w8-Dm1celFpneXyOy11g0-CbNp6lY2At5oI1kW4vAmSQbxaCgPgSbWiFB5kEwWLGM2G3s=w1920-h1080"></object>
