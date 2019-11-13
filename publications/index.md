@@ -71,15 +71,12 @@ Fiddes, J. (2007). Afghanistan: Implications Of Climate Change For Water Resourc
 
 ### Technical contributions
 `2019`
-
 Muccione and Manon 2019. Nexus Brief: Climate Change & Environment x Climate-Cryosphere-Water Nexus in Central Asia. Zöi Network 
 <a href="https://issuu.com/zoienvironment/docs/nexusbrief-cryosphere-eng">online version</a>
 
 `2013`
-
 Thomas, V., Azizi, M. A., & Ghafoori, I. (2013). Water Rights and Conflict Resolution Processes in Afghanistan: The Case of the Sar-i-Pul Sub-basin.
 
 `2012`
-
 Thomas, V., Mumtaz, W., & Azizi, M. A. (2012). Mind the Gap?: Local Practices and Institutional Reform for Water Allocation in Afghanistan’s Panj-Amu River Basin. Afghanistan Research and Evaluation Unit.
 
