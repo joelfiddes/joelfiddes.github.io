@@ -69,7 +69,7 @@ The Status and Role of the alpine Cryosphere in Central Asia _(Book Chapter)_. M
 
 Muccione, Veruska; Huggel, Christian; Salzmann, Nadine; **Fiddes, Joel;** Nussbaumer, Samuel U; Novikov, Viktor; Hughes, Geoff (2018). Climate-cryosphere-water nexus: Central Asia outlook.  Zoï Environment Network. <a href= "https://doi.org/10.5167/uzh-161876">doi: 10.5167/uzh-161876</a>.
 
-Mathias Bavay, **Joel Fiddes,** Charles Fierz, Michael Lehning, Fabiano Monti, Thomas Egger. THE METEOIO PRE-PROCESSING LIBRARY FOR OPERATIONAL APPLICATIONS. Proceedings, International Snow Science Workshop, Innsbruck, Austria, 2018
+Mathias Bavay, **Joel Fiddes,** Charles Fierz, Michael Lehning, Fabiano Monti, Thomas Egger. The MeteoIO pre-processing library for operational applications. Proceedings, International Snow Science Workshop, Innsbruck, Austria, 2018
 <a href="http://arc.lib.montana.edu/snow-science/objects/ISSW2018_O08.2.pdf">Montana Library</a>.
 
 `2014`
