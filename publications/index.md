@@ -14,7 +14,7 @@ image:
 
 ### Peer reviewed
 `2020`
->Bavay, M., **Fiddes, J.** and Godøy, Ø., 2020. Automatic Data Standardization for the Global Cryosphere Watch Data Portal. Data Science Journal, 19(1), p.6. DOI: <a href="http://doi.org/10.5334/dsj-2020-006">10.5334/dsj-2020-006</a>
+>bavay, M., **Fiddes, J.** and Godøy, Ø., 2020. Automatic Data Standardization for the Global Cryosphere Watch Data Portal. Data Science Journal, 19(1), p.6. DOI: <a href="http://doi.org/10.5334/dsj-2020-006">10.5334/dsj-2020-006</a>
 
 >Bender, E.,  Lehning, M., & **Fiddes, J.** 2020. Changes in climatology, snow cover and ground temperatures at high alpine locations, Front. Earth Sci. _In press._
 
