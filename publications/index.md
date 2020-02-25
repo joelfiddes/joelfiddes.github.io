@@ -14,14 +14,11 @@ image:
 
 ### Peer reviewed
 `2020`
->bavay, M., **Fiddes, J.** and Godøy, Ø., 2020. Automatic Data Standardization for the Global Cryosphere Watch Data Portal. Data Science Journal, 19(1), p.6. DOI: <a href="http://doi.org/10.5334/dsj-2020-006">10.5334/dsj-2020-006</a>
-
->Bender, E.,  Lehning, M., & **Fiddes, J.** 2020. Changes in climatology, snow cover and ground temperatures at high alpine locations, Front. Earth Sci. _In press._
+Bavay, M., **Fiddes, J.** and Godøy, Ø., 2020. Automatic Data Standardization for the Global Cryosphere Watch Data Portal. Data Science Journal, 19(1), p.6. DOI: <a href="http://doi.org/10.5334/dsj-2020-006">10.5334/dsj-2020-006</a>
+Bender, E.,  Lehning, M., & **Fiddes, J.** 2020. Changes in climatology, snow cover and ground temperatures at high alpine locations, Front. Earth Sci. _In press._
 
 `2019`
->**Fiddes, J.**, Aalstad, K., and Westermann, S.: Hyper-resolution ensemble-based snow reanalysis in mountain regions using clustering, Hydrol. Earth Syst. Sci., 23, 4717–4736, 2019._  <a href="https://doi.org/10.5194/hess-23-4717-2019">10.5194/hess-23-4717-2019</a>
-
-
+**Fiddes, J.**, Aalstad, K., and Westermann, S.: Hyper-resolution ensemble-based snow reanalysis in mountain regions using clustering, Hydrol. Earth Syst. Sci., 23, 4717–4736, 2019._  <a href="https://doi.org/10.5194/hess-23-4717-2019">10.5194/hess-23-4717-2019</a>
 
 `2016`
 Allen, SK., **Fiddes J**., Linsbauer, A., Randhawa, S.S., Salzmann, N. 2016: Indo-Swiss partnership initiates first local permafrost studies in the Indian Himalaya.
