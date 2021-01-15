@@ -14,9 +14,14 @@ image:
 
 ### Peer reviewed
 `2020`
-Bavay, M., **Fiddes, J.** and Godøy, Ø., 2020. Automatic Data Standardization for the Global Cryosphere Watch Data Portal. Data Science Journal, 19(1), p.6. DOI: <a href="http://doi.org/10.5334/dsj-2020-006">10.5334/dsj-2020-006</a>
 
-Bender, E.,  Lehning, M., & **Fiddes, J.** 2020. Changes in climatology, snow cover and ground temperatures at high alpine locations, Front. Earth Sci. _In press._
+Barandun, Martina, **Joel Fiddes**, Martin Scherler, Tamara Mathys, Tomas Saks, Dmitry Petrakov, and Martin Hoelzle. 2020. “The State and Future of the Cryosphere in Central Asia.” Water Security 11 (December): 100072. DOI: <a href="https://doi.org/10.1016/j.wasec.2020.100072">10.1016/j.wasec.2020.100072</a>
+
+Philipson, Christopher D., Mark E. J. Cutler, Philip G. Brodrick, Gregory P. Asner, Doreen S. Boyd, Pedro Moura Costa, **Joel Fiddes**, et al. 2020. “Active Restoration Accelerates the Carbon Recovery of Human-Modified Tropical Forests.” Science 369 (6505): 838–41. DOI: <a href="http://doi.org/10.1126/science.aay4490">10.1126/science.aay4490</a>
+
+Bender, Esther, Michael Lehning, and **Joel Fiddes**. 2020. “Changes in Climatology, Snow Cover, and Ground Temperatures at High Alpine Locations.” Frontiers in Earth Science 8 (ARTICLE): 100.DOI: <a href="http://doi.org/10.1126/science.aay4490">10.1126/science.aay4490</a>
+
+Bavay, M., **Fiddes, J.** and Godøy, Ø., 2020. Automatic Data Standardization for the Global Cryosphere Watch Data Portal. Data Science Journal, 19(1), p.6. DOI: <a href="http://doi.org/10.5334/dsj-2020-006">10.5334/dsj-2020-006</a>
 
 `2019`
 **Fiddes, J.**, Aalstad, K., and Westermann, S.: Hyper-resolution ensemble-based snow reanalysis in mountain regions using clustering, Hydrol. Earth Syst. Sci., 23, 4717–4736, 2019._  <a href="https://doi.org/10.5194/hess-23-4717-2019">10.5194/hess-23-4717-2019</a>
