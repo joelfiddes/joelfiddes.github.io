@@ -130,7 +130,7 @@ h1+p {
 
 h2 {
 	font-size: 1.1em;
-	color: #000000;
+	color: #0097c3;
 	margin-top: 1em;
 	position: relative;
 	top: 1.5em;
@@ -143,10 +143,10 @@ h2+p {
 }
 
 h3 {
-	color: #0097c3;
+	color: #808080;
 	font-size: 1em;
 	line-height: 2em;
-	color: #0097c3;
+	color: #808080;
 	position: relative;
 	top: 1.6em;
 	text-align: right;
