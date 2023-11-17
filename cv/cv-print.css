@@ -142,7 +142,7 @@ h2+p {
 }
 
 h3 {
-	color: #808080;
+	color: #0097c3;
 	font-size: 1em;
 	line-height: 2em;
 	color: #808080;
@@ -165,7 +165,7 @@ a:hover {
  	margin-top: 0em;
 	position: relative;
 	left: 28%;
-	color: #808080;
+	color: #0097c3;
 	font-family: Menlo,monospace,sans-serif;
 	font-size: 80%;
 }
