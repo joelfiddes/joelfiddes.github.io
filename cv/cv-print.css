@@ -120,6 +120,7 @@ h1 {
 
 h1+p {
 	/*subtitle*/
+	color: #f24f26
 	font-style: italic;
 	font-size: 110%;
 	line-height: 2em;
@@ -129,7 +130,7 @@ h1+p {
 
 h2 {
 	font-size: 1.1em;
-	color: #000000;
+	color: #0097c3;
 	margin-top: 1em;
 	position: relative;
 	top: 1.5em;
@@ -165,7 +166,7 @@ a:hover {
  	margin-top: 0em;
 	position: relative;
 	left: 28%;
-	color: #808080;
+	color: #0097c3;
 	font-family: Menlo,monospace,sans-serif;
 	font-size: 80%;
 }
