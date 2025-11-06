@@ -89,17 +89,15 @@ ul {
 	width: 65%;
 	margin-bottom: 1.5em;
 	margin-top: 1em;
-  column-count: 3;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-gap: 1em;
-  -webkit-column-gap: 1em;
-  -moz-column-gap: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
 }
 
-
 li {
-	/* empty */
+	flex: 0 0 33.333%;
+	padding-right: 1em;
+	box-sizing: border-box;
 }
 
 li ul {
