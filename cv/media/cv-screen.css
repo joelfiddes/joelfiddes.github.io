@@ -169,7 +169,7 @@ a:hover {
 #webaddress {
 	margin-top: 0em;
 	position: absolute;
-  left: 0 !important;
+  left: 1em !important;
   margin-left: 0 !important;
 	color: #aaa;
 	font-family: Menlo,monospace,sans-serif;
