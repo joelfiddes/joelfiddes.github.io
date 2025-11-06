@@ -121,7 +121,7 @@ h1 {
 
 h1+p {
 	/*subtitle*/
-	color: #37b81a;
+	color: #6B8E23;
 	font-style: italic;
 	font-size: 110%;
 	line-height: 2em;
@@ -131,7 +131,7 @@ h1+p {
 
 h2 {
 	font-size: 1.1em;
-	color: #37b81a;
+	color: #6B8E23;
 	margin-top: 1em;
 	position: relative;
 	top: 1.5em;
