@@ -49,38 +49,6 @@ table {
 
 /* end of reset */
 
-@page {
-	margin: 0.75in;
-	size: A4;
-}
-
-@page :first {
-	@top-left { content: ""; }
-	@top-center { content: ""; }
-	@top-right { content: ""; }
-	@bottom-left { content: ""; }
-	@bottom-center { content: ""; }
-	@bottom-right { content: ""; }
-}
-
-@page :left {
-	@top-left { content: ""; }
-	@top-center { content: ""; }
-	@top-right { content: ""; }
-	@bottom-left { content: ""; }
-	@bottom-center { content: ""; }
-	@bottom-right { content: ""; }
-}
-
-@page :right {
-	@top-left { content: ""; }
-	@top-center { content: ""; }
-	@top-right { content: ""; }
-	@bottom-left { content: ""; }
-	@bottom-center { content: ""; }
-	@bottom-right { content: ""; }
-}
-
 /* faux Wikipedia logo font */
 @font-face { font-family: 'Linux Libertine'; font-style: normal; font-weight: 400; src: local('Linux Libertine'),url(//brick.a.ssl.fastly.net/fonts/linuxlibertine/400.woff) format('woff'); } .fa-wikipedia:before { font-family: 'Linux Libertine', 'Times New Roman', Times, serif; font-weight: 400; content: "W"; }
 
@@ -239,9 +207,4 @@ strong {
 		margin-bottom: 3em;
 		margin-right: 0;
 		width: 65%;
-}
-
-/* Hide the "Footer" heading */
-h3#footer {
-	display: none;
 }
