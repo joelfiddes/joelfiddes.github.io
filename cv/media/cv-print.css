@@ -165,7 +165,7 @@ a:hover {
 #webaddress {
  	margin-top: 0em;
 	position: relative;
-	left: 28%;
+	margin-left: 1em;
 	color: #ccc;
 	font-family: Menlo,monospace,sans-serif;
 	font-size: 80%;
@@ -173,6 +173,13 @@ a:hover {
 
 #webaddress a {
 	text-decoration: none;
+}
+
+#webaddress p {
+	position: relative;
+	left: 0;
+	margin-left: 0;
+	width: auto;
 }
 
 em {
