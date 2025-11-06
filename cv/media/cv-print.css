@@ -71,9 +71,9 @@ p {
 
 code {
 	font: normal normal;
-	font-size: 70%;
-	font-family: Menlo, monospace,s ans-serif;
-	color: #ddd;
+	font-size: 90%;
+	font-family: Menlo, monospace, sans-serif;
+	color: #aaa;
 }
 
 p code {
