@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Fix: hide nav bar dropdown overlay (white square on hover) */
+.framer-1jil8vf {
+  display: none !important;
+}
+
+/* Fix: nav bar full width, centered content */
+.framer-ZOdAv.framer-zsts2k {
+  width: 100% !important;
+}
+
+.framer-ZOdAv .framer-17lhhbv {
+  width: 100% !important;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.framer-ZOdAv .framer-ou1d5c {
+  width: 100% !important;
+  max-width: 100% !important;
+  justify-content: center !important;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.framer-ZOdAv .framer-1v3pc41 {
+  width: 100% !important;
+  max-width: 1200px !important;
+}

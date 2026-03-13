@@ -1,0 +1,147 @@
+import Label from '../components/Label'
+
+export default function Contact() {
+  return (
+    <section
+      className="w-full flex justify-center"
+      style={{
+        backgroundImage: 'url(/images/contact-hero.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        minHeight: '100vh',
+      }}
+    >
+      <div className="w-full max-w-[1200px]">
+        <div style={{ padding: '169px 0 0 140px' }}>
+          <div className="max-w-[55%] flex flex-col gap-[24px]">
+            <Label text="Get in touch" />
+            <p
+              style={{
+                fontFamily: "'Geist', sans-serif",
+                fontSize: '1.14rem',
+                lineHeight: '1.35em',
+                letterSpacing: '-0.03em',
+                color: 'var(--unframer-forrest)',
+              }}
+            >
+              Whether you're launching a project or exploring partnerships, we're here to
+              collaborate.
+            </p>
+          </div>
+        </div>
+
+        {/* Contact Form */}
+        <div className="w-full" style={{ padding: '65px 145px 145px 145px' }}>
+          <form className="flex flex-col gap-[36px]">
+            <div className="grid grid-cols-2 gap-4">
+              <label className="flex flex-col gap-[10px]">
+                <span
+                  style={{
+                    fontFamily: "'DM Mono', monospace",
+                    fontWeight: 300,
+                    fontSize: '16px',
+                    letterSpacing: '-0.04em',
+                  }}
+                >
+                  Name
+                </span>
+                <input
+                  type="text"
+                  className="w-full border-b border-neutral-300 bg-transparent py-2 outline-none"
+                  style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px' }}
+                />
+              </label>
+              <label className="flex flex-col gap-[10px]">
+                <span
+                  style={{
+                    fontFamily: "'DM Mono', monospace",
+                    fontWeight: 300,
+                    fontSize: '16px',
+                    letterSpacing: '-0.04em',
+                  }}
+                >
+                  Phone
+                </span>
+                <input
+                  type="tel"
+                  className="w-full border-b border-neutral-300 bg-transparent py-2 outline-none"
+                  style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px' }}
+                />
+              </label>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <label className="flex flex-col gap-[10px]">
+                <span
+                  style={{
+                    fontFamily: "'DM Mono', monospace",
+                    fontWeight: 300,
+                    fontSize: '16px',
+                    letterSpacing: '-0.04em',
+                  }}
+                >
+                  Company
+                </span>
+                <input
+                  type="text"
+                  className="w-full border-b border-neutral-300 bg-transparent py-2 outline-none"
+                  style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px' }}
+                />
+              </label>
+              <label className="flex flex-col gap-[10px]">
+                <span
+                  style={{
+                    fontFamily: "'DM Mono', monospace",
+                    fontWeight: 300,
+                    fontSize: '16px',
+                    letterSpacing: '-0.04em',
+                  }}
+                >
+                  Email
+                </span>
+                <input
+                  type="email"
+                  className="w-full border-b border-neutral-300 bg-transparent py-2 outline-none"
+                  style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px' }}
+                />
+              </label>
+            </div>
+            <label className="flex flex-col gap-[10px]">
+              <span
+                style={{
+                  fontFamily: "'DM Mono', monospace",
+                  fontWeight: 300,
+                  fontSize: '16px',
+                  letterSpacing: '-0.04em',
+                }}
+              >
+                Your message
+              </span>
+              <textarea
+                rows={4}
+                className="w-full border-b border-neutral-300 bg-transparent py-2 outline-none resize-none"
+                style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px' }}
+              />
+            </label>
+            <button
+              type="submit"
+              style={{
+                fontFamily: "'DM Mono', monospace",
+                fontWeight: 300,
+                fontSize: '16px',
+                letterSpacing: '-0.04em',
+                backgroundColor: 'var(--unframer-forrest)',
+                color: 'white',
+                padding: '12px 24px',
+                border: 'none',
+                cursor: 'pointer',
+                width: 'fit-content',
+              }}
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  )
+}
