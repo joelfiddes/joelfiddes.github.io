@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Supporting water information systems in Baluchistan",
+    "slug": "supporting-water-information-systems-in-baluchistan",
+    "thumb": "https://framerusercontent.com/images/RZewRLEPZRNFHnzwxdM88CaZqc.webp",
+    "duration": "2025",
+    "region": "Pakistan",
+    "programme": "RBWRP",
+    "donor": "Landell Mills",
+    "sector": "Water",
+    "links": [
+      { "label": "Doc: Link 1", "url": "https://joelfiddes.github.io/" },
+      { "label": "App: Link 1", "url": "https://joelfiddes.github.io/about/" },
+      { "label": "Web: Link 1", "url": "https://joelfiddes.github.io/posts/" }
+    ],
+    "description": "This project provided an assessment of the hydrological regime of Balochistan, integrating an analysis of climate, topography, and water availability with the development of a new, high-resolution modeling pipeline."
+  },
+  {
+    "title": "Himalayan mountain hazards",
+    "slug": "himalayan-mountain-hazards",
+    "thumb": "https://framerusercontent.com/images/32h73MPSOernmd1yYOmtkknVFP8.png",
+    "duration": "2023-2024",
+    "region": "Himalaya",
+    "programme": "20MW",
+    "donor": "SDC/ ADB",
+    "sector": "DRR",
+    "links": [],
+    "description": "Explore how a leading organization transformed its energy landscape with a customized solution, driving significant efficiency gains, cost savings, and reduced environmental impact."
+  },
+  {
+    "title": "SnowMapper: operational snow forecasts for Central Asia",
+    "slug": "snowmapper-operational-snow-forecasts-for-central-asia",
+    "thumb": "https://framerusercontent.com/images/9bChxNcdieRLyIWGggNKpEAOa1w.jpeg",
+    "duration": "2021-2026",
+    "region": "Central Asia",
+    "programme": "CROMO-ADAPT",
+    "donor": "SDC",
+    "sector": "WRM, DRR",
+    "links": [
+      { "label": "CROMO-ADAPT overview", "url": "https://cromoadapt.tilda.ws/" },
+      { "label": "SnowMapper App", "url": "https://snowmapper.ch/mcass-dashboard" },
+      { "label": "SAPPHIRE project", "url": "https://www.hydrosolutions.ch/projects/sapphire-central-asia" }
+    ],
+    "description": "The Swiss Agency for Development and Cooperation supports multiple projects in semi-arid Central Asia that aim to enhance the effective management of shared water resources. Within this framework, SnowMapper CA provides operational snow cover analysis spanning the Tien Shan, Gissar-Alay, Pamir, and Hindukush mountain ranges."
+  }
+]

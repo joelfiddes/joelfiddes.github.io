@@ -28,3 +28,29 @@
   width: 100% !important;
   max-width: 1200px !important;
 }
+
+/* Resource card image: grayscale by default, color on hover */
+.resource-card-img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.group:hover .resource-card-img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Logo marquee banner */
+.logo-marquee {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.logo-marquee-track {
+  display: flex;
+  flex-shrink: 0;
+  animation: marquee-scroll 30s linear infinite;
+}
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}

@@ -9,7 +9,7 @@ export default function About() {
       <HeroSection image="/images/about-hero.jpg" title="About us" height="74vh" />
 
       {/* About Header */}
-      <section className="w-full flex justify-center" style={{ padding: '70px 32px 67px 32px' }}>
+      <section className="w-full flex justify-center" style={{ padding: '70px 32px 67px 32px', backgroundColor: '#f5f5f5' }}>
         <div className="w-full max-w-[1200px]">
           <div className="flex justify-between items-end gap-[48px]">
             <div className="max-w-[700px] flex flex-col gap-[24px]">
@@ -256,23 +256,53 @@ export default function About() {
         </div>
       </section>
 
-      {/* Our Network - logos */}
-      <section className="w-full flex justify-center" style={{ padding: '156px 21px 67px 21px' }}>
-        <div className="w-full max-w-[1200px] flex flex-col gap-[31px]">
+      {/* Our Network - running logo banner */}
+      <section className="w-full flex flex-col items-center overflow-hidden" style={{ padding: '156px 0 67px 0', backgroundColor: '#f5f5f5' }}>
+        <div className="w-full max-w-[1200px] px-[21px]">
           <Label text="Our network" />
-          <p
-            style={{
-              fontFamily: "'Inter', sans-serif",
-              fontSize: '14px',
-              lineHeight: '1.55em',
-              letterSpacing: '-0.03em',
-              color: 'var(--unframer-neutral-400)',
-              textAlign: 'center',
-              padding: '40px 0',
-            }}
-          >
-            Partner logos coming soon
-          </p>
+        </div>
+        <div className="w-full overflow-hidden" style={{ marginTop: '31px' }}>
+          <div className="logo-marquee">
+            {[...Array(2)].map((_, copy) => (
+              <div key={copy} className="logo-marquee-track">
+                {[
+                  'https://framerusercontent.com/images/6blXjB6orGNl5HuJTGaWZazTTk.png',
+                  'https://framerusercontent.com/images/uJFmh1ReohVM6IkQqSNtKAGtygI.png',
+                  'https://framerusercontent.com/images/ApXjjP0iUUbkUDwZm3cdLvIka5I.png',
+                  'https://framerusercontent.com/images/2BtnXE1PMp0IgIySJAQdU9n7Lq0.png',
+                  'https://framerusercontent.com/images/tIDQ8Daek1PshKehwLHfqc3lOmg.png',
+                  'https://framerusercontent.com/images/oUHwyG7R7IVcQkiLWgq4OtZnmU.png',
+                  'https://framerusercontent.com/images/OGfW7RHqKGtMEaVqNy5OtUZ7dsk.png',
+                  'https://framerusercontent.com/images/Pyk3ZKfsd4HhZqFzP93815nMk.png',
+                  'https://framerusercontent.com/images/V0nZeK5cPymB0wIHDC9ZYsWmRCA.png',
+                  'https://framerusercontent.com/images/lMH1ZAr2RvpuhuhjziVh8Jl07M.png',
+                  'https://framerusercontent.com/images/HIA2J8PcSyJpQGPCOOKmVmr6E.png',
+                  'https://framerusercontent.com/images/4X27eq8U0piuPjXzhuo6EkPII.png',
+                  'https://framerusercontent.com/images/6A0esCRiUbJT4OdFzZo7cjP8Ipo.png',
+                ].map((src, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center justify-center flex-shrink-0"
+                    style={{ width: '220px', height: '100px', padding: '0 25px' }}
+                  >
+                    <img
+                      src={src}
+                      alt=""
+                      style={{
+                        maxWidth: '100%',
+                        maxHeight: '60px',
+                        objectFit: 'contain',
+                        opacity: 0.7,
+                        transition: 'opacity 0.3s',
+                      }}
+                      onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
+                      onMouseLeave={e => (e.currentTarget.style.opacity = '0.7')}
+                    />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
