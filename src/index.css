@@ -53,6 +53,12 @@
   max-width: 100% !important;
 }
 
+/* Fix: reduce nav item left padding to prevent overlap with Contact button */
+.framer-ZOdAv .framer-34ui8e {
+  padding-left: 200px !important;
+  gap: 16px !important;
+}
+
 /* News nav item container */
 .framer-news-nav-container,
 .framer-news-phone-container {

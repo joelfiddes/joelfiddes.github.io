@@ -884,146 +884,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																gestureVariant,
 															)}
 														>
-															<ResolveLinks
-																links={[
-																	{
-																		href: {
-																			webPageId: "EpXpYwtEx",
-																		},
-																		implicitPathVariables: void 0,
-																	},
-																	{
-																		href: {
-																			webPageId: "EpXpYwtEx",
-																		},
-																		implicitPathVariables: void 0,
-																	},
-																	{
-																		href: {
-																			webPageId: "EpXpYwtEx",
-																		},
-																		implicitPathVariables: void 0,
-																	},
-																]}
-															>
-																{(resolvedLinks) => (
-																	<ComponentViewportProvider
-																		height={24}
-																		y={
-																			(componentViewport?.y || 0) +
-																			0 +
-																			0 +
-																			0 +
-																			0 +
-																			24.5584 +
-																			17.4417 +
-																			0 +
-																			0
-																		}
-																	>
-																		<SmartComponentScopedContainer
-																			className={"framer-17x2xs1-container"}
-																			layoutDependency={layoutDependency}
-																			layoutId={"X5mS7ogW7-container"}
-																			nodeId={"X5mS7ogW7"}
-																			rendersWithMotion={true}
-																			scopeId={"RDJDSwGe5"}
-																		>
-																			{_jsx(stdin_default3, {
-																				GJdPiUY1W: resolvedLinks[0],
-																				height: "100%",
-																				id: "X5mS7ogW7",
-																				layoutId: "X5mS7ogW7",
-																				variant: matchVariant("Wvk3bmAvm"),
-																				wasUFRWmn: "Expertise",
-																				width: "100%",
-																				...addPropertyOverrides(
-																					{
-																						EhTGa3RbW: {
-																							GJdPiUY1W: resolvedLinks[2],
-																						},
-																						qwnrt93F1: {
-																							GJdPiUY1W: resolvedLinks[1],
-																						},
-																					},
-																					baseVariant,
-																					gestureVariant,
-																				),
-																			})}
-																		</SmartComponentScopedContainer>
-																	</ComponentViewportProvider>
-																)}
-															</ResolveLinks>
-															<ResolveLinks
-																links={[
-																	{
-																		href: {
-																			webPageId: "jp324etuO",
-																		},
-																		implicitPathVariables: void 0,
-																	},
-																	{
-																		href: {
-																			webPageId: "jp324etuO",
-																		},
-																		implicitPathVariables: void 0,
-																	},
-																	{
-																		href: {
-																			webPageId: "jp324etuO",
-																		},
-																		implicitPathVariables: void 0,
-																	},
-																]}
-															>
-																{(resolvedLinks1) => (
-																	<ComponentViewportProvider
-																		height={24}
-																		y={
-																			(componentViewport?.y || 0) +
-																			0 +
-																			0 +
-																			0 +
-																			0 +
-																			24.5584 +
-																			17.4417 +
-																			0 +
-																			0
-																		}
-																	>
-																		<SmartComponentScopedContainer
-																			className={"framer-1gmreic-container"}
-																			layoutDependency={layoutDependency}
-																			layoutId={"OhRKv_lI7-container"}
-																			nodeId={"OhRKv_lI7"}
-																			rendersWithMotion={true}
-																			scopeId={"RDJDSwGe5"}
-																		>
-																			{_jsx(stdin_default3, {
-																				GJdPiUY1W: resolvedLinks1[0],
-																				height: "100%",
-																				id: "OhRKv_lI7",
-																				layoutId: "OhRKv_lI7",
-																				variant: matchVariant("Wvk3bmAvm"),
-																				wasUFRWmn: "Resources",
-																				width: "100%",
-																				...addPropertyOverrides(
-																					{
-																						EhTGa3RbW: {
-																							GJdPiUY1W: resolvedLinks1[2],
-																						},
-																						qwnrt93F1: {
-																							GJdPiUY1W: resolvedLinks1[1],
-																						},
-																					},
-																					baseVariant,
-																					gestureVariant,
-																				),
-																			})}
-																		</SmartComponentScopedContainer>
-																	</ComponentViewportProvider>
-																)}
-															</ResolveLinks>
+															{/* 1. About */}
 															<ResolveLinks
 																links={[
 																	{
@@ -1097,7 +958,102 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																	</ComponentViewportProvider>
 																)}
 															</ResolveLinks>
-															{/* News nav item */}
+															{/* 2. Expertise */}
+															<ResolveLinks
+																links={[
+																	{
+																		href: {
+																			webPageId: "EpXpYwtEx",
+																		},
+																		implicitPathVariables: void 0,
+																	},
+																	{
+																		href: {
+																			webPageId: "EpXpYwtEx",
+																		},
+																		implicitPathVariables: void 0,
+																	},
+																	{
+																		href: {
+																			webPageId: "EpXpYwtEx",
+																		},
+																		implicitPathVariables: void 0,
+																	},
+																]}
+															>
+																{(resolvedLinks) => (
+																	<ComponentViewportProvider
+																		height={24}
+																		y={
+																			(componentViewport?.y || 0) +
+																			0 +
+																			0 +
+																			0 +
+																			0 +
+																			24.5584 +
+																			17.4417 +
+																			0 +
+																			0
+																		}
+																	>
+																		<SmartComponentScopedContainer
+																			className={"framer-17x2xs1-container"}
+																			layoutDependency={layoutDependency}
+																			layoutId={"X5mS7ogW7-container"}
+																			nodeId={"X5mS7ogW7"}
+																			rendersWithMotion={true}
+																			scopeId={"RDJDSwGe5"}
+																		>
+																			{_jsx(stdin_default3, {
+																				GJdPiUY1W: resolvedLinks[0],
+																				height: "100%",
+																				id: "X5mS7ogW7",
+																				layoutId: "X5mS7ogW7",
+																				variant: matchVariant("Wvk3bmAvm"),
+																				wasUFRWmn: "Expertise",
+																				width: "100%",
+																				...addPropertyOverrides(
+																					{
+																						EhTGa3RbW: {
+																							GJdPiUY1W: resolvedLinks[2],
+																						},
+																						qwnrt93F1: {
+																							GJdPiUY1W: resolvedLinks[1],
+																						},
+																					},
+																					baseVariant,
+																					gestureVariant,
+																				),
+																			})}
+																		</SmartComponentScopedContainer>
+																	</ComponentViewportProvider>
+																)}
+															</ResolveLinks>
+															{/* 3. Projects */}
+															<ComponentViewportProvider
+																height={24}
+																y={(componentViewport?.y || 0) + 42}
+															>
+																<SmartComponentScopedContainer
+																	className={"framer-news-nav-container"}
+																	layoutDependency={layoutDependency}
+																	layoutId={"projects-nav-container"}
+																	nodeId={"projects-nav"}
+																	rendersWithMotion={true}
+																	scopeId={"RDJDSwGe5"}
+																>
+																	{_jsx(stdin_default3, {
+																		GJdPiUY1W: "/projects",
+																		height: "100%",
+																		id: "projects-nav",
+																		layoutId: "projects-nav",
+																		variant: matchVariant("Wvk3bmAvm"),
+																		wasUFRWmn: "Projects",
+																		width: "100%",
+																	})}
+																</SmartComponentScopedContainer>
+															</ComponentViewportProvider>
+															{/* 4. News */}
 															<ComponentViewportProvider
 																height={24}
 																y={(componentViewport?.y || 0) + 42}
@@ -1121,6 +1077,77 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																	})}
 																</SmartComponentScopedContainer>
 															</ComponentViewportProvider>
+															{/* 5. Resources */}
+															<ResolveLinks
+																links={[
+																	{
+																		href: {
+																			webPageId: "jp324etuO",
+																		},
+																		implicitPathVariables: void 0,
+																	},
+																	{
+																		href: {
+																			webPageId: "jp324etuO",
+																		},
+																		implicitPathVariables: void 0,
+																	},
+																	{
+																		href: {
+																			webPageId: "jp324etuO",
+																		},
+																		implicitPathVariables: void 0,
+																	},
+																]}
+															>
+																{(resolvedLinks1) => (
+																	<ComponentViewportProvider
+																		height={24}
+																		y={
+																			(componentViewport?.y || 0) +
+																			0 +
+																			0 +
+																			0 +
+																			0 +
+																			24.5584 +
+																			17.4417 +
+																			0 +
+																			0
+																		}
+																	>
+																		<SmartComponentScopedContainer
+																			className={"framer-1gmreic-container"}
+																			layoutDependency={layoutDependency}
+																			layoutId={"OhRKv_lI7-container"}
+																			nodeId={"OhRKv_lI7"}
+																			rendersWithMotion={true}
+																			scopeId={"RDJDSwGe5"}
+																		>
+																			{_jsx(stdin_default3, {
+																				GJdPiUY1W: resolvedLinks1[0],
+																				height: "100%",
+																				id: "OhRKv_lI7",
+																				layoutId: "OhRKv_lI7",
+																				variant: matchVariant("Wvk3bmAvm"),
+																				wasUFRWmn: "Resources",
+																				width: "100%",
+																				...addPropertyOverrides(
+																					{
+																						EhTGa3RbW: {
+																							GJdPiUY1W: resolvedLinks1[2],
+																						},
+																						qwnrt93F1: {
+																							GJdPiUY1W: resolvedLinks1[1],
+																						},
+																					},
+																					baseVariant,
+																					gestureVariant,
+																				),
+																			})}
+																		</SmartComponentScopedContainer>
+																	</ComponentViewportProvider>
+																)}
+															</ResolveLinks>
 														</motion.div>
 													</motion.div>
 												)}
@@ -1698,55 +1725,6 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											</ResolveLinks>
 										</motion.div>
 										<motion.div
-											className={"framer-16vmm9b"}
-											data-framer-name={"Nav Wrap"}
-											layoutDependency={layoutDependency}
-											layoutId={"iVBYyNXdh"}
-										>
-											{isDisplayed3() && (
-												<ResolveLinks
-													links={[
-														{
-															href: {
-																webPageId: "AZF3M1jeL",
-															},
-															implicitPathVariables: void 0,
-														},
-													]}
-												>
-													{(resolvedLinks6) => (
-														<ComponentViewportProvider
-															height={24}
-															width={"342px"}
-														>
-															<SmartComponentScopedContainer
-																className={"framer-g0nj6w-container"}
-																layoutDependency={layoutDependency}
-																layoutId={"X7vj071RS-container"}
-																nodeId={"X7vj071RS"}
-																rendersWithMotion={true}
-																scopeId={"RDJDSwGe5"}
-															>
-																{_jsx(stdin_default3, {
-																	GJdPiUY1W: resolvedLinks6[0],
-																	height: "100%",
-																	id: "X7vj071RS",
-																	layoutId: "X7vj071RS",
-																	SgzcbqAFq: SgzcbqAFq1r2zvol,
-																	style: {
-																		width: "100%",
-																	},
-																	variant: matchVariant("OBgEiGF37"),
-																	wasUFRWmn: "Projects",
-																	width: "100%",
-																})}
-															</SmartComponentScopedContainer>
-														</ComponentViewportProvider>
-													)}
-												</ResolveLinks>
-											)}
-										</motion.div>
-										<motion.div
 											className={"framer-eithws"}
 											data-framer-name={"Nav Wrap"}
 											layoutDependency={layoutDependency}
@@ -1827,6 +1805,38 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												)}
 											</ResolveLinks>
 										</motion.div>
+										<motion.div
+											className={"framer-16vmm9b"}
+											data-framer-name={"Nav Wrap"}
+											layoutDependency={layoutDependency}
+											layoutId={"iVBYyNXdh"}
+										>
+											<ComponentViewportProvider
+												height={24}
+												width={"342px"}
+											>
+												<SmartComponentScopedContainer
+													className={"framer-news-phone-container"}
+													layoutDependency={layoutDependency}
+													layoutId={"projects-phone-container"}
+													nodeId={"projects-phone"}
+													rendersWithMotion={true}
+													scopeId={"RDJDSwGe5"}
+												>
+													{_jsx(stdin_default3, {
+														GJdPiUY1W: "/projects",
+														height: "100%",
+														id: "projects-phone",
+														layoutId: "projects-phone",
+														SgzcbqAFq: SgzcbqAFq1r2zvol,
+														style: { width: "100%" },
+														variant: matchVariant("OBgEiGF37"),
+														wasUFRWmn: "Projects",
+														width: "100%",
+													})}
+												</SmartComponentScopedContainer>
+											</ComponentViewportProvider>
+										</motion.div>
 										<RichText
 											__fromCanvasComponent={true}
 											className={"framer-1zg2sq"}
@@ -1848,6 +1858,39 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												</motion.p>
 											</React.Fragment>
 										</RichText>
+										{/* News nav item (Phone) */}
+										<motion.div
+											className={"framer-143qx0w"}
+											data-framer-name={"Nav Wrap"}
+											layoutDependency={layoutDependency}
+											layoutId={"news-phone-nav"}
+										>
+											<ComponentViewportProvider
+												height={24}
+												width={"342px"}
+											>
+												<SmartComponentScopedContainer
+													className={"framer-news-phone-container"}
+													layoutDependency={layoutDependency}
+													layoutId={"news-phone-container"}
+													nodeId={"news-phone"}
+													rendersWithMotion={true}
+													scopeId={"RDJDSwGe5"}
+												>
+													{_jsx(stdin_default3, {
+														GJdPiUY1W: "/news",
+														height: "100%",
+														id: "news-phone",
+														layoutId: "news-phone",
+														SgzcbqAFq: SgzcbqAFq1r2zvol,
+														style: { width: "100%" },
+														variant: matchVariant("OBgEiGF37"),
+														wasUFRWmn: "News",
+														width: "100%",
+													})}
+												</SmartComponentScopedContainer>
+											</ComponentViewportProvider>
+										</motion.div>
 										<motion.div
 											className={"framer-mbto1v"}
 											data-framer-name={"Nav Wrap"}
@@ -1928,39 +1971,6 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 													</ComponentViewportProvider>
 												)}
 											</ResolveLinks>
-										</motion.div>
-										{/* News nav item (Phone) */}
-										<motion.div
-											className={"framer-143qx0w"}
-											data-framer-name={"Nav Wrap"}
-											layoutDependency={layoutDependency}
-											layoutId={"news-phone-nav"}
-										>
-											<ComponentViewportProvider
-												height={24}
-												width={"342px"}
-											>
-												<SmartComponentScopedContainer
-													className={"framer-news-phone-container"}
-													layoutDependency={layoutDependency}
-													layoutId={"news-phone-container"}
-													nodeId={"news-phone"}
-													rendersWithMotion={true}
-													scopeId={"RDJDSwGe5"}
-												>
-													{_jsx(stdin_default3, {
-														GJdPiUY1W: "/news",
-														height: "100%",
-														id: "news-phone",
-														layoutId: "news-phone",
-														SgzcbqAFq: SgzcbqAFq1r2zvol,
-														style: { width: "100%" },
-														variant: matchVariant("OBgEiGF37"),
-														wasUFRWmn: "News",
-														width: "100%",
-													})}
-												</SmartComponentScopedContainer>
-											</ComponentViewportProvider>
 										</motion.div>
 										<motion.div
 											className={"framer-143qx0w"}
