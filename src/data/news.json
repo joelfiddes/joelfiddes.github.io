@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Community-driven snow depth measurement network launched in Central Asia",
+    "date": "2025-12-01",
+    "summary": "Over 1,000 snow depth observations collected across Kyrgyzstan, Tajikistan, and Uzbekistan using a Telegram-based community volunteer network — a novel approach to filling critical data gaps in remote mountain regions.",
+    "link": "https://essd.copernicus.org/preprints/essd-2025-580/",
+    "tags": ["publication", "snow", "Central Asia"]
+  },
+  {
+    "title": "New study: Mitigating future glacial lake outburst floods in the Himalaya",
+    "date": "2026-01-15",
+    "summary": "Published in Science Bulletin, this study evaluates China's Glacial Lake Management System and finds that GLMS engineering could reduce flood intensity by 24%. Simon Allen contributed as co-author.",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2095927325011521",
+    "tags": ["publication", "GLOF", "Himalaya"]
+  },
+  {
+    "title": "SnowMapper completes second operational season",
+    "date": "2025-04-01",
+    "summary": "SnowMapper CA completed its second full winter season covering 400,000+ km² across five Central Asian countries. The 2024–25 assessment documented anomalously low snow in the Syr Darya basin.",
+    "link": "https://snowmapper.ch/mcass-dashboard",
+    "tags": ["project", "SnowMapper", "Central Asia"]
+  },
+  {
+    "title": "GLOF risk modelling advances in Kyrgyz Republic",
+    "date": "2026-02-20",
+    "summary": "New research published in NHESS compares lake lowering, deflection dams, and retention basins for managing glacial lake outburst flood risk in the Ala-Archa valley.",
+    "link": "https://nhess.copernicus.org/articles/26/733/2026/",
+    "tags": ["publication", "GLOF", "Central Asia"]
+  },
+  {
+    "title": "TopoPyScale v0.3.1 released",
+    "date": "2025-09-15",
+    "summary": "Latest release of our open-source Python library for hillslope-scale climate downscaling, now used by research groups worldwide for snow, permafrost, and hydrological modelling.",
+    "link": "https://github.com/ArcticSnow/TopoPyScale",
+    "tags": ["release", "TopoPyScale", "open-source"]
+  },
+  {
+    "title": "WMO Global Cryosphere Watch: Regional Snow Assessments 2025",
+    "date": "2025-06-05",
+    "summary": "Joel Fiddes contributed to the GCW 2025 regional snow assessments, providing operational snow analysis for Central Asia as part of the WMO expert network.",
+    "link": "https://globalcryospherewatch.org/snow-assessments-2025/",
+    "tags": ["WMO", "snow", "assessment"]
+  },
+  {
+    "title": "Advancing GLOF hazard assessment in Bhutan",
+    "date": "2026-03-01",
+    "summary": "New NHESS study finds over 11,000 people exposed to glacial lake outburst flood risk in Bhutan through hydrodynamic flood mapping and exposure analysis. Simon Allen co-authored.",
+    "link": "https://nhess.copernicus.org/articles/26/1015/2026/",
+    "tags": ["publication", "GLOF", "Bhutan"]
+  },
+  {
+    "title": "CROMO-ADAPT enters final phase",
+    "date": "2025-06-01",
+    "summary": "The CHF 2.96M SDC-funded project on cryospheric observation and modelling in Central Asia enters its final implementation phase, with operational tools now serving national hydrometeorological agencies.",
+    "link": "https://cromoadapt.tilda.ws/",
+    "tags": ["project", "CROMO-ADAPT", "Central Asia"]
+  }
+]

@@ -32,7 +32,14 @@ export default function Contact() {
 
         {/* Contact Form */}
         <div className="w-full" style={{ padding: '65px 0 145px 0' }}>
-          <form className="flex flex-col gap-[36px]">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            className="flex flex-col gap-[36px]"
+          >
+            <input type="hidden" name="access_key" value="9209aecb-cee3-4948-abc5-c7af1686e041" />
+            <input type="hidden" name="redirect" value="https://mountainfutures.ch/contact" />
+            <input type="hidden" name="subject" value="New contact from mountainfutures.ch" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <label className="flex flex-col gap-[10px]">
                 <span
@@ -47,6 +54,8 @@ export default function Contact() {
                 </span>
                 <input
                   type="text"
+                  name="name"
+                  required
                   className="w-full border-b border-neutral-300 bg-transparent py-2 outline-none"
                   style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px' }}
                 />
@@ -64,6 +73,7 @@ export default function Contact() {
                 </span>
                 <input
                   type="tel"
+                  name="phone"
                   className="w-full border-b border-neutral-300 bg-transparent py-2 outline-none"
                   style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px' }}
                 />
@@ -83,6 +93,7 @@ export default function Contact() {
                 </span>
                 <input
                   type="text"
+                  name="company"
                   className="w-full border-b border-neutral-300 bg-transparent py-2 outline-none"
                   style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px' }}
                 />
@@ -100,6 +111,8 @@ export default function Contact() {
                 </span>
                 <input
                   type="email"
+                  name="email"
+                  required
                   className="w-full border-b border-neutral-300 bg-transparent py-2 outline-none"
                   style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px' }}
                 />
@@ -118,6 +131,8 @@ export default function Contact() {
               </span>
               <textarea
                 rows={4}
+                name="message"
+                required
                 className="w-full border-b border-neutral-300 bg-transparent py-2 outline-none resize-none"
                 style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px' }}
               />

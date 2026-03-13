@@ -1097,6 +1097,30 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																	</ComponentViewportProvider>
 																)}
 															</ResolveLinks>
+															{/* News nav item */}
+															<ComponentViewportProvider
+																height={24}
+																y={(componentViewport?.y || 0) + 42}
+															>
+																<SmartComponentScopedContainer
+																	className={"framer-news-nav-container"}
+																	layoutDependency={layoutDependency}
+																	layoutId={"news-nav-container"}
+																	nodeId={"news-nav"}
+																	rendersWithMotion={true}
+																	scopeId={"RDJDSwGe5"}
+																>
+																	{_jsx(stdin_default3, {
+																		GJdPiUY1W: "/news",
+																		height: "100%",
+																		id: "news-nav",
+																		layoutId: "news-nav",
+																		variant: matchVariant("Wvk3bmAvm"),
+																		wasUFRWmn: "News",
+																		width: "100%",
+																	})}
+																</SmartComponentScopedContainer>
+															</ComponentViewportProvider>
 														</motion.div>
 													</motion.div>
 												)}
@@ -1904,6 +1928,39 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 													</ComponentViewportProvider>
 												)}
 											</ResolveLinks>
+										</motion.div>
+										{/* News nav item (Phone) */}
+										<motion.div
+											className={"framer-143qx0w"}
+											data-framer-name={"Nav Wrap"}
+											layoutDependency={layoutDependency}
+											layoutId={"news-phone-nav"}
+										>
+											<ComponentViewportProvider
+												height={24}
+												width={"342px"}
+											>
+												<SmartComponentScopedContainer
+													className={"framer-news-phone-container"}
+													layoutDependency={layoutDependency}
+													layoutId={"news-phone-container"}
+													nodeId={"news-phone"}
+													rendersWithMotion={true}
+													scopeId={"RDJDSwGe5"}
+												>
+													{_jsx(stdin_default3, {
+														GJdPiUY1W: "/news",
+														height: "100%",
+														id: "news-phone",
+														layoutId: "news-phone",
+														SgzcbqAFq: SgzcbqAFq1r2zvol,
+														style: { width: "100%" },
+														variant: matchVariant("OBgEiGF37"),
+														wasUFRWmn: "News",
+														width: "100%",
+													})}
+												</SmartComponentScopedContainer>
+											</ComponentViewportProvider>
 										</motion.div>
 										<motion.div
 											className={"framer-143qx0w"}
