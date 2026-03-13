@@ -2204,6 +2204,11 @@ var Component3 = /* @__PURE__ */ React3.forwardRef(function (props, ref) {
 											</motion3.div>
 										</motion3.a>
 									</Link3>
+									<img
+										src="/images/wsl-spinoff.png"
+										alt="WSL Spin-off"
+										style={{ height: '40px', objectFit: 'contain', marginLeft: '4px', opacity: 0.9 }}
+									/>
 									<motion3.div
 										className={"framer-z4yo8m"}
 										data-framer-name={"Wrap"}
@@ -2240,7 +2245,7 @@ var Component3 = /* @__PURE__ */ React3.forwardRef(function (props, ref) {
 															"var(--extracted-r6o4lv, var(--token-ad0dbc1a-e59a-47ab-8ef3-f598c1c19141, rgb(255, 255, 255)))",
 													}}
 												>
-													{"\xA92025 Mountain Futures"}
+													{`\xA9${new Date().getFullYear()} Mountain Futures`}
 												</motion3.p>
 											</React3.Fragment>
 										</RichText3>

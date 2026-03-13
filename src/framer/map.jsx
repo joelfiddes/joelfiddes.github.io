@@ -155,7 +155,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 						layoutId={"TIMaCSTdq"}
 						ref={refBinding}
 						style={{
-							backgroundColor: "rgb(68, 204, 255)",
+							backgroundColor: "rgb(245, 245, 245)",
 							...style,
 						}}
 						{...addPropertyOverrides(

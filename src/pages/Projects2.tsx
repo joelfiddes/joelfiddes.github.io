@@ -7,7 +7,7 @@ export default function Projects2() {
     <>
       <section
         className="w-full flex flex-col items-center"
-        style={{ padding: '160px 16px 80px 16px' }}
+        style={{ padding: '160px 16px 80px 16px', backgroundColor: '#F5F5F5' }}
       >
         <div className="w-full max-w-[1200px]">
           {/* Header */}

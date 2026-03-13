@@ -14,7 +14,7 @@ export default function Home() {
       />
 
       {/* Section Intro */}
-      <section className="w-full flex justify-center" style={{ padding: '80px 16px' }}>
+      <section className="w-full flex justify-center" style={{ padding: '80px 16px', backgroundColor: '#F5F5F5' }}>
         <div className="w-full max-w-[1200px] flex flex-col gap-[37px]">
           <Label text="Introduction" />
           <div className="md:max-w-[80%]">
@@ -41,7 +41,7 @@ export default function Home() {
       </section>
 
       {/* Focus Areas */}
-      <section className="w-full flex justify-center" style={{ padding: '45px 16px 8px 16px' }}>
+      <section className="w-full flex justify-center" style={{ padding: '45px 16px 8px 16px', backgroundColor: '#F5F5F5' }}>
         <div className="w-full max-w-[1200px] flex flex-col gap-[48px]">
           <h2
             className="text-[24px] md:text-[35px]"
@@ -81,7 +81,7 @@ export default function Home() {
       </section>
 
       {/* Where We Work */}
-      <section className="w-full flex justify-center" style={{ padding: '128px 16px' }}>
+      <section className="w-full flex justify-center" style={{ padding: '128px 16px', backgroundColor: '#F5F5F5' }}>
         <div className="w-full max-w-[1200px] flex flex-col gap-[44px]">
           <div className="flex flex-col gap-[32px]">
             <Label text="Where we work" />

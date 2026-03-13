@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mountain Futures — Color Palette</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', system-ui, sans-serif; background: #f5f5f5; color: #122023; padding: 40px 24px; }
+  h1 { font-family: 'DM Mono', monospace; font-weight: 300; font-size: 28px; letter-spacing: -0.03em; margin-bottom: 8px; }
+  .subtitle { color: #858585; font-size: 14px; margin-bottom: 48px; }
+  h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: #858585; margin-bottom: 16px; }
+  .section { margin-bottom: 48px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+  .swatch {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .swatch-color {
+    height: 100px;
+    width: 100%;
+  }
+  .swatch-info {
+    padding: 12px 14px;
+  }
+  .swatch-name { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+  .swatch-hex { font-family: 'DM Mono', monospace; font-size: 13px; color: #858585; }
+  .swatch-rgb { font-family: 'DM Mono', monospace; font-size: 11px; color: #aaa; }
+  .swatch-var { font-family: 'DM Mono', monospace; font-size: 11px; color: #b0b0b0; margin-top: 2px; }
+</style>
+</head>
+<body>
+  <h1>Mountain Futures</h1>
+  <p class="subtitle">Color Palette</p>
+
+  <div class="section">
+    <h2>Dark Tones</h2>
+    <div class="grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#000000"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Black</div>
+          <div class="swatch-hex">#000000</div>
+          <div class="swatch-rgb">rgb(0, 0, 0)</div>
+          <div class="swatch-var">--unframer-black</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#122023"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Forrest</div>
+          <div class="swatch-hex">#122023</div>
+          <div class="swatch-rgb">rgb(18, 32, 35)</div>
+          <div class="swatch-var">--unframer-forrest</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#1A2C30"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Evergreen</div>
+          <div class="swatch-hex">#1A2C30</div>
+          <div class="swatch-rgb">rgb(26, 44, 48)</div>
+          <div class="swatch-var">--unframer-evergreen</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#272E3F"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">MF Dark Blue</div>
+          <div class="swatch-hex">#272E3F</div>
+          <div class="swatch-rgb">rgb(39, 46, 63)</div>
+          <div class="swatch-var">--unframer-mf-dark-blue</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Neutrals (light → dark)</h2>
+    <div class="grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#FFFFFF; border-bottom: 1px solid #eee"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">White</div>
+          <div class="swatch-hex">#FFFFFF</div>
+          <div class="swatch-rgb">rgb(255, 255, 255)</div>
+          <div class="swatch-var">--unframer-white</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#F5F5F5"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Neutral 100</div>
+          <div class="swatch-hex">#F5F5F5</div>
+          <div class="swatch-rgb">rgb(245, 245, 245)</div>
+          <div class="swatch-var">--unframer-neutral-100</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#E9E9E9"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Grey</div>
+          <div class="swatch-hex">#E9E9E9</div>
+          <div class="swatch-rgb">rgb(233, 233, 233)</div>
+          <div class="swatch-var">--unframer-grey</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#E6EEF6"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">MF Light Grey</div>
+          <div class="swatch-hex">#E6EEF6</div>
+          <div class="swatch-rgb">rgb(230, 238, 246)</div>
+          <div class="swatch-var">--unframer-mf-light-grey</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#E4E4E4"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Neutral 200</div>
+          <div class="swatch-hex">#E4E4E4</div>
+          <div class="swatch-rgb">rgb(228, 228, 228)</div>
+          <div class="swatch-var">--unframer-neutral-200</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#C9C9C9"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Neutral 300</div>
+          <div class="swatch-hex">#C9C9C9</div>
+          <div class="swatch-rgb">rgb(201, 201, 201)</div>
+          <div class="swatch-var">--unframer-neutral-300</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#858585"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Neutral 400</div>
+          <div class="swatch-hex">#858585</div>
+          <div class="swatch-rgb">rgb(133, 133, 133)</div>
+          <div class="swatch-var">--unframer-neutral-400</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Accents — Cyan / Teal</h2>
+    <div class="grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#35E4E4"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">MF Accent Blue</div>
+          <div class="swatch-hex">#35E4E4</div>
+          <div class="swatch-rgb">rgb(53, 228, 228)</div>
+          <div class="swatch-var">--unframer-mf-accent-blue</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#B9FFFF"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Accent Blue</div>
+          <div class="swatch-hex">#B9FFFF</div>
+          <div class="swatch-rgb">rgb(185, 255, 255)</div>
+          <div class="swatch-var">--unframer-accent-blue</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Accents — Green</h2>
+    <div class="grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#D5F0A3"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Lime</div>
+          <div class="swatch-hex">#D5F0A3</div>
+          <div class="swatch-rgb">rgb(213, 240, 163)</div>
+          <div class="swatch-var">--unframer-lime</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#E1FCAD"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Light Green</div>
+          <div class="swatch-hex">#E1FCAD</div>
+          <div class="swatch-rgb">rgb(225, 252, 173)</div>
+          <div class="swatch-var">--unframer-light-green</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
