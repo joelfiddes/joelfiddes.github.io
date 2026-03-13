@@ -7,14 +7,14 @@ export default function Careers() {
   return (
     <>
       {/* Careers Header */}
-      <section className="w-full flex justify-center" style={{ padding: '180px 32px 48px 32px' }}>
+      <section className="w-full flex justify-center" style={{ padding: '120px 16px 48px 16px' }}>
         <div className="w-full max-w-[1800px]">
           <div className="max-w-[500px]">
             <h1
+              className="text-[36px] md:text-[66px]"
               style={{
                 fontFamily: "'DM Mono', monospace",
                 fontWeight: 300,
-                fontSize: '66px',
                 lineHeight: '1em',
                 letterSpacing: '-0.05em',
                 color: 'var(--unframer-forrest)',
@@ -27,7 +27,7 @@ export default function Careers() {
       </section>
 
       {/* Hero Image */}
-      <section className="w-full relative" style={{ height: '640px' }}>
+      <section className="w-full relative h-[300px] md:h-[640px]">
         <img
           src="/images/careers-hero.webp"
           alt="Mountain landscape"
@@ -36,13 +36,13 @@ export default function Careers() {
       </section>
 
       {/* Open Positions */}
-      <section className="w-full flex justify-center" style={{ padding: '160px 80px' }}>
+      <section className="w-full flex justify-center" style={{ padding: '80px 16px' }}>
         <div className="w-full max-w-[1800px] flex flex-col gap-[32px]">
           <Label text="careers" color="var(--unframer-light-green)" />
           <h2
+            className="text-[22px] md:text-[29px]"
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: '29px',
               lineHeight: '34px',
               letterSpacing: '-0.05em',
               color: 'var(--unframer-forrest)',
@@ -74,16 +74,16 @@ export default function Careers() {
         className="w-full flex justify-center"
         style={{
           backgroundColor: 'var(--unframer-grey)',
-          padding: '128px 16px',
+          padding: '80px 16px',
         }}
       >
-        <div className="w-full max-w-[1800px] flex flex-col gap-[92px]">
-          <div className="max-w-[70%] flex flex-col gap-[32px]">
+        <div className="w-full max-w-[1800px] flex flex-col gap-[48px] md:gap-[92px]">
+          <div className="md:max-w-[70%] flex flex-col gap-[32px]">
             <Label text="Our Benefits" color="var(--unframer-light-green)" />
             <h2
+              className="text-[22px] md:text-[29px]"
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: '29px',
                 lineHeight: '34px',
                 letterSpacing: '-0.05em',
                 color: 'var(--unframer-forrest)',
@@ -92,7 +92,7 @@ export default function Careers() {
               Your Well-being, Our Priority
             </h2>
           </div>
-          <div className="grid grid-cols-3 gap-x-8 gap-y-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 md:gap-y-20">
             <BenefitItemFramerComponent.Responsive
               o8cqVruEu="01"
               ZzfhAtmjk="Flexible Work Arrangements"

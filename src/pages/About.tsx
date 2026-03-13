@@ -9,7 +9,7 @@ export default function About() {
       <HeroSection image="/images/about-hero.jpg" title="About us" height="74vh" />
 
       {/* About Header */}
-      <section className="w-full flex justify-center" style={{ padding: '70px 32px 67px 32px', backgroundColor: '#f5f5f5' }}>
+      <section className="w-full flex justify-center" style={{ padding: '70px 16px 67px 16px', backgroundColor: '#f5f5f5' }}>
         <div className="w-full max-w-[1200px]">
           <div className="flex justify-between items-end gap-[48px]">
             <div className="max-w-[700px] flex flex-col gap-[24px]">
@@ -40,7 +40,7 @@ export default function About() {
           backgroundImage: 'url(/images/about-team-bg.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          padding: '174px 0 0 32px',
+          padding: '80px 16px 0 16px',
           borderBottom: '1px solid var(--unframer-neutral-300)',
         }}
       >
@@ -49,10 +49,10 @@ export default function About() {
 
           {/* Joel */}
           <div
-            className="flex mt-14"
+            className="flex flex-col md:flex-row mt-14"
             style={{ borderBottom: '1px solid var(--unframer-neutral-300)', paddingBottom: '20px' }}
           >
-            <div className="flex-1 flex flex-col gap-[76px]" style={{ padding: '19px 0' }}>
+            <div className="md:flex-1 flex flex-col gap-[40px] md:gap-[76px]" style={{ padding: '19px 0' }}>
               <div>
                 <h3
                   style={{
@@ -80,51 +80,50 @@ export default function About() {
               <img
                 src="/images/joel.png"
                 alt="Joel Fiddes"
-                style={{ width: '374px', height: '322px', objectFit: 'cover' }}
+                className="w-full md:w-[374px]"
+                style={{ height: '322px', objectFit: 'cover' }}
               />
             </div>
             <div
-              className="flex-1"
+              className="md:flex-1 pt-4 md:pt-0"
               style={{
-                borderLeft: '1px solid var(--unframer-neutral-300)',
-                padding: '0 0 0 15px',
+                borderLeft: 'none',
+                padding: '0 0 0 0',
               }}
             >
-              <p
-                style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: '14px',
-                  lineHeight: '1.55em',
-                  letterSpacing: '-0.03em',
-                }}
-              >
-                Over 15 years of international experience in mountain hydrology and climate change,
-                translating science into practice through operational tools and data-driven solutions
-                for water resources and climate risk in High Mountain Asia and beyond.
-              </p>
-              <p
-                style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: '14px',
-                  lineHeight: '1.55em',
-                  letterSpacing: '-0.03em',
-                  marginTop: '1em',
-                }}
-              >
-                Lead developer of widely adopted open-source tools for climate downscaling and snow
-                modelling used by the global research community. WMO expert and affiliated researcher
-                at the WSL Institute for Snow and Avalanche Research (SLF).
-              </p>
+              <div className="md:border-l md:border-[var(--unframer-neutral-300)] md:pl-[15px]">
+                <p
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '14px',
+                    lineHeight: '1.55em',
+                    letterSpacing: '-0.03em',
+                  }}
+                >
+                  Over 15 years of international experience in mountain hydrology and climate change,
+                  translating science into practice through operational tools and data-driven solutions
+                  for water resources and climate risk in High Mountain Asia and beyond.
+                </p>
+                <p
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '14px',
+                    lineHeight: '1.55em',
+                    letterSpacing: '-0.03em',
+                    marginTop: '1em',
+                  }}
+                >
+                  Lead developer of widely adopted open-source tools for climate downscaling and snow
+                  modelling used by the global research community. WMO expert and affiliated researcher
+                  at the WSL Institute for Snow and Avalanche Research (SLF).
+                </p>
+              </div>
             </div>
             <div
-              style={{
-                flex: '0.5',
-                borderLeft: '1px solid var(--unframer-neutral-300)',
-                padding: '0 0 0 12px',
-              }}
-              className="flex flex-col gap-[20px]"
+              className="pt-4 md:pt-0 flex flex-col gap-[20px]"
+              style={{ flex: '0.5' }}
             >
-              <div>
+              <div className="md:border-l md:border-[var(--unframer-neutral-300)] md:pl-[12px]">
                 <p
                   style={{
                     fontFamily: "'Inter', sans-serif",
@@ -147,7 +146,7 @@ export default function About() {
                   Snow forecasting<br />Water management<br />Climate models
                 </p>
               </div>
-              <div className="flex gap-[21px] items-center mt-auto">
+              <div className="flex gap-[21px] items-center mt-auto md:pl-[12px]">
                 <PrimaryFramerComponent.Responsive
                   BYNIrUSxY="Contact"
                   hYruqSCKG="mailto:joel.fiddes@slf.ch"
@@ -158,10 +157,10 @@ export default function About() {
 
           {/* Simon */}
           <div
-            className="flex mt-10"
+            className="flex flex-col md:flex-row mt-10"
             style={{ borderBottom: '1px solid var(--unframer-neutral-300)', paddingBottom: '20px' }}
           >
-            <div className="flex flex-col gap-[91px]" style={{ flex: '1.1', padding: '0 12px 0 0' }}>
+            <div className="flex flex-col gap-[40px] md:gap-[91px]" style={{ flex: '1.1', padding: '0 12px 0 0' }}>
               <div>
                 <h3
                   style={{
@@ -193,36 +192,30 @@ export default function About() {
               />
             </div>
             <div
-              className="flex-1"
-              style={{
-                borderLeft: '1px solid var(--unframer-neutral-300)',
-                padding: '0 0 0 15px',
-              }}
+              className="md:flex-1 pt-4 md:pt-0"
             >
-              <p
-                style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: '14px',
-                  lineHeight: '1.55em',
-                  letterSpacing: '-0.03em',
-                }}
-              >
-                Focus on climate impacts and disaster risk management in developing regions and high
-                mountain environments. Over the past decade, extensive work alongside local
-                stakeholders to deliver integrated climate risk assessments supporting adaptation
-                planning and sustainable development across South and Central Asia, the Caucasus,
-                the Andes, and Tibet.
-              </p>
+              <div className="md:border-l md:border-[var(--unframer-neutral-300)] md:pl-[15px]">
+                <p
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '14px',
+                    lineHeight: '1.55em',
+                    letterSpacing: '-0.03em',
+                  }}
+                >
+                  Focus on climate impacts and disaster risk management in developing regions and high
+                  mountain environments. Over the past decade, extensive work alongside local
+                  stakeholders to deliver integrated climate risk assessments supporting adaptation
+                  planning and sustainable development across South and Central Asia, the Caucasus,
+                  the Andes, and Tibet.
+                </p>
+              </div>
             </div>
             <div
-              style={{
-                flex: '0.6',
-                borderLeft: '1px solid var(--unframer-neutral-300)',
-                padding: '0 0 0 12px',
-              }}
-              className="flex flex-col gap-[58px]"
+              className="pt-4 md:pt-0 flex flex-col gap-[58px]"
+              style={{ flex: '0.6' }}
             >
-              <div>
+              <div className="md:border-l md:border-[var(--unframer-neutral-300)] md:pl-[12px]">
                 <p
                   style={{
                     fontFamily: "'Inter', sans-serif",
@@ -245,7 +238,7 @@ export default function About() {
                   Climate impacts<br />Disaster risk management<br />Mountain hazards
                 </p>
               </div>
-              <div className="flex gap-[21px] items-center">
+              <div className="flex gap-[21px] items-center md:pl-[12px]">
                 <PrimaryFramerComponent.Responsive
                   BYNIrUSxY="Contact"
                   hYruqSCKG="mailto:simon.allen@geo.uzh.ch"
@@ -257,8 +250,8 @@ export default function About() {
       </section>
 
       {/* Our Network - running logo banner */}
-      <section className="w-full flex flex-col items-center overflow-hidden" style={{ padding: '156px 0 67px 0', backgroundColor: '#f5f5f5' }}>
-        <div className="w-full max-w-[1200px] px-[21px]">
+      <section className="w-full flex flex-col items-center overflow-hidden" style={{ padding: '80px 0 67px 0', backgroundColor: '#f5f5f5' }}>
+        <div className="w-full max-w-[1200px] px-[16px] md:px-[21px]">
           <Label text="Our network" />
         </div>
         <div className="w-full overflow-hidden" style={{ marginTop: '31px' }}>

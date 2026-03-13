@@ -53,7 +53,7 @@ export default function Expertise() {
           <div
             style={{
               borderBottom: '1px solid var(--unframer-neutral-300)',
-              padding: '0 32px 119px 32px',
+              padding: '0 16px 119px 16px',
             }}
           >
             <div className="max-w-[700px] flex flex-col gap-[24px]">
@@ -76,7 +76,7 @@ export default function Expertise() {
           </div>
 
           {/* Service Cards Grid */}
-          <div className="grid grid-cols-2 gap-x-10 gap-y-2" style={{ padding: '0 32px' }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-2" style={{ padding: '0 16px' }}>
             {services.map((service) => (
               <div key={service.title} className="flex flex-col gap-[22px] pb-16">
                 <h3
@@ -94,7 +94,8 @@ export default function Expertise() {
                 <img
                   src={service.image}
                   alt={service.title}
-                  style={{ width: '100%', height: '340px', objectFit: 'cover', borderRadius: '20px' }}
+                  className="h-[240px] md:h-[340px]"
+                  style={{ width: '100%', objectFit: 'cover', borderRadius: '20px' }}
                 />
                 <p
                   style={{

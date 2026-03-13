@@ -11,13 +11,13 @@ export default function Projects() {
           backgroundImage: 'url(/images/projects-bg.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          padding: '160px 20px',
+          padding: '160px 16px',
         }}
       >
-        <div className="w-full max-w-[1200px] flex flex-col gap-[160px]">
+        <div className="w-full max-w-[1200px] flex flex-col gap-[80px] md:gap-[160px]">
           {/* Header */}
-          <div style={{ padding: '180px 16px 14px 16px' }}>
-            <div className="max-w-[40%] flex flex-col gap-[24px]">
+          <div style={{ padding: '80px 0 14px 0' }}>
+            <div className="md:max-w-[40%] flex flex-col gap-[24px]">
               <Label text="Our Projects" />
               <p
                 style={{
@@ -35,7 +35,7 @@ export default function Projects() {
           </div>
 
           {/* Project Cards */}
-          <div className="grid grid-cols-3 gap-5" style={{ padding: '0 20px' }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {projects.map((p, i) => (
               <div
                 key={i}

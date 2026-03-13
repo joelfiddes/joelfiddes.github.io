@@ -11,9 +11,9 @@ export default function Contact() {
         minHeight: '100vh',
       }}
     >
-      <div className="w-full max-w-[1200px]">
-        <div style={{ padding: '169px 0 0 140px' }}>
-          <div className="max-w-[55%] flex flex-col gap-[24px]">
+      <div className="w-full max-w-[1200px] px-4">
+        <div style={{ padding: '120px 0 0 0' }}>
+          <div className="md:max-w-[55%] flex flex-col gap-[24px]">
             <Label text="Get in touch" />
             <p
               style={{
@@ -31,9 +31,9 @@ export default function Contact() {
         </div>
 
         {/* Contact Form */}
-        <div className="w-full" style={{ padding: '65px 145px 145px 145px' }}>
+        <div className="w-full" style={{ padding: '65px 0 145px 0' }}>
           <form className="flex flex-col gap-[36px]">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <label className="flex flex-col gap-[10px]">
                 <span
                   style={{
@@ -69,7 +69,7 @@ export default function Contact() {
                 />
               </label>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <label className="flex flex-col gap-[10px]">
                 <span
                   style={{

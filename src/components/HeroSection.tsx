@@ -17,7 +17,7 @@ export default function HeroSection({ image, title, height = '100vh' }: HeroSect
   return (
     <section
       className="relative w-full flex flex-col justify-end items-center overflow-hidden"
-      style={{ height, padding: '32px 32px 16px 32px' }}
+      style={{ height, padding: '32px 16px 16px 16px' }}
     >
       <img
         src={image}
@@ -28,10 +28,10 @@ export default function HeroSection({ image, title, height = '100vh' }: HeroSect
       <div className="w-full max-w-[1200px] relative" style={{ zIndex: 1 }}>
         <div className="max-w-[900px]" style={{ padding: '11px 0' }}>
           <h1
+            className="text-[32px] md:text-[66px]"
             style={{
               fontFamily: "'DM Mono', monospace",
               fontWeight: 300,
-              fontSize: '66px',
               lineHeight: '1em',
               letterSpacing: '-0.05em',
               color: '#ffffff',

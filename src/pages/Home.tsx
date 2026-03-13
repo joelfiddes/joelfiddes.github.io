@@ -17,11 +17,11 @@ export default function Home() {
       <section className="w-full flex justify-center" style={{ padding: '80px 16px' }}>
         <div className="w-full max-w-[1200px] flex flex-col gap-[37px]">
           <Label text="Introduction" />
-          <div className="max-w-[80%]">
+          <div className="md:max-w-[80%]">
             <p
+              className="text-[18px] md:text-[23px]"
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: '23px',
                 lineHeight: '1.3em',
                 letterSpacing: '-0.04em',
                 color: 'var(--unframer-forrest)',
@@ -44,10 +44,10 @@ export default function Home() {
       <section className="w-full flex justify-center" style={{ padding: '45px 16px 8px 16px' }}>
         <div className="w-full max-w-[1200px] flex flex-col gap-[48px]">
           <h2
+            className="text-[24px] md:text-[35px]"
             style={{
               fontFamily: "'DM Mono', monospace",
               fontWeight: 300,
-              fontSize: '35px',
               lineHeight: '0.9em',
               letterSpacing: '-0.05em',
               color: 'var(--unframer-forrest)',
@@ -55,7 +55,7 @@ export default function Home() {
           >
             Our expertise
           </h2>
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
             <FocusCardFramerComponent.Responsive
               title="Energy & Water"
               overview="Advancing understanding of water and cryosphere processes to strengthen water and energy security."
@@ -85,11 +85,11 @@ export default function Home() {
         <div className="w-full max-w-[1200px] flex flex-col gap-[44px]">
           <div className="flex flex-col gap-[32px]">
             <Label text="Where we work" />
-            <div className="max-w-[70%]">
+            <div className="md:max-w-[70%]">
               <p
+                className="text-[20px] md:text-[29px]"
                 style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '29px',
                   lineHeight: '34px',
                   letterSpacing: '-0.05em',
                   color: 'var(--unframer-forrest)',
@@ -101,7 +101,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <MapFramerComponent.Responsive style={{ width: '1100px', height: '570px' }} />
+          <MapFramerComponent.Responsive style={{ width: '100%', maxWidth: '1100px', height: 'auto', aspectRatio: '1100/570' }} />
         </div>
       </section>
 

@@ -11,13 +11,13 @@ export default function Resources() {
           backgroundImage: 'url(/images/resources-bg.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          padding: '160px 20px',
+          padding: '160px 16px',
         }}
       >
         <div className="w-full max-w-[1200px]">
           {/* Header */}
-          <div className="flex gap-[78px]" style={{ padding: '0 18px 0 18px' }}>
-            <div className="max-w-[65%] flex flex-col gap-[26px]" style={{ padding: '0 65px 20px 0' }}>
+          <div className="flex gap-[78px]" style={{ padding: '0 0 20px 0' }}>
+            <div className="md:max-w-[65%] flex flex-col gap-[26px]">
               <Label text="Resources" />
               <p
                 style={{
@@ -36,7 +36,7 @@ export default function Resources() {
           </div>
 
           {/* Resources Grid */}
-          <div className="grid grid-cols-3 gap-x-16 gap-y-10" style={{ padding: '21px' }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-10" style={{ padding: '21px 0' }}>
             {resources.map((r, i) => (
               <a
                 key={i}
