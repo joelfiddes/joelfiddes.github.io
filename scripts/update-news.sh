@@ -72,13 +72,21 @@ PROMPT
 claude -p "$(cat "$PROMPT_FILE")" --output-format text > "$FILTERED_FILE"
 rm -f "$PROMPT_FILE"
 
-# Strip markdown code fences if present
+# Extract JSON array from Claude output (may contain extra text)
 python3 -c "
-import re, sys
+import re, json
 text = open('$FILTERED_FILE').read().strip()
-text = re.sub(r'^\`\`\`json?\s*', '', text)
-text = re.sub(r'\s*\`\`\`$', '', text)
-open('$FILTERED_FILE', 'w').write(text)
+# Try to find a JSON array in the output
+match = re.search(r'\[.*\]', text, re.DOTALL)
+if match:
+    # Validate it's actual JSON
+    try:
+        parsed = json.loads(match.group())
+        open('$FILTERED_FILE', 'w').write(json.dumps(parsed, indent=2))
+    except json.JSONDecodeError:
+        open('$FILTERED_FILE', 'w').write('[]')
+else:
+    open('$FILTERED_FILE', 'w').write('[]')
 "
 
 # Validate JSON output
