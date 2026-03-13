@@ -1,46 +1,237 @@
 [
   {
-    "title": "Supporting water information systems in Baluchistan",
-    "slug": "supporting-water-information-systems-in-baluchistan",
-    "thumb": "https://framerusercontent.com/images/RZewRLEPZRNFHnzwxdM88CaZqc.webp",
-    "duration": "2025",
-    "region": "Pakistan",
-    "programme": "RBWRP",
-    "donor": "Landell Mills",
-    "sector": "Water",
-    "links": [
-      { "label": "Doc: Link 1", "url": "https://joelfiddes.github.io/" },
-      { "label": "App: Link 1", "url": "https://joelfiddes.github.io/about/" },
-      { "label": "Web: Link 1", "url": "https://joelfiddes.github.io/posts/" }
-    ],
-    "description": "This project provided an assessment of the hydrological regime of Balochistan, integrating an analysis of climate, topography, and water availability with the development of a new, high-resolution modeling pipeline."
-  },
-  {
-    "title": "Himalayan mountain hazards",
-    "slug": "himalayan-mountain-hazards",
-    "thumb": "https://framerusercontent.com/images/32h73MPSOernmd1yYOmtkknVFP8.png",
-    "duration": "2023-2024",
-    "region": "Himalaya",
-    "programme": "20MW",
-    "donor": "SDC/ ADB",
-    "sector": "DRR",
-    "links": [],
-    "description": "Explore how a leading organization transformed its energy landscape with a customized solution, driving significant efficiency gains, cost savings, and reduced environmental impact."
-  },
-  {
-    "title": "SnowMapper: operational snow forecasts for Central Asia",
-    "slug": "snowmapper-operational-snow-forecasts-for-central-asia",
+    "title": "SnowMapper: operational snow monitoring for Central Asia",
+    "slug": "snowmapper-central-asia",
     "thumb": "https://framerusercontent.com/images/9bChxNcdieRLyIWGggNKpEAOa1w.jpeg",
-    "duration": "2021-2026",
+    "duration": "2021–2026",
+    "region": "Central Asia",
+    "programme": "CROMO-ADAPT / SAPPHIRE",
+    "donor": "SDC",
+    "sector": "Snow Monitoring",
+    "links": [
+      { "label": "SnowMapper App", "url": "https://snowmapper.ch/mcass-dashboard" },
+      { "label": "CROMO-ADAPT", "url": "https://cromoadapt.tilda.ws/" },
+      { "label": "SAPPHIRE", "url": "https://www.hydrosolutions.ch/projects/sapphire-central-asia" }
+    ],
+    "description": "Operational snow cover analysis at 500m resolution spanning the Tien Shan, Gissar-Alay, Pamir, and Hindukush mountain ranges, supporting water resource management across five Central Asian countries."
+  },
+  {
+    "title": "CROMO-ADAPT: cryosphere monitoring and climate adaptation",
+    "slug": "cromo-adapt",
+    "thumb": "https://framerusercontent.com/images/7oyKJ4eP2LGzqddMrQ6QaraRg.png",
+    "duration": "2021–2025",
     "region": "Central Asia",
     "programme": "CROMO-ADAPT",
     "donor": "SDC",
-    "sector": "WRM, DRR",
+    "sector": "Climate Adaptation",
     "links": [
-      { "label": "CROMO-ADAPT overview", "url": "https://cromoadapt.tilda.ws/" },
-      { "label": "SnowMapper App", "url": "https://snowmapper.ch/mcass-dashboard" },
-      { "label": "SAPPHIRE project", "url": "https://www.hydrosolutions.ch/projects/sapphire-central-asia" }
+      { "label": "CROMO-ADAPT overview", "url": "https://cromoadapt.tilda.ws/" }
     ],
-    "description": "The Swiss Agency for Development and Cooperation supports multiple projects in semi-arid Central Asia that aim to enhance the effective management of shared water resources. Within this framework, SnowMapper CA provides operational snow cover analysis spanning the Tien Shan, Gissar-Alay, Pamir, and Hindukush mountain ranges."
+    "description": "Co-PI and technical lead on SDC-funded programme developing operational cryosphere monitoring tools and climate assessments for national hydromet services across Central Asia."
+  },
+  {
+    "title": "Revival of Balochistan Water Resources Programme",
+    "slug": "rbwrp-balochistan",
+    "thumb": "https://framerusercontent.com/images/RZewRLEPZRNFHnzwxdM88CaZqc.webp",
+    "duration": "2025–2026",
+    "region": "Pakistan",
+    "programme": "RBWRP",
+    "donor": "EU / Landell Mills",
+    "sector": "Water Resources",
+    "links": [
+      { "label": "Climate Explorer", "url": "https://connect.posit.cloud/joelfiddes/content/0197a77d-cd73-0caa-bccd-2a6ab193c267" }
+    ],
+    "description": "Climate downscaling and hydrological modelling across 214 catchments in Balochistan, with an interactive climate and hydrology dashboard for scenario exploration."
+  },
+  {
+    "title": "UNESCO/GEF climate impact scenarios for Central Asia",
+    "slug": "unesco-gef-climate-scenarios",
+    "thumb": "https://framerusercontent.com/images/6twUxCOGPnPZdZyVVPMhFbpIM8.png",
+    "duration": "2024–2025",
+    "region": "Central Asia",
+    "programme": "UNESCO/GEF",
+    "donor": "UNESCO / GEF / UNDP",
+    "sector": "Climate Scenarios",
+    "links": [
+      { "label": "Snow climate scenarios", "url": "https://connect.posit.cloud/joelfiddes/content/0197d113-7bd3-3c3c-b476-abb26b25363b" }
+    ],
+    "description": "High-resolution 21st century climate impact scenarios for snow cover across five Central Asian countries, informing national and regional climate adaptation programmes."
+  },
+  {
+    "title": "WMO Global Cryosphere Watch snow assessments",
+    "slug": "wmo-gcw-snow-assessments",
+    "thumb": "https://framerusercontent.com/images/ufSVWAeZa1fgOtoDyUvAFCU8w.png",
+    "duration": "2023–present",
+    "region": "Central Asia",
+    "programme": "WMO GCW",
+    "donor": "WMO",
+    "sector": "Cryosphere Monitoring",
+    "links": [
+      { "label": "GCW Snow Assessments", "url": "https://globalcryospherewatch.org/snow-assessments-2025/" }
+    ],
+    "description": "Contributing author producing annual snow assessments for WMO's Global Cryosphere Watch programme, covering Central Asian mountain regions."
+  },
+  {
+    "title": "Himalayan mountain hazard assessment",
+    "slug": "himalayan-mountain-hazards",
+    "thumb": "https://framerusercontent.com/images/32h73MPSOernmd1yYOmtkknVFP8.png",
+    "duration": "2023–2024",
+    "region": "Himalaya",
+    "programme": "20MW",
+    "donor": "SDC / ADB",
+    "sector": "DRR",
+    "links": [
+      { "label": "Glacier hazard guidance", "url": "https://weadapt.org/wp-content/uploads/2023/05/assessment_glacier_permafrost_hazards_mountain_regions_0.pdf" }
+    ],
+    "description": "Assessment of glacier and permafrost hazards in the Indian Himalayan Region, contributing to technical guidance on mountain risk reduction for development agencies."
+  },
+  {
+    "title": "WWCS: weather and climate services for Tajikistan",
+    "slug": "wwcs-tajikistan",
+    "thumb": "/images/policy.png",
+    "duration": "2021–2025",
+    "region": "Tajikistan",
+    "programme": "WWCS",
+    "donor": "SDC / CARITAS CH",
+    "sector": "Climate Services",
+    "links": [],
+    "description": "Co-PI delivering operational weather and climate tools and training for national hydromet services in Tajikistan through a partnership approach with CARITAS Switzerland."
+  },
+  {
+    "title": "Glacio-hydrological modelling in Uttarakhand, India",
+    "slug": "futurewater-bhagirathi",
+    "thumb": "https://framerusercontent.com/images/k1d7xxdDkqhDCadUtu9RGRbXo.png",
+    "duration": "2021–2023",
+    "region": "India",
+    "programme": "SCA-Himalayas",
+    "donor": "SDC / FutureWater",
+    "sector": "Water Resources",
+    "links": [],
+    "description": "Modelling present and future hydrological scenarios for the Bhagirathi sub-basin; co-authored glacio-hydrological modelling guidelines for High Mountain Asia."
+  },
+  {
+    "title": "World Bank: Tajikistan disaster forensics",
+    "slug": "world-bank-tajikistan-2021",
+    "thumb": "/images/hazards-risk.png",
+    "duration": "2021",
+    "region": "Tajikistan",
+    "programme": "",
+    "donor": "World Bank",
+    "sector": "DRR",
+    "links": [],
+    "description": "Forensic analysis of cryospheric and hydrometeorological factors behind the May 2021 Tajikistan disasters using remote sensing and numerical modelling."
+  },
+  {
+    "title": "Chamoli rock-ice avalanche investigation",
+    "slug": "chamoli-disaster-2021",
+    "thumb": "https://framerusercontent.com/images/936XkIsg3kVdJ4fEBw0xbF7Ek.png",
+    "duration": "2021",
+    "region": "India",
+    "programme": "",
+    "donor": "International collaboration",
+    "sector": "DRR",
+    "links": [
+      { "label": "Science publication", "url": "https://www.science.org/doi/10.1126/science.abh4455" }
+    ],
+    "description": "Contributed to the international investigation of the 2021 Chamoli disaster in the Indian Himalaya, published in Science."
+  },
+  {
+    "title": "Permian Global: tropical deforestation monitoring",
+    "slug": "permian-global-deforestation",
+    "thumb": "/images/adaptation.png",
+    "duration": "2020–2021",
+    "region": "Global (tropics)",
+    "programme": "",
+    "donor": "Permian Global",
+    "sector": "Remote Sensing",
+    "links": [],
+    "description": "Developed automated remote sensing tools for deforestation rate estimation supporting conservation finance across tropical forest regions."
+  },
+  {
+    "title": "WMO cryosphere observation network assessment",
+    "slug": "wmo-cryo-networks",
+    "thumb": "/images/energy-water.png",
+    "duration": "2022",
+    "region": "Central Asia",
+    "programme": "WMO GCW",
+    "donor": "WMO",
+    "sector": "Monitoring Networks",
+    "links": [],
+    "description": "Inventory and gap analysis of mountain cryosphere observation networks across five Central Asian countries, delivering recommendations published as WMO GCW Report No. 1."
+  },
+  {
+    "title": "Zarafshan River Basin snow monitoring",
+    "slug": "zarafshan-tajikistan",
+    "thumb": "/images/expertise-hero.jpg",
+    "duration": "2018–2020",
+    "region": "Tajikistan",
+    "programme": "ZRBP",
+    "donor": "EU / Landell Mills",
+    "sector": "Snow Monitoring",
+    "links": [],
+    "description": "Technical assistance to the Ministry of Energy and Water Resources developing pilot monitoring and modelling for snow-based water resources in the Zarafshan basin."
+  },
+  {
+    "title": "TopoPyScale: climate downscaling toolchain",
+    "slug": "topopyscale",
+    "thumb": "https://framerusercontent.com/images/niy6puNTsUf8Ag7AaSRMJIzW5TU.png",
+    "duration": "2009–present",
+    "region": "Global",
+    "programme": "",
+    "donor": "SNSF / WSL",
+    "sector": "Tools & Software",
+    "links": [
+      { "label": "Documentation", "url": "https://topopyscale.readthedocs.io/latest/" },
+      { "label": "GitHub", "url": "https://github.com/ArcticSnow/TopoPyScale" }
+    ],
+    "description": "Open-source Python library for efficient climate downscaling in complex mountain terrain, evolved from the PhD-era TopoSUB/TopoSCALE tools and now underpinning SnowMapper operations."
+  },
+  {
+    "title": "Himalaya permafrost monitoring, Nepal",
+    "slug": "himalaya-permafrost-nepal",
+    "thumb": "https://framerusercontent.com/images/ZELjWBl04e5g0Di0xYLhZOrtbXw.png",
+    "duration": "2016",
+    "region": "Nepal",
+    "programme": "ETH SEED",
+    "donor": "ETH Zurich",
+    "sector": "Permafrost",
+    "links": [],
+    "description": "Established high-altitude permafrost monitoring sites in the Langtang valley; trained Nepalese scientists and conducted a regional permafrost workshop."
+  },
+  {
+    "title": "DEZA climate adaptation baseline mapping, India",
+    "slug": "deza-india-baseline",
+    "thumb": "/images/projects-bg.jpg",
+    "duration": "2014",
+    "region": "India",
+    "programme": "",
+    "donor": "SDC (DEZA)",
+    "sector": "Climate Adaptation",
+    "links": [],
+    "description": "Developed baseline maps for land surface variables in the Indian Himalaya, coordinating with government agencies and the Department of Science & Technology."
+  },
+  {
+    "title": "Kunduz River Basin water resources, Afghanistan",
+    "slug": "kunduz-afghanistan",
+    "thumb": "https://framerusercontent.com/images/lj8QaXrlzc9cJpI3eWc1w3lFgSI.png",
+    "duration": "2007–2012",
+    "region": "Afghanistan",
+    "programme": "KRBP",
+    "donor": "EU / Landell Mills",
+    "sector": "Water Resources",
+    "links": [],
+    "description": "Multiple engagements including water strategy development, snow sampling training, and a 30-year satellite snow cover analysis for the Kunduz River Basin."
+  },
+  {
+    "title": "Panj-Amu River Basin remote sensing, Afghanistan",
+    "slug": "panj-amu-afghanistan",
+    "thumb": "/images/about-hero.jpg",
+    "duration": "2007–2012",
+    "region": "Afghanistan",
+    "programme": "P-ARBP",
+    "donor": "EU / Landell Mills",
+    "sector": "Remote Sensing, DRR",
+    "links": [],
+    "description": "Remote sensing analysis of irrigated zones, avalanche hazard risk zoning, and GIS capacity building for Afghan water management partners."
   }
 ]

@@ -2,7 +2,7 @@ import Label from '../components/Label'
 import SectionContactFramerComponent from '../framer/section-contact'
 import projects from '../data/projects.json'
 
-export default function Projects() {
+export default function Projects2() {
   return (
     <>
       <section
@@ -11,7 +11,7 @@ export default function Projects() {
       >
         <div className="w-full max-w-[1200px]">
           {/* Header */}
-          <div style={{ paddingBottom: '80px' }}>
+          <div style={{ paddingBottom: '48px' }}>
             <div className="md:max-w-[40%] flex flex-col gap-[24px]">
               <Label text="Our Projects" />
               <p
@@ -29,28 +29,38 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* Project Cards — alternating layout */}
-          <div className="flex flex-col gap-[64px] md:gap-[100px]">
+          {/* Project Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((p, i) => (
               <div
                 key={i}
-                className={`flex flex-col ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-[32px] md:gap-[48px] items-stretch`}
+                className="flex flex-col overflow-hidden group"
+                style={{
+                  borderRadius: '8px',
+                  backgroundColor: 'rgba(255,255,255,0.95)',
+                  border: '4px solid transparent',
+                  transition: 'border-color 0.3s, background-color 0.3s',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.borderColor = 'var(--unframer-accent-blue)'
+                  e.currentTarget.style.backgroundColor = 'rgba(185, 255, 255, 0.08)'
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.borderColor = 'transparent'
+                  e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.95)'
+                }}
               >
                 {/* Image */}
-                <div
-                  className="w-full md:w-[60%] shrink-0 overflow-hidden group"
-                  style={{ borderRadius: '8px' }}
-                >
+                <div className="w-full overflow-hidden" style={{ aspectRatio: '16/10' }}>
                   <img
                     src={p.thumb}
                     alt={p.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    style={{ minHeight: '280px', maxHeight: '440px' }}
+                    className="w-full h-full object-cover resource-card-img"
                   />
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-col justify-center gap-[16px] flex-1">
+                <div className="flex flex-col gap-[10px] flex-1" style={{ padding: '20px' }}>
                   {/* Tags */}
                   <div className="flex gap-[8px] flex-wrap">
                     <span
@@ -61,7 +71,7 @@ export default function Projects() {
                         letterSpacing: '-0.02em',
                         color: 'var(--unframer-light-green)',
                         backgroundColor: 'var(--unframer-forrest)',
-                        padding: '3px 10px',
+                        padding: '2px 8px',
                         borderRadius: '2px',
                       }}
                     >
@@ -75,7 +85,7 @@ export default function Projects() {
                         letterSpacing: '-0.02em',
                         color: 'var(--unframer-forrest)',
                         backgroundColor: 'var(--unframer-accent-blue)',
-                        padding: '3px 10px',
+                        padding: '2px 8px',
                         borderRadius: '2px',
                       }}
                     >
@@ -87,7 +97,7 @@ export default function Projects() {
                   <h3
                     style={{
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: '22px',
+                      fontSize: '16px',
                       lineHeight: '1.3em',
                       letterSpacing: '-0.03em',
                       color: 'var(--unframer-forrest)',
@@ -125,8 +135,8 @@ export default function Projects() {
                   <p
                     style={{
                       fontFamily: "'Inter', sans-serif",
-                      fontSize: '14px',
-                      lineHeight: '1.6em',
+                      fontSize: '13px',
+                      lineHeight: '1.5em',
                       letterSpacing: '-0.02em',
                       color: 'var(--unframer-neutral-400)',
                     }}
@@ -136,14 +146,13 @@ export default function Projects() {
 
                   {/* Links */}
                   {p.links.length > 0 && (
-                    <div className="flex flex-col gap-[6px]" style={{ marginTop: '4px' }}>
+                    <div className="flex flex-col gap-[4px] mt-auto" style={{ paddingTop: '8px' }}>
                       {p.links.map((link, j) => (
                         <a
                           key={j}
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="group/link inline-flex items-center gap-[6px]"
                           style={{
                             fontFamily: "'DM Mono', monospace",
                             fontWeight: 300,
@@ -152,12 +161,7 @@ export default function Projects() {
                             textDecoration: 'none',
                           }}
                         >
-                          {link.label}
-                          <span
-                            className="inline-block transition-transform duration-200 group-hover/link:translate-x-1"
-                          >
-                            →
-                          </span>
+                          {link.label} →
                         </a>
                       ))}
                     </div>

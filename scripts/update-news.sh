@@ -158,6 +158,14 @@ EOF
     --base main \
     --head "$BRANCH"
 
+# Open PR in browser for review
+PR_URL=$(gh pr view "$BRANCH" --json url -q '.url')
+echo "Opening PR for review..."
+open "$PR_URL"
+
+# Also show a macOS notification
+osascript -e "display notification \"$NUM_POSTS new items ready for review\" with title \"Mountain Futures News\" sound name \"Glass\""
+
 # Switch back to main
 git checkout main
 
