@@ -2,6 +2,7 @@
   {
     "title": "SnowMapper: operational snow monitoring for Central Asia",
     "slug": "snowmapper-central-asia",
+    "category": "mf",
     "thumb": "https://framerusercontent.com/images/9bChxNcdieRLyIWGggNKpEAOa1w.jpeg",
     "duration": "2021–2026",
     "region": "Central Asia",
@@ -18,8 +19,9 @@
   {
     "title": "CROMO-ADAPT: cryosphere monitoring and climate adaptation",
     "slug": "cromo-adapt",
+    "category": "mf",
     "thumb": "https://framerusercontent.com/images/7oyKJ4eP2LGzqddMrQ6QaraRg.png",
-    "duration": "2021–2025",
+    "duration": "2021–2026",
     "region": "Central Asia",
     "programme": "CROMO-ADAPT",
     "donor": "SDC",
@@ -32,6 +34,7 @@
   {
     "title": "Revival of Balochistan Water Resources Programme",
     "slug": "rbwrp-balochistan",
+    "category": "mf",
     "thumb": "https://framerusercontent.com/images/RZewRLEPZRNFHnzwxdM88CaZqc.webp",
     "duration": "2025–2026",
     "region": "Pakistan",
@@ -46,6 +49,7 @@
   {
     "title": "UNESCO/GEF climate impact scenarios for Central Asia",
     "slug": "unesco-gef-climate-scenarios",
+    "category": "mf",
     "thumb": "https://framerusercontent.com/images/6twUxCOGPnPZdZyVVPMhFbpIM8.png",
     "duration": "2024–2025",
     "region": "Central Asia",
@@ -60,6 +64,7 @@
   {
     "title": "WMO Global Cryosphere Watch snow assessments",
     "slug": "wmo-gcw-snow-assessments",
+    "category": "mf",
     "thumb": "https://framerusercontent.com/images/ufSVWAeZa1fgOtoDyUvAFCU8w.png",
     "duration": "2023–present",
     "region": "Central Asia",
@@ -74,6 +79,7 @@
   {
     "title": "Himalayan mountain hazard assessment",
     "slug": "himalayan-mountain-hazards",
+    "category": "track-record",
     "thumb": "https://framerusercontent.com/images/32h73MPSOernmd1yYOmtkknVFP8.png",
     "duration": "2023–2024",
     "region": "Himalaya",
@@ -88,6 +94,7 @@
   {
     "title": "WWCS: weather and climate services for Tajikistan",
     "slug": "wwcs-tajikistan",
+    "category": "track-record",
     "thumb": "/images/policy.png",
     "duration": "2021–2025",
     "region": "Tajikistan",
@@ -100,6 +107,7 @@
   {
     "title": "Glacio-hydrological modelling in Uttarakhand, India",
     "slug": "futurewater-bhagirathi",
+    "category": "track-record",
     "thumb": "https://framerusercontent.com/images/k1d7xxdDkqhDCadUtu9RGRbXo.png",
     "duration": "2021–2023",
     "region": "India",
@@ -112,6 +120,7 @@
   {
     "title": "World Bank: Tajikistan disaster forensics",
     "slug": "world-bank-tajikistan-2021",
+    "category": "track-record",
     "thumb": "/images/hazards-risk.png",
     "duration": "2021",
     "region": "Tajikistan",
@@ -124,6 +133,7 @@
   {
     "title": "Chamoli rock-ice avalanche investigation",
     "slug": "chamoli-disaster-2021",
+    "category": "track-record",
     "thumb": "https://framerusercontent.com/images/936XkIsg3kVdJ4fEBw0xbF7Ek.png",
     "duration": "2021",
     "region": "India",
@@ -138,6 +148,7 @@
   {
     "title": "Permian Global: tropical deforestation monitoring",
     "slug": "permian-global-deforestation",
+    "category": "track-record",
     "thumb": "/images/adaptation.png",
     "duration": "2020–2021",
     "region": "Global (tropics)",
@@ -150,6 +161,7 @@
   {
     "title": "WMO cryosphere observation network assessment",
     "slug": "wmo-cryo-networks",
+    "category": "track-record",
     "thumb": "/images/energy-water.png",
     "duration": "2022",
     "region": "Central Asia",
@@ -162,6 +174,7 @@
   {
     "title": "Zarafshan River Basin snow monitoring",
     "slug": "zarafshan-tajikistan",
+    "category": "track-record",
     "thumb": "/images/expertise-hero.jpg",
     "duration": "2018–2020",
     "region": "Tajikistan",
@@ -174,6 +187,7 @@
   {
     "title": "TopoPyScale: climate downscaling toolchain",
     "slug": "topopyscale",
+    "category": "track-record",
     "thumb": "https://framerusercontent.com/images/niy6puNTsUf8Ag7AaSRMJIzW5TU.png",
     "duration": "2009–present",
     "region": "Global",
@@ -189,6 +203,7 @@
   {
     "title": "Himalaya permafrost monitoring, Nepal",
     "slug": "himalaya-permafrost-nepal",
+    "category": "track-record",
     "thumb": "https://framerusercontent.com/images/ZELjWBl04e5g0Di0xYLhZOrtbXw.png",
     "duration": "2016",
     "region": "Nepal",
@@ -201,6 +216,7 @@
   {
     "title": "DEZA climate adaptation baseline mapping, India",
     "slug": "deza-india-baseline",
+    "category": "track-record",
     "thumb": "/images/projects-bg.jpg",
     "duration": "2014",
     "region": "India",
@@ -213,6 +229,7 @@
   {
     "title": "Kunduz River Basin water resources, Afghanistan",
     "slug": "kunduz-afghanistan",
+    "category": "track-record",
     "thumb": "https://framerusercontent.com/images/lj8QaXrlzc9cJpI3eWc1w3lFgSI.png",
     "duration": "2007–2012",
     "region": "Afghanistan",
@@ -225,6 +242,7 @@
   {
     "title": "Panj-Amu River Basin remote sensing, Afghanistan",
     "slug": "panj-amu-afghanistan",
+    "category": "track-record",
     "thumb": "/images/about-hero.jpg",
     "duration": "2007–2012",
     "region": "Afghanistan",
