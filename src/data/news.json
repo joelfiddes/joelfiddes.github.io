@@ -33,17 +33,6 @@
     ]
   },
   {
-    "title": "Community-driven snow depth measurement network launched in Central Asia",
-    "date": "2025-12-01",
-    "summary": "Over 1,000 snow depth observations collected across Kyrgyzstan, Tajikistan, and Uzbekistan using a Telegram-based community volunteer network — a novel approach to filling critical data gaps in remote mountain regions.",
-    "link": "https://essd.copernicus.org/preprints/essd-2025-580/",
-    "tags": [
-      "publication",
-      "snow",
-      "Central Asia"
-    ]
-  },
-  {
     "title": "TopoPyScale v0.3.3 released with critical bug fix",
     "date": "2025-10-20",
     "summary": "TopoPyScale v0.3.3 fixes a critical bug where clustered pixels were not remapped to their correct locations, causing incorrect spatial output when using the clustering option.",
