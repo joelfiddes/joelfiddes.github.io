@@ -7,28 +7,28 @@ const services = [
     title: 'Energy & Water',
     image: '/images/energy-water.png',
     description:
-      'Mountain water fuels hydropower, agriculture, and communities downstream. We combine high-resolution modelling with field-based observations to clarify how climate and cryosphere changes affect water availability. Our insights help partners optimise hydropower operations, plan seasonal water use, and build resilient energy–water systems.',
+      'High-resolution snow and hydrological modelling combined with field observations to quantify how cryosphere change affects water availability. We support hydropower planning, seasonal forecasting, and water security across mountain basins.',
     sectors: ['Snow Monitoring', 'Water Resources', 'Cryosphere Monitoring'],
   },
   {
     title: 'Hazards & Risk',
     image: '/images/hazards-risk.png',
     description:
-      'Mountain regions face rising risks from floods, avalanches, landslides, and glacier-related hazards. We integrate cutting-edge field monitoring, modelling, and remote sensing to assess emerging threats to communities and infrastructure. Our solutions support early warning, build local capacities, reduce vulnerabilities, and enable climate-resilient planning.',
+      'Integrated field monitoring, modelling, and remote sensing to assess glacier, permafrost, and flood hazards. We deliver risk assessments, early warning support, and capacity building for disaster risk reduction.',
     sectors: ['DRR'],
   },
   {
     title: 'Adaptation Solutions',
     image: '/images/adaptation.png',
     description:
-      'We turn mountain climate science into practical strategies that help communities and institutions adapt to change. By combining robust data, scenario analysis, and close collaboration with local partners, we co-develop solutions that strengthen water security, reduce hazard impacts, and build long-term resilience in mountain regions.',
+      'Translating climate data and scenario analysis into actionable adaptation strategies. We work with local partners to co-develop plans that strengthen water security, reduce hazard exposure, and build long-term resilience.',
     sectors: ['Climate Adaptation', 'Climate Scenarios', 'Climate Services'],
   },
   {
     title: 'Policy Engagement',
     image: '/images/policy.png',
     description:
-      'We bridge mountain science and policy to support informed, evidence-based decision-making. Through tailored briefings, guidance documents, capacity building, and long-term partnerships with government agencies and regional institutions, we help integrate climate risk and water insights into planning, governance, and resource management.',
+      'Tailored briefings, technical guidance, and institutional partnerships that bring climate and water science into governance and resource management decisions.',
     sectors: ['Monitoring Networks'],
   },
 ]
@@ -118,23 +118,15 @@ export default function Expertise() {
             </div>
           </div>
 
-          {/* Service Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-2" style={{ padding: '0 16px' }}>
-            {services.map((service) => (
-              <div key={service.title} className="flex flex-col gap-[22px] pb-16 group">
-                <h3
-                  style={{
-                    fontFamily: "'DM Mono', monospace",
-                    fontWeight: 300,
-                    fontSize: '23px',
-                    lineHeight: '1em',
-                    letterSpacing: '-0.05em',
-                    color: 'var(--unframer-forrest)',
-                  }}
-                >
-                  {service.title}
-                </h3>
-                <div className="overflow-hidden" style={{ borderRadius: '20px' }}>
+          {/* Service Cards — alternating image/text layout */}
+          <div className="flex flex-col" style={{ padding: '0 16px' }}>
+            {services.map((service, i) => (
+              <div
+                key={service.title}
+                className={`flex flex-col md:flex-row gap-[32px] md:gap-[64px] pb-16 group ${i % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
+                style={{ borderBottom: i < services.length - 1 ? '1px solid var(--unframer-neutral-300)' : 'none', paddingTop: i > 0 ? '64px' : '0' }}
+              >
+                <div className="md:w-1/2 overflow-hidden" style={{ borderRadius: '20px' }}>
                   <img
                     src={service.image}
                     alt={service.title}
@@ -142,34 +134,48 @@ export default function Expertise() {
                     style={{ width: '100%', objectFit: 'cover' }}
                   />
                 </div>
-                <p
-                  style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '14px',
-                    lineHeight: '1.55em',
-                    letterSpacing: '-0.03em',
-                    color: 'var(--unframer-forrest)',
-                  }}
-                >
-                  {service.description}
-                </p>
-                <a
-                  href={`/projects?sector=${encodeURIComponent(service.sectors[0])}`}
-                  style={{
-                    fontFamily: "'DM Mono', monospace",
-                    fontWeight: 400,
-                    fontSize: '13px',
-                    color: 'var(--unframer-mf-accent-blue)',
-                    backgroundColor: 'var(--unframer-mf-dark-blue)',
-                    textDecoration: 'none',
-                    padding: '10px 20px',
-                    borderRadius: '6px',
-                    display: 'inline-block',
-                    width: 'fit-content',
-                  }}
-                >
-                  See related projects →
-                </a>
+                <div className="md:w-1/2 flex flex-col gap-[22px] justify-center">
+                  <h3
+                    style={{
+                      fontFamily: "'DM Mono', monospace",
+                      fontWeight: 300,
+                      fontSize: '23px',
+                      lineHeight: '1em',
+                      letterSpacing: '-0.05em',
+                      color: 'var(--unframer-forrest)',
+                    }}
+                  >
+                    {service.title}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: "'Geist', sans-serif",
+                      fontSize: '1.14rem',
+                      lineHeight: '1.35em',
+                      letterSpacing: '-0.03em',
+                      color: 'var(--unframer-forrest)',
+                    }}
+                  >
+                    {service.description}
+                  </p>
+                  <a
+                    href={`/projects?sector=${encodeURIComponent(service.sectors[0])}`}
+                    style={{
+                      fontFamily: "'DM Mono', monospace",
+                      fontWeight: 400,
+                      fontSize: '13px',
+                      color: 'var(--unframer-mf-accent-blue)',
+                      backgroundColor: 'var(--unframer-mf-dark-blue)',
+                      textDecoration: 'none',
+                      padding: '10px 20px',
+                      borderRadius: '6px',
+                      display: 'inline-block',
+                      width: 'fit-content',
+                    }}
+                  >
+                    See related projects →
+                  </a>
+                </div>
               </div>
             ))}
           </div>

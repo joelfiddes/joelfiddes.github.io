@@ -59,21 +59,25 @@ export default function Home() {
             <FocusCardFramerComponent.Responsive
               title="Energy & Water"
               overview="Advancing understanding of water and cryosphere processes to strengthen water and energy security."
+              icon={{ src: 'https://framerusercontent.com/images/iiQwBNQcCcDi7J5sN4aFs0RI0Mg.png', alt: 'Energy & Water' }}
               style={{ width: '100%', height: '377px' }}
             />
             <FocusCardFramerComponent.Responsive
               title="Hazards & Risk"
               overview="Delivering solutions for disaster risk reduction to strengthen resilience and adaptive capacity."
+              icon={{ src: 'https://framerusercontent.com/images/36NIpLGjIHMIAr8We5YC8ZO2PJQ.png', alt: 'Hazards & Risk' }}
               style={{ width: '100%', height: '377px' }}
             />
             <FocusCardFramerComponent.Responsive
               title="Adaptation Solutions"
               overview="Translating mountain climate knowledge into targeted actions that support resilient planning and safer communities."
+              icon={{ src: 'https://framerusercontent.com/images/KnKOoD9a8xaIeLqTcXaGnkasHOA.png', alt: 'Adaptation Solutions' }}
               style={{ width: '100%', height: '377px' }}
             />
             <FocusCardFramerComponent.Responsive
               title="Policy Engagement"
               overview="Bridging science and policy to strengthen climate-resilient decision-making."
+              icon={{ src: 'https://framerusercontent.com/images/he2V1ICax9WCiGgQtFUx05UhM0I.png', alt: 'Policy Engagement' }}
               style={{ width: '100%', height: '377px' }}
             />
           </div>
