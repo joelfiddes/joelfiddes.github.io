@@ -37,7 +37,8 @@ export default function About() {
       <section
         className="w-full flex flex-col items-center"
         style={{
-          backgroundImage: 'url(/images/about-team-bg.jpg)',
+          backgroundColor: '#F5F5F5',
+          backgroundImage: 'url(/images/contour-lines.svg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           padding: '80px 16px 0 16px',
@@ -151,6 +152,10 @@ export default function About() {
                   BYNIrUSxY="Contact"
                   hYruqSCKG="mailto:joel.fiddes@slf.ch"
                 />
+                <PrimaryFramerComponent.Responsive
+                  BYNIrUSxY="CV"
+                  hYruqSCKG="https://joelfiddes.github.io/cv/"
+                />
                 <a
                   href="https://www.linkedin.com/in/joelfiddes/"
                   target="_blank"
@@ -252,6 +257,10 @@ export default function About() {
                 <PrimaryFramerComponent.Responsive
                   BYNIrUSxY="Contact"
                   hYruqSCKG="mailto:simon.allen@geo.uzh.ch"
+                />
+                <PrimaryFramerComponent.Responsive
+                  BYNIrUSxY="CV"
+                  hYruqSCKG="#"
                 />
                 <a
                   href="https://www.linkedin.com/in/simon-allen-351a28194/"

@@ -1,5 +1,23 @@
 [
   {
+    "title": "Mountain Futures Apps",
+    "thumb": "/images/apps-icon.png",
+    "date": "",
+    "link": "https://apps.mountainfutures.ch"
+  },
+  {
+    "title": "Publications",
+    "thumb": "/images/pubs-icon.png",
+    "date": "",
+    "link": "/publications"
+  },
+  {
+    "title": "Media",
+    "thumb": "/images/media-icon.png",
+    "date": "",
+    "link": "/media"
+  },
+  {
     "title": "Snowmapper CA: snowforecast and WRM app",
     "thumb": "https://framerusercontent.com/images/7oyKJ4eP2LGzqddMrQ6QaraRg.png",
     "date": "11.06.2025",

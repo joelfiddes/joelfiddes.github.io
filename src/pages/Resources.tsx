@@ -8,9 +8,7 @@ export default function Resources() {
       <section
         className="w-full flex flex-col items-center"
         style={{
-          backgroundImage: 'url(/images/resources-bg.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundColor: '#F5F5F5',
           padding: '160px 16px',
         }}
       >

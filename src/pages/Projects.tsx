@@ -7,7 +7,12 @@ export default function Projects() {
     <>
       <section
         className="w-full flex flex-col items-center"
-        style={{ padding: '160px 16px 80px 16px' }}
+        style={{
+          backgroundImage: 'url(/images/contour-lines.svg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          padding: '160px 16px 80px 16px',
+        }}
       >
         <div className="w-full max-w-[1200px]">
           {/* Header */}

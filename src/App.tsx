@@ -9,6 +9,8 @@ import Resources from './pages/Resources'
 import Careers from './pages/Careers'
 import Contact from './pages/Contact'
 import News from './pages/News'
+import Publications from './pages/Publications'
+import Media from './pages/Media'
 
 export default function App() {
   return (
@@ -22,6 +24,8 @@ export default function App() {
           <Route path="/resources" element={<Resources />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/news" element={<News />} />
+          <Route path="/publications" element={<Publications />} />
+          <Route path="/media" element={<Media />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>

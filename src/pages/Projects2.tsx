@@ -1,9 +1,7 @@
+import { useSearchParams } from 'react-router-dom'
 import Label from '../components/Label'
 import SectionContactFramerComponent from '../framer/section-contact'
 import projects from '../data/projects.json'
-
-const mfProjects = projects.filter((p: any) => p.category === 'mf')
-const trackRecord = projects.filter((p: any) => p.category === 'track-record')
 
 function ProjectCard({ p }: { p: typeof projects[number] }) {
   return (
@@ -146,6 +144,18 @@ function ProjectCard({ p }: { p: typeof projects[number] }) {
 }
 
 export default function Projects2() {
+  const [searchParams] = useSearchParams()
+  const sectorFilter = searchParams.get('sector')
+
+  const matchesSector = (p: any) =>
+    !sectorFilter || p.sector.toLowerCase().includes(sectorFilter.toLowerCase())
+
+  const mfProjects = projects.filter((p: any) => p.category === 'mf')
+  const trackRecord = projects.filter((p: any) => p.category === 'track-record')
+
+  const filteredMf = sectorFilter ? mfProjects.filter(matchesSector) : mfProjects
+  const filteredTrack = sectorFilter ? trackRecord.filter(matchesSector) : trackRecord
+
   return (
     <>
       <section
@@ -173,7 +183,7 @@ export default function Projects2() {
 
           {/* MF Project Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {mfProjects.map((p, i) => (
+            {filteredMf.map((p, i) => (
               <ProjectCard key={i} p={p} />
             ))}
           </div>
@@ -197,7 +207,7 @@ export default function Projects2() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {trackRecord.map((p, i) => (
+            {filteredTrack.map((p, i) => (
               <ProjectCard key={i} p={p} />
             ))}
           </div>
