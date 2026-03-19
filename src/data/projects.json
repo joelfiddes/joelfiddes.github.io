@@ -77,19 +77,19 @@
     "description": "Contributing author producing annual snow assessments for WMO's Global Cryosphere Watch programme, covering Central Asian mountain regions."
   },
   {
-    "title": "Himalayan mountain hazard assessment",
+    "title": "Assessment of Glacier and Permafrost Hazards in Mountain Regions – Technical Guidance Documen",
     "slug": "himalayan-mountain-hazards",
     "category": "track-record",
     "thumb": "https://framerusercontent.com/images/32h73MPSOernmd1yYOmtkknVFP8.png",
-    "duration": "2023–2024",
-    "region": "Himalaya",
+    "duration": "2017",
+    "region": "Global",
     "programme": "20MW",
-    "donor": "SDC / ADB",
+    "donor": "SDC",
     "sector": "DRR",
     "links": [
       { "label": "Glacier hazard guidance", "url": "https://weadapt.org/wp-content/uploads/2023/05/assessment_glacier_permafrost_hazards_mountain_regions_0.pdf" }
     ],
-    "description": "Assessment of glacier and permafrost hazards in the Indian Himalayan Region, contributing to technical guidance on mountain risk reduction for development agencies."
+    "description": " Assessment of Glacier and Permafrost Hazards in Mountain Regions – Technical Guidance Document produced by the GAPHAZ working group (Lead author Allen)."
   },
   {
     "title": "WWCS: weather and climate services for Tajikistan",
