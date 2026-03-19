@@ -251,5 +251,210 @@
     "sector": "Remote Sensing, DRR",
     "links": [],
     "description": "Remote sensing analysis of irrigated zones, avalanche hazard risk zoning, and GIS capacity building for Afghan water management partners."
+  },
+  {
+    "title": "BARHKH: multi-hazard risk assessment and early warning, Nepal",
+    "slug": "barhkh-nepal",
+    "category": "track-record",
+    "thumb": "https://www.icimod.org/wp-content/uploads/1749112865636-TheFarsight_Website_0oysVLx.jpg",
+    "duration": "2025–present",
+    "region": "Nepal",
+    "programme": "BARHKH",
+    "donor": "SDC",
+    "sector": "DRR",
+    "links": [],
+    "description": "Developing a multi-hazard risk assessment model and supporting the design of a multi-hazard early warning approach in Koshi Province, Nepal."
+  },
+  {
+    "title": "Insurance markets for resilient societies, Asia-Pacific",
+    "slug": "adb-insurance-markets",
+    "category": "track-record",
+    "thumb": "/images/policy.png",
+    "duration": "2023–present",
+    "region": "Asia-Pacific",
+    "programme": "",
+    "donor": "ADB",
+    "sector": "Climate Adaptation",
+    "links": [],
+    "description": "Climate risk assessment expert for glacier and permafrost hazards in Nepal, supporting the development of insurance markets for sustainable and resilient societies."
+  },
+  {
+    "title": "PAMIR: climate change impacts on the Third Pole, Tajikistan",
+    "slug": "pamir-tajikistan",
+    "category": "track-record",
+    "thumb": "https://pamir-project.ch/wp-content/uploads/2022/10/c_Achille_Jouberton_3_resized-1920x1080.jpg",
+    "duration": "2022–present",
+    "region": "Tajikistan",
+    "programme": "PAMIR",
+    "donor": "Swiss Polar Initiative",
+    "sector": "Climate Scenarios",
+    "links": [
+      { "label": "PAMIR project", "url": "https://pamir-project.ch/" }
+    ],
+    "description": "Interdisciplinary research on climate change impacts on the Third Pole, with a focus on hazards cluster leadership."
+  },
+  {
+    "title": "GLOF risk reduction in Central Asia",
+    "slug": "glofca",
+    "category": "track-record",
+    "thumb": "https://glofca.org/wp-content/themes/yootheme/cache/91/Baralmos-Glacier-and-its-outlet-channel-the-source-of-several-large-outburst-floods-in-recent-years-near-Jirgatol-Tajikistan-1-scaled-9133f26f.jpeg",
+    "duration": "2021–present",
+    "region": "Central Asia",
+    "programme": "GLOFCA",
+    "donor": "Adaptation Fund / UNESCO",
+    "sector": "DRR",
+    "links": [
+      { "label": "GLOFCA project", "url": "https://glofca.org/en/" }
+    ],
+    "description": "Reducing vulnerabilities of populations in Central Asia from glacier lake outburst floods in a changing climate. Lead implementing partner to UNESCO."
+  },
+  {
+    "title": "Integrated Water Resource Management, Central Himalayas",
+    "slug": "iwrm-central-himalayas",
+    "category": "track-record",
+    "thumb": "https://www.futurewater.nl/wp-content/uploads/2023/07/sdc-pan.jpg",
+    "duration": "2021–present",
+    "region": "India",
+    "programme": "IWRM",
+    "donor": "SDC",
+    "sector": "Water Resources",
+    "links": [],
+    "description": "Project scientist for integrated water resource management in the Central Himalayas, India."
+  },
+  {
+    "title": "Disaster Risk Management in the Indian Himalayan Region",
+    "slug": "drm-indian-himalaya",
+    "category": "track-record",
+    "thumb": "/images/hazards-risk.png",
+    "duration": "2020–2025",
+    "region": "India",
+    "programme": "",
+    "donor": "SDC",
+    "sector": "DRR",
+    "links": [],
+    "description": "Disaster risk management planning and implementation support focusing on glacier lake outburst flood hazards in the Indian Himalayan Region."
+  },
+  {
+    "title": "Adaptation at Altitude",
+    "slug": "adaptation-at-altitude",
+    "category": "track-record",
+    "thumb": "https://adaptationataltitude.org/wp-content/uploads/2025/10/Hussaini_Paley.jpg",
+    "duration": "2020–present",
+    "region": "Global",
+    "programme": "Adaptation at Altitude",
+    "donor": "SDC",
+    "sector": "Climate Adaptation",
+    "links": [
+      { "label": "Adaptation at Altitude", "url": "https://adaptationataltitude.org/" }
+    ],
+    "description": "Increasing the resilience and adaptive capacity of mountain communities and ecosystems to climate change. Lead scientist for adaptation effectiveness."
+  },
+  {
+    "title": "Strengthening Adaptive Capacity in the Caucasus",
+    "slug": "caucasus-adaptive-capacity",
+    "category": "track-record",
+    "thumb": "/images/projects-bg.jpg",
+    "duration": "2019–present",
+    "region": "Caucasus",
+    "programme": "",
+    "donor": "SDC",
+    "sector": "DRR",
+    "links": [],
+    "description": "Enhancing regional cooperative action for the benefit of the Caucasus Mountain Region. Lead scientist for DRM education."
+  },
+  {
+    "title": "EVOGLAC: glacial lake evolution in China",
+    "slug": "evoglac-china",
+    "category": "track-record",
+    "thumb": "/images/hazards-risk.png",
+    "duration": "2017–2020",
+    "region": "China",
+    "programme": "EVOGLAC",
+    "donor": "SNSF / NSFC",
+    "sector": "DRR",
+    "links": [],
+    "description": "Recent and future evolution of glacial lakes in China. Lead scientist for glacier lake outburst flood hazard assessment."
+  },
+  {
+    "title": "Glacial hazards guidelines, Indian Himalaya",
+    "slug": "glacial-hazards-guidelines-india",
+    "category": "track-record",
+    "thumb": "https://eclim-research.ch/wp-content/uploads/2020/06/Projects_GLOF_2_Dan-Grossman-scaled.jpg",
+    "duration": "2018–2020",
+    "region": "India",
+    "programme": "",
+    "donor": "SDC / NDMA India",
+    "sector": "DRR",
+    "links": [],
+    "description": "Preparation of guidelines for the management of glacial hazards and risks in the Indian Himalayan Region, in collaboration with the National Disaster Management Authority."
+  },
+  {
+    "title": "Indo-German climate risk and vulnerability assessment",
+    "slug": "giz-indo-german",
+    "category": "track-record",
+    "thumb": "/images/adaptation.png",
+    "duration": "2018–2019",
+    "region": "India",
+    "programme": "",
+    "donor": "GIZ",
+    "sector": "Climate Adaptation",
+    "links": [],
+    "description": "Integrated climate risk and vulnerability assessment for the Indo-German Environment Programme in rural areas."
+  },
+  {
+    "title": "Climate-resilient water governance, Bolivia",
+    "slug": "idb-bolivia-water",
+    "category": "track-record",
+    "thumb": "/images/energy-water.png",
+    "duration": "2018–2019",
+    "region": "Bolivia",
+    "programme": "",
+    "donor": "IDB / World Bank",
+    "sector": "Water Resources",
+    "links": [
+      { "label": "IDB Report", "url": "http://dx.doi.org/10.18235/0002226" }
+    ],
+    "description": "Assessing the potential to build a climate-resilient water governance framework in the pluri-national State of Bolivia."
+  },
+  {
+    "title": "Landslide EVO: citizen science for disaster resilience, Nepal",
+    "slug": "landslide-evo-nepal",
+    "category": "track-record",
+    "thumb": "/images/hazards-risk.png",
+    "duration": "2017–2019",
+    "region": "Nepal",
+    "programme": "Landslide EVO",
+    "donor": "NERC / DFID",
+    "sector": "DRR",
+    "links": [],
+    "description": "Citizen science for landslide risk reduction and disaster resilience building in mountain regions of Nepal. Lead scientist for landslide assessment."
+  },
+  {
+    "title": "Flood risk in Uttarakhand, India",
+    "slug": "flood-risk-uttarakhand",
+    "category": "track-record",
+    "thumb": "/images/hazards-risk.png",
+    "duration": "2015–2016",
+    "region": "India",
+    "programme": "",
+    "donor": "SERI",
+    "sector": "DRR",
+    "links": [],
+    "description": "Assessment of flood risk in Uttarakhand, India, with a focus on glacial lake outburst flood hazards."
+  },
+  {
+    "title": "IHCAP: Indian Himalayas Climate Adaptation Programme",
+    "slug": "ihcap-india",
+    "category": "track-record",
+    "thumb": "https://eclim-research.ch/wp-content/uploads/2020/06/project_ihcap_1.jpg",
+    "duration": "2014–2016",
+    "region": "India",
+    "programme": "IHCAP",
+    "donor": "SDC",
+    "sector": "Climate Adaptation",
+    "links": [
+      { "label": "IHCAP overview", "url": "https://eclim-research.ch/ihcap/" }
+    ],
+    "description": "Project scientist for risk assessment in the Indian Himalayas Climate Adaptation Programme, supporting climate-resilient development planning."
   }
 ]
