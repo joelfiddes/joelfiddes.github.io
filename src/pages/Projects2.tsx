@@ -150,8 +150,13 @@ export default function Projects2() {
   const matchesSector = (p: any) =>
     !sectorFilter || p.sector.toLowerCase().includes(sectorFilter.toLowerCase())
 
-  const mfProjects = projects.filter((p: any) => p.category === 'mf')
-  const trackRecord = projects.filter((p: any) => p.category === 'track-record')
+  const endYear = (d: string) => {
+    const m = d.match(/(\d{4})\s*$/) || d.match(/(\d{4})/)
+    return m ? parseInt(m[1]) : 0
+  }
+
+  const mfProjects = projects.filter((p: any) => p.category === 'mf').sort((a, b) => endYear(b.duration) - endYear(a.duration))
+  const trackRecord = projects.filter((p: any) => p.category === 'track-record').sort((a, b) => endYear(b.duration) - endYear(a.duration))
 
   const filteredMf = sectorFilter ? mfProjects.filter(matchesSector) : mfProjects
   const filteredTrack = sectorFilter ? trackRecord.filter(matchesSector) : trackRecord
