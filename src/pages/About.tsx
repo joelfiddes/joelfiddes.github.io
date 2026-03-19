@@ -260,7 +260,7 @@ export default function About() {
                 />
                 <PrimaryFramerComponent.Responsive
                   BYNIrUSxY="CV"
-                  hYruqSCKG="#"
+                  hYruqSCKG="/docs/CV_SimonALLEN_2025_short.pdf"
                 />
                 <a
                   href="https://www.linkedin.com/in/simon-allen-351a28194/"
