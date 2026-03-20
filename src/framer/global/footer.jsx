@@ -2074,7 +2074,13 @@ var Component3 = /* @__PURE__ */ React3.forwardRef(function (props, ref) {
 									data-framer-name={"End"}
 									layoutDependency={layoutDependency}
 									layoutId={"dVORhDhr3"}
+									style={{ position: 'relative', overflow: 'visible' }}
 								>
+									<img
+										src="/images/wsl-spinoff.png"
+										alt="WSL Spin-off"
+										style={{ position: 'absolute', right: '0', top: '-60px', height: '50px', objectFit: 'contain', opacity: 0.9 }}
+									/>
 									<Link3
 										href={{
 											webPageId: "augiA20Il",
@@ -2204,11 +2210,6 @@ var Component3 = /* @__PURE__ */ React3.forwardRef(function (props, ref) {
 											</motion3.div>
 										</motion3.a>
 									</Link3>
-									<img
-										src="/images/wsl-spinoff.png"
-										alt="WSL Spin-off"
-										style={{ height: '40px', objectFit: 'contain', marginLeft: '4px', opacity: 0.9 }}
-									/>
 									<motion3.div
 										className={"framer-z4yo8m"}
 										data-framer-name={"Wrap"}
