@@ -2079,7 +2079,7 @@ var Component3 = /* @__PURE__ */ React3.forwardRef(function (props, ref) {
 									<img
 										src="/images/wsl-spinoff.png"
 										alt="WSL Spin-off"
-										style={{ position: 'absolute', right: '0', top: '-60px', height: '50px', objectFit: 'contain', opacity: 0.9 }}
+										style={{ position: 'absolute', right: '0', top: '-75px', height: '150px', objectFit: 'contain', opacity: 0.9 }}
 									/>
 									<Link3
 										href={{
