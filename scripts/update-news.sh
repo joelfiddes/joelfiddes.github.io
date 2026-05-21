@@ -16,11 +16,13 @@ unset CLAUDECODE 2>/dev/null || true
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_DIR"
 
-CANDIDATES_FILE=$(mktemp /tmp/news-candidates.XXXXX.json)
-FILTERED_FILE=$(mktemp /tmp/news-filtered.XXXXX.json)
+# Note: macOS BSD mktemp only randomizes trailing X's — no suffix after them.
+CANDIDATES_FILE=$(mktemp /tmp/news-candidates.XXXXXX)
+FILTERED_FILE=$(mktemp /tmp/news-filtered.XXXXXX)
+PROMPT_FILE=""
 NEWS_JSON="$REPO_DIR/src/data/news.json"
 
-cleanup() { rm -f "$CANDIDATES_FILE" "$FILTERED_FILE"; }
+cleanup() { rm -f "$CANDIDATES_FILE" "$FILTERED_FILE" ${PROMPT_FILE:+"$PROMPT_FILE"}; }
 trap cleanup EXIT
 
 echo "=== Step 1: Fetching candidates ==="
@@ -38,7 +40,7 @@ echo ""
 echo "=== Step 2: Claude Code filtering and post generation ==="
 
 # Build prompt file (avoids shell escaping issues with large JSON)
-PROMPT_FILE=$(mktemp /tmp/news-prompt.XXXXX.txt)
+PROMPT_FILE=$(mktemp /tmp/news-prompt.XXXXXX)
 cat > "$PROMPT_FILE" <<PROMPT
 You are curating a news feed for Mountain Futures (mountainfutures.ch), a Swiss
 consultancy by Joel Fiddes and Simon Allen focused on cryosphere science, mountain
@@ -58,8 +60,14 @@ INSTRUCTIONS:
 1. STRICTLY filter: only include items directly about Mountain Futures' work, their
    named people (Joel Fiddes, Simon Allen — the cryosphere researchers, not other
    people with the same name), or their specific projects/topics.
-2. REJECT generic climate/mountain news and papers by unrelated authors.
-3. For accepted items, write a clean 1-2 sentence summary.
+2. Items with an "mf_author" field are ORCID-verified to be authored by that MF
+   team member — ACCEPT these by default unless the title is clearly off-topic
+   (e.g. unrelated domain like marine biology or pathogens, which can occur due
+   to OpenAlex author-merging errors).
+3. REJECT generic climate/mountain news and papers by unrelated authors when
+   "mf_author" is not present.
+4. For accepted items, write a clean 1-2 sentence summary. Mention the MF author
+   by name in the summary when "mf_author" is set.
 
 CRITICAL: When in doubt, EXCLUDE. Do NOT fabricate information.
 
