@@ -1,7 +1,7 @@
 {
   "authors": [
-    "Joel Fiddes",
-    "Simon Allen"
+    {"name": "Joel Fiddes", "orcid": "0000-0003-2870-6972"},
+    {"name": "Simon Allen", "orcid": "0000-0002-4809-649X"}
   ],
   "search_terms": [
     "Mountain Futures Switzerland",

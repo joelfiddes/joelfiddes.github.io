@@ -82,16 +82,17 @@ def fetch_xml(url):
 
 
 # ---------------------------------------------------------------------------
-# Source: CrossRef (publications by author)
+# Source: CrossRef (publications by author ORCID)
 # ---------------------------------------------------------------------------
 def search_crossref(authors, since_date):
-    """Search CrossRef for recent publications by authors."""
+    """Search CrossRef for recent publications by author ORCID."""
     candidates = []
     for author in authors:
-        print(f"  CrossRef: searching for '{author}'...", file=sys.stderr)
+        name = author["name"]
+        orcid = author["orcid"]
+        print(f"  CrossRef: searching ORCID {orcid} ({name})...", file=sys.stderr)
         query = urllib.parse.urlencode({
-            "query.author": author,
-            "filter": f"from-pub-date:{since_date}",
+            "filter": f"orcid:{orcid},from-pub-date:{since_date}",
             "rows": 10,
             "sort": "published",
             "order": "desc",
@@ -119,22 +120,29 @@ def search_crossref(authors, since_date):
                 "date": date_str,
                 "link": link,
                 "source": "CrossRef",
+                "mf_author": name,
                 "raw_abstract": item.get("abstract", ""),
             })
     return candidates
 
 
 # ---------------------------------------------------------------------------
-# Source: OpenAlex (publications by author name)
+# Source: OpenAlex (publications by author ORCID)
 # ---------------------------------------------------------------------------
 def search_openalex(authors, since_date):
-    """Search OpenAlex for recent publications by authors."""
+    """Search OpenAlex for recent publications by author ORCID."""
     candidates = []
     for author in authors:
-        print(f"  OpenAlex: searching for '{author}'...", file=sys.stderr)
-        safe_author = urllib.parse.quote(author)
-        query = f"filter=authorships.author.display_name.search:{safe_author},from_publication_date:{since_date}&sort=publication_date:desc&per-page=10&mailto=info@mountainfutures.ch"
-        url = f"https://api.openalex.org/works?{query}"
+        name = author["name"]
+        orcid = author["orcid"]
+        print(f"  OpenAlex: searching ORCID {orcid} ({name})...", file=sys.stderr)
+        orcid_filter = urllib.parse.quote(f"https://orcid.org/{orcid}", safe="")
+        url = (
+            "https://api.openalex.org/works"
+            f"?filter=authorships.author.orcid:{orcid_filter},from_publication_date:{since_date}"
+            "&sort=publication_date:desc&per-page=10"
+            "&mailto=info@mountainfutures.ch"
+        )
         data = fetch_json(url)
         if not data:
             continue
@@ -150,6 +158,7 @@ def search_openalex(authors, since_date):
                 "date": item.get("publication_date", since_date),
                 "link": link,
                 "source": "OpenAlex",
+                "mf_author": name,
                 "raw_abstract": (item.get("abstract_inverted_index") or "")
                     if isinstance(item.get("abstract_inverted_index"), str)
                     else "",
