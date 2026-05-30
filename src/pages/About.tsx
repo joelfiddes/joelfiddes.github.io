@@ -276,12 +276,14 @@ export default function About() {
             </div>
           </div>
 
-          {/* Regional Team — Central Asia */}
+          {/* Regional Team — Central Asia — temporarily hidden (no members shown)
           <div className="mt-20">
             <Label text="Regional team — Central Asia" />
           </div>
+          */}
 
           {[
+            /* Temporarily hidden — re-enable to show on the About page
             {
               name: 'Tomas Saks',
               role: 'Regional Director, Central Asia',
@@ -292,7 +294,6 @@ export default function About() {
               cv: '',
               linkedin: '',
             },
-            /* Temporarily hidden — re-enable to show on the About page
             {
               name: 'Sultanbek Belekov',
               role: 'Regional Expert',
