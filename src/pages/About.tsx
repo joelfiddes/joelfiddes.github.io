@@ -275,6 +275,149 @@ export default function About() {
               </div>
             </div>
           </div>
+
+          {/* Regional Team — Central Asia */}
+          <div className="mt-20">
+            <Label text="Regional team — Central Asia" />
+          </div>
+
+          {[
+            {
+              name: 'Tomas Saks',
+              role: 'Regional Director, Central Asia',
+              image: '/images/tomas.png',
+              bio: 'Bio placeholder — add Tomas\'s background, experience, and focus areas here.',
+              expertise: ['Glaciology', 'Central Asia', 'Field research'],
+              email: '',
+              cv: '',
+              linkedin: '',
+            },
+            {
+              name: 'Sultanbek Belekov',
+              role: 'Regional Expert',
+              image: '/images/sultanbek.png',
+              bio: 'Bio placeholder — add Sultanbek\'s background, experience, and focus areas here.',
+              expertise: ['Regional expertise', 'Stakeholder engagement', 'Field operations'],
+              email: '',
+              cv: '',
+              linkedin: '',
+            },
+            {
+              name: 'Ruslan Kenzhebaev',
+              role: 'Regional Expert',
+              image: '/images/ruslan.png',
+              bio: 'Bio placeholder — add Ruslan\'s background, experience, and focus areas here.',
+              expertise: ['Regional expertise', 'Stakeholder engagement', 'Field operations'],
+              email: '',
+              cv: '',
+              linkedin: '',
+            },
+          ].map((member) => (
+            <div
+              key={member.name}
+              className="flex flex-col md:flex-row mt-10"
+              style={{ borderBottom: '1px solid var(--unframer-neutral-300)', paddingBottom: '20px' }}
+            >
+              <div className="flex flex-col gap-[40px] md:gap-[91px]" style={{ flex: '1.1', padding: '0 12px 0 0' }}>
+                <div>
+                  <h3
+                    style={{
+                      fontFamily: "'DM Mono', monospace",
+                      fontWeight: 300,
+                      fontSize: '23px',
+                      lineHeight: '1em',
+                      letterSpacing: '-0.05em',
+                    }}
+                  >
+                    {member.name}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: "'Inter', sans-serif",
+                      fontSize: '14px',
+                      lineHeight: '1.55em',
+                      letterSpacing: '-0.03em',
+                      color: 'var(--unframer-neutral-400)',
+                    }}
+                  >
+                    {member.role}
+                  </p>
+                </div>
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  style={{ width: '100%', height: '285px', objectFit: 'cover', backgroundColor: 'var(--unframer-neutral-200)' }}
+                />
+              </div>
+              <div className="md:flex-1 pt-4 md:pt-0">
+                <div className="md:border-l md:border-[var(--unframer-neutral-300)] md:pl-[15px]">
+                  <p
+                    style={{
+                      fontFamily: "'Inter', sans-serif",
+                      fontSize: '14px',
+                      lineHeight: '1.55em',
+                      letterSpacing: '-0.03em',
+                    }}
+                  >
+                    {member.bio}
+                  </p>
+                </div>
+              </div>
+              <div className="pt-4 md:pt-0 flex flex-col gap-[58px]" style={{ flex: '0.6' }}>
+                <div className="md:border-l md:border-[var(--unframer-neutral-300)] md:pl-[12px]">
+                  <p
+                    style={{
+                      fontFamily: "'Inter', sans-serif",
+                      fontSize: '13px',
+                      lineHeight: '1.55em',
+                      letterSpacing: '-0.03em',
+                      fontWeight: 500,
+                    }}
+                  >
+                    Areas of expertise
+                  </p>
+                  <p
+                    style={{
+                      fontFamily: "'Inter', sans-serif",
+                      fontSize: '13px',
+                      lineHeight: '1.55em',
+                      letterSpacing: '-0.03em',
+                    }}
+                  >
+                    {member.expertise.map((e, i) => (
+                      <span key={i}>{e}{i < member.expertise.length - 1 && <br />}</span>
+                    ))}
+                  </p>
+                </div>
+                <div className="flex gap-[12px] items-center md:pl-[12px]">
+                  {member.email && (
+                    <PrimaryFramerComponent.Responsive
+                      BYNIrUSxY="Contact"
+                      hYruqSCKG={`mailto:${member.email}`}
+                    />
+                  )}
+                  {member.cv && (
+                    <PrimaryFramerComponent.Responsive
+                      BYNIrUSxY="CV"
+                      hYruqSCKG={member.cv}
+                    />
+                  )}
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'flex', alignItems: 'center' }}
+                    >
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--unframer-forrest)">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                      </svg>
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -288,20 +431,20 @@ export default function About() {
             {[...Array(2)].map((_, copy) => (
               <div key={copy} className="logo-marquee-track">
                 {[
-                  'https://framerusercontent.com/images/6blXjB6orGNl5HuJTGaWZazTTk.png',
-                  'https://framerusercontent.com/images/uJFmh1ReohVM6IkQqSNtKAGtygI.png',
-                  'https://framerusercontent.com/images/ApXjjP0iUUbkUDwZm3cdLvIka5I.png',
-                  'https://framerusercontent.com/images/2BtnXE1PMp0IgIySJAQdU9n7Lq0.png',
-                  'https://framerusercontent.com/images/tIDQ8Daek1PshKehwLHfqc3lOmg.png',
-                  'https://framerusercontent.com/images/oUHwyG7R7IVcQkiLWgq4OtZnmU.png',
-                  'https://framerusercontent.com/images/OGfW7RHqKGtMEaVqNy5OtUZ7dsk.png',
-                  'https://framerusercontent.com/images/Pyk3ZKfsd4HhZqFzP93815nMk.png',
-                  'https://framerusercontent.com/images/V0nZeK5cPymB0wIHDC9ZYsWmRCA.png',
-                  'https://framerusercontent.com/images/lMH1ZAr2RvpuhuhjziVh8Jl07M.png',
-                  'https://framerusercontent.com/images/HIA2J8PcSyJpQGPCOOKmVmr6E.png',
-                  'https://framerusercontent.com/images/4X27eq8U0piuPjXzhuo6EkPII.png',
-                  'https://framerusercontent.com/images/6A0esCRiUbJT4OdFzZo7cjP8Ipo.png',
-                ].map((src, i) => (
+                  { src: '/images/network/slf.png', alt: 'WSL Institute for Snow and Avalanche Research SLF' },
+                  { src: '/images/network/swiss-polar-institute.png', alt: 'Swiss Polar Institute' },
+                  { src: '/images/network/wsl.png', alt: 'WSL' },
+                  { src: '/images/network/university-fribourg.png', alt: 'University of Fribourg' },
+                  { src: '/images/network/hydrosolutions.png', alt: 'hydrosolutions' },
+                  { src: '/images/network/futurewater.png', alt: 'FutureWater' },
+                  { src: '/images/network/sdc.png', alt: 'Swiss Agency for Development and Cooperation SDC' },
+                  { src: '/images/network/university-zurich.png', alt: 'University of Zurich' },
+                  { src: '/images/network/adb.png', alt: 'Asian Development Bank' },
+                  { src: '/images/network/landell-mills.png', alt: 'Landell Mills' },
+                  { src: '/images/network/world-bank.png', alt: 'The World Bank' },
+                  { src: '/images/network/university-geneva.png', alt: 'University of Geneva' },
+                  { src: '/images/network/zoi-environment-network.png', alt: 'Zoï Environment Network' },
+                ].map(({ src, alt }, i) => (
                   <div
                     key={i}
                     className="flex items-center justify-center flex-shrink-0"
@@ -309,7 +452,7 @@ export default function About() {
                   >
                     <img
                       src={src}
-                      alt=""
+                      alt={copy === 0 ? alt : ''}
                       style={{
                         maxWidth: '100%',
                         maxHeight: '60px',
