@@ -199,6 +199,28 @@ var Icon = (React4) => {
 };
 var House_default = Icon;
 
+// Plus (phosphor-icons/Plus@0.0.57) — vendored locally to remove the
+// runtime dependency on framer.com/m/phosphor-icons. See importModule below.
+var PlusComponent;
+var PlusIconInner;
+var PlusIcon = (R) => {
+	if (!PlusComponent) {
+		PlusComponent = /* @__PURE__ */ new Map([
+			["bold", /* @__PURE__ */ R.createElement(R.Fragment, null, /* @__PURE__ */ R.createElement("path", { d: "M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z" }))],
+			["duotone", /* @__PURE__ */ R.createElement(R.Fragment, null, /* @__PURE__ */ R.createElement("path", { d: "M216,56V200a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V56A16,16,0,0,1,56,40H200A16,16,0,0,1,216,56Z", opacity: "0.2" }), /* @__PURE__ */ R.createElement("path", { d: "M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z" }))],
+			["fill", /* @__PURE__ */ R.createElement(R.Fragment, null, /* @__PURE__ */ R.createElement("path", { d: "M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM184,136H136v48a8,8,0,0,1-16,0V136H72a8,8,0,0,1,0-16h48V72a8,8,0,0,1,16,0v48h48a8,8,0,0,1,0,16Z" }))],
+			["light", /* @__PURE__ */ R.createElement(R.Fragment, null, /* @__PURE__ */ R.createElement("path", { d: "M222,128a6,6,0,0,1-6,6H134v82a6,6,0,0,1-12,0V134H40a6,6,0,0,1,0-12h82V40a6,6,0,0,1,12,0v82h82A6,6,0,0,1,222,128Z" }))],
+			["regular", /* @__PURE__ */ R.createElement(R.Fragment, null, /* @__PURE__ */ R.createElement("path", { d: "M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z" }))],
+			["thin", /* @__PURE__ */ R.createElement(R.Fragment, null, /* @__PURE__ */ R.createElement("path", { d: "M220,128a4,4,0,0,1-4,4H132v84a4,4,0,0,1-8,0V132H40a4,4,0,0,1,0-8h84V40a4,4,0,0,1,8,0v84h84A4,4,0,0,1,220,128Z" }))],
+		]);
+		PlusIconInner = R.forwardRef((props, ref) =>
+			/* @__PURE__ */ R.createElement("g", { ref, ...props }, PlusComponent.get(props.weight)),
+		);
+	}
+	return PlusIconInner;
+};
+var Plus_default = PlusIcon;
+
 // /:https://framerusercontent.com/modules/Ma20hU0GGRxLxZphbywl/OSpwWF91FHPVFyQJjMHt/utils.js
 import { useMemo } from "react";
 import { ControlType } from "unframer";
@@ -1746,7 +1768,7 @@ var iconKeys = [
 	"YinYang",
 	"YoutubeLogo",
 ];
-var moduleBaseUrl = "https://framer.com/m/phosphor-icons/";
+// moduleBaseUrl removed — phosphor icons are vendored locally (see Plus_default / importModule).
 var weightOptions = ["thin", "light", "regular", "bold", "fill", "duotone"];
 var lowercaseIconKeyPairs = iconKeys.reduce((res, key) => {
 	res[key.toLowerCase()] = key;
@@ -1779,14 +1801,15 @@ function Icon2(props) {
 	);
 	async function importModule() {
 		try {
-			const version = "0.0.57";
-			const iconModuleUrl = `${moduleBaseUrl}${iconKey}.js@${version}`;
-			const module = await import(
-				/* webpackIgnore: true */
-				/* @vite-ignore */
-				iconModuleUrl
-			);
-			if (isMounted.current) setSelectedIcon(module.default(React2));
+			// Icons are vendored locally (Plus, House) to avoid a runtime
+			// import from framer.com. Only these are used on the site.
+			const localIcons = {
+				Plus: Plus_default,
+				House: House_default,
+				Home: House_default,
+			};
+			const local = localIcons[iconKey];
+			if (isMounted.current) setSelectedIcon(local ? local(React2) : null);
 		} catch (err) {
 			if (isMounted.current) setSelectedIcon(null);
 		}
@@ -2022,7 +2045,7 @@ var getProps = ({ height, icon, id, overview, title, width, ...props }) => {
 				alt: "",
 				pixelHeight: 125,
 				pixelWidth: 125,
-				src: "https://framerusercontent.com/images/kXEk5PthLueijJvPsw26V2PcWA.svg?width=125&height=125",
+				src: "/images/framer/kXEk5PthLueijJvPsw26V2PcWA.svg?width=125&height=125",
 			},
 		IHMAQA45k:
 			overview ??
@@ -2534,7 +2557,7 @@ addFonts(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+					url: "/fonts/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
 					weight: "400",
 				},
 				{
@@ -2543,7 +2566,7 @@ addFonts(
 					style: "normal",
 					uiFamilyName: "Inter",
 					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+					url: "/fonts/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
 					weight: "400",
 				},
 				{
@@ -2552,7 +2575,7 @@ addFonts(
 					style: "normal",
 					uiFamilyName: "Inter",
 					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+					url: "/fonts/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
 					weight: "400",
 				},
 				{
@@ -2561,7 +2584,7 @@ addFonts(
 					style: "normal",
 					uiFamilyName: "Inter",
 					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+					url: "/fonts/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
 					weight: "400",
 				},
 				{
@@ -2571,7 +2594,7 @@ addFonts(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+					url: "/fonts/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
 					weight: "400",
 				},
 				{
@@ -2581,7 +2604,7 @@ addFonts(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+					url: "/fonts/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
 					weight: "400",
 				},
 				{
@@ -2591,7 +2614,7 @@ addFonts(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+					url: "/fonts/b6Y37FthZeALduNqHicBT6FutY.woff2",
 					weight: "400",
 				},
 			],

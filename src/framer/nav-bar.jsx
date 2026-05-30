@@ -93,7 +93,7 @@ var fonts = [
 				source: "google",
 				style: "normal",
 				uiFamilyName: "DM Mono",
-				url: "https://fonts.gstatic.com/s/dmmono/v16/aFTR7PB1QTsUX8KYvrGyIYGnbKX9Rlk.woff2",
+				url: "/fonts/aFTR7PB1QTsUX8KYvrGyIYGnbKX9Rlk.woff2",
 				weight: "300",
 			},
 			{
@@ -101,7 +101,7 @@ var fonts = [
 				source: "google",
 				style: "normal",
 				uiFamilyName: "DM Mono",
-				url: "https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYhhiaBYyMcKw.woff2",
+				url: "/fonts/aFTU7PB1QTsUX8KYhhiaBYyMcKw.woff2",
 				weight: "400",
 			},
 			{
@@ -109,7 +109,7 @@ var fonts = [
 				source: "google",
 				style: "italic",
 				uiFamilyName: "DM Mono",
-				url: "https://fonts.gstatic.com/s/dmmono/v16/aFTW7PB1QTsUX8KYth-QBK6JYKzkXw.woff2",
+				url: "/fonts/aFTW7PB1QTsUX8KYth-QBK6JYKzkXw.woff2",
 				weight: "400",
 			},
 			{
@@ -117,7 +117,7 @@ var fonts = [
 				source: "google",
 				style: "italic",
 				uiFamilyName: "DM Mono",
-				url: "https://fonts.gstatic.com/s/dmmono/v16/aFTT7PB1QTsUX8KYth-orYatbYf4VllXuA.woff2",
+				url: "/fonts/aFTT7PB1QTsUX8KYth-orYatbYf4VllXuA.woff2",
 				weight: "300",
 			},
 		],
@@ -145,7 +145,7 @@ var fonts2 = [
 				source: "google",
 				style: "normal",
 				uiFamilyName: "DM Mono",
-				url: "https://fonts.gstatic.com/s/dmmono/v16/aFTR7PB1QTsUX8KYvrGyIYGnbKX9Rlk.woff2",
+				url: "/fonts/aFTR7PB1QTsUX8KYvrGyIYGnbKX9Rlk.woff2",
 				weight: "300",
 			},
 			{
@@ -155,7 +155,7 @@ var fonts2 = [
 				uiFamilyName: "Inter",
 				unicodeRange:
 					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/mkY5Sgyq51ik0AMrSBwhm9DJg.woff2",
+				url: "/fonts/mkY5Sgyq51ik0AMrSBwhm9DJg.woff2",
 				weight: "900",
 			},
 			{
@@ -164,7 +164,7 @@ var fonts2 = [
 				style: "normal",
 				uiFamilyName: "Inter",
 				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/X5hj6qzcHUYv7h1390c8Rhm6550.woff2",
+				url: "/fonts/X5hj6qzcHUYv7h1390c8Rhm6550.woff2",
 				weight: "900",
 			},
 			{
@@ -173,7 +173,7 @@ var fonts2 = [
 				style: "normal",
 				uiFamilyName: "Inter",
 				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/gQhNpS3tN86g8RcVKYUUaKt2oMQ.woff2",
+				url: "/fonts/gQhNpS3tN86g8RcVKYUUaKt2oMQ.woff2",
 				weight: "900",
 			},
 			{
@@ -182,7 +182,7 @@ var fonts2 = [
 				style: "normal",
 				uiFamilyName: "Inter",
 				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/cugnVhSraaRyANCaUtI5FV17wk.woff2",
+				url: "/fonts/cugnVhSraaRyANCaUtI5FV17wk.woff2",
 				weight: "900",
 			},
 			{
@@ -192,7 +192,7 @@ var fonts2 = [
 				uiFamilyName: "Inter",
 				unicodeRange:
 					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/5HcVoGak8k5agFJSaKa4floXVu0.woff2",
+				url: "/fonts/5HcVoGak8k5agFJSaKa4floXVu0.woff2",
 				weight: "900",
 			},
 			{
@@ -202,7 +202,7 @@ var fonts2 = [
 				uiFamilyName: "Inter",
 				unicodeRange:
 					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/rZ5DdENNqIdFTIyQQiP5isO7M.woff2",
+				url: "/fonts/rZ5DdENNqIdFTIyQQiP5isO7M.woff2",
 				weight: "900",
 			},
 			{
@@ -212,7 +212,7 @@ var fonts2 = [
 				uiFamilyName: "Inter",
 				unicodeRange:
 					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/P2Bw01CtL0b9wqygO0sSVogWbo.woff2",
+				url: "/fonts/P2Bw01CtL0b9wqygO0sSVogWbo.woff2",
 				weight: "900",
 			},
 			{
@@ -222,7 +222,7 @@ var fonts2 = [
 				uiFamilyName: "Inter",
 				unicodeRange:
 					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/05KsVHGDmqXSBXM4yRZ65P8i0s.woff2",
+				url: "/fonts/05KsVHGDmqXSBXM4yRZ65P8i0s.woff2",
 				weight: "900",
 			},
 			{
@@ -231,7 +231,7 @@ var fonts2 = [
 				style: "italic",
 				uiFamilyName: "Inter",
 				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/ky8ovPukK4dJ1Pxq74qGhOqCYI.woff2",
+				url: "/fonts/ky8ovPukK4dJ1Pxq74qGhOqCYI.woff2",
 				weight: "900",
 			},
 			{
@@ -240,7 +240,7 @@ var fonts2 = [
 				style: "italic",
 				uiFamilyName: "Inter",
 				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/vvNSqIj42qeQ2bvCRBIWKHscrc.woff2",
+				url: "/fonts/vvNSqIj42qeQ2bvCRBIWKHscrc.woff2",
 				weight: "900",
 			},
 			{
@@ -249,7 +249,7 @@ var fonts2 = [
 				style: "italic",
 				uiFamilyName: "Inter",
 				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/3ZmXbBKToJifDV9gwcifVd1tEY.woff2",
+				url: "/fonts/3ZmXbBKToJifDV9gwcifVd1tEY.woff2",
 				weight: "900",
 			},
 			{
@@ -259,7 +259,7 @@ var fonts2 = [
 				uiFamilyName: "Inter",
 				unicodeRange:
 					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/FNfhX3dt4ChuLJq2PwdlxHO7PU.woff2",
+				url: "/fonts/FNfhX3dt4ChuLJq2PwdlxHO7PU.woff2",
 				weight: "900",
 			},
 			{
@@ -269,7 +269,7 @@ var fonts2 = [
 				uiFamilyName: "Inter",
 				unicodeRange:
 					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/gcnfba68tfm7qAyrWRCf9r34jg.woff2",
+				url: "/fonts/gcnfba68tfm7qAyrWRCf9r34jg.woff2",
 				weight: "900",
 			},
 			{
@@ -279,7 +279,7 @@ var fonts2 = [
 				uiFamilyName: "Inter",
 				unicodeRange:
 					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/efTfQcBJ53kM2pB1hezSZ3RDUFs.woff2",
+				url: "/fonts/efTfQcBJ53kM2pB1hezSZ3RDUFs.woff2",
 				weight: "900",
 			},
 			{
@@ -289,7 +289,7 @@ var fonts2 = [
 				uiFamilyName: "Inter",
 				unicodeRange:
 					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
+				url: "/fonts/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
 				weight: "700",
 			},
 			{
@@ -298,7 +298,7 @@ var fonts2 = [
 				style: "italic",
 				uiFamilyName: "Inter",
 				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
+				url: "/fonts/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
 				weight: "700",
 			},
 			{
@@ -307,7 +307,7 @@ var fonts2 = [
 				style: "italic",
 				uiFamilyName: "Inter",
 				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
+				url: "/fonts/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
 				weight: "700",
 			},
 			{
@@ -316,7 +316,7 @@ var fonts2 = [
 				style: "italic",
 				uiFamilyName: "Inter",
 				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
+				url: "/fonts/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
 				weight: "700",
 			},
 			{
@@ -326,7 +326,7 @@ var fonts2 = [
 				uiFamilyName: "Inter",
 				unicodeRange:
 					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
+				url: "/fonts/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
 				weight: "700",
 			},
 			{
@@ -336,7 +336,7 @@ var fonts2 = [
 				uiFamilyName: "Inter",
 				unicodeRange:
 					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/ia3uin3hQWqDrVloC1zEtYHWw.woff2",
+				url: "/fonts/ia3uin3hQWqDrVloC1zEtYHWw.woff2",
 				weight: "700",
 			},
 			{
@@ -346,7 +346,7 @@ var fonts2 = [
 				uiFamilyName: "Inter",
 				unicodeRange:
 					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
+				url: "/fonts/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
 				weight: "700",
 			},
 		],
@@ -807,7 +807,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																		positionX: "left",
 																		positionY: "center",
 																		sizes: "193px",
-																		src: "https://framerusercontent.com/images/axQzuIp57UflF3icBkt0du6bnI.svg?width=378&height=98",
+																		src: "/images/framer/axQzuIp57UflF3icBkt0du6bnI.svg?width=378&height=98",
 																	}}
 																	className={"framer-riyux7"}
 																	data-framer-name={"Icpn"}
@@ -824,7 +824,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																					positionX: "left",
 																					positionY: "center",
 																					sizes: "193px",
-																					src: "https://framerusercontent.com/images/axQzuIp57UflF3icBkt0du6bnI.svg?width=378&height=98",
+																					src: "/images/framer/axQzuIp57UflF3icBkt0du6bnI.svg?width=378&height=98",
 																				},
 																			},
 																			XrVhf7Dvy: {
@@ -847,7 +847,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																					positionX: "left",
 																					positionY: "center",
 																					sizes: "193px",
-																					src: "https://framerusercontent.com/images/axQzuIp57UflF3icBkt0du6bnI.svg?width=378&height=98",
+																					src: "/images/framer/axQzuIp57UflF3icBkt0du6bnI.svg?width=378&height=98",
 																				},
 																			},
 																		},
@@ -2391,7 +2391,7 @@ addFonts(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+					url: "/fonts/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
 					weight: "400",
 				},
 				{
@@ -2400,7 +2400,7 @@ addFonts(
 					style: "normal",
 					uiFamilyName: "Inter",
 					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+					url: "/fonts/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
 					weight: "400",
 				},
 				{
@@ -2409,7 +2409,7 @@ addFonts(
 					style: "normal",
 					uiFamilyName: "Inter",
 					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+					url: "/fonts/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
 					weight: "400",
 				},
 				{
@@ -2418,7 +2418,7 @@ addFonts(
 					style: "normal",
 					uiFamilyName: "Inter",
 					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+					url: "/fonts/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
 					weight: "400",
 				},
 				{
@@ -2428,7 +2428,7 @@ addFonts(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+					url: "/fonts/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
 					weight: "400",
 				},
 				{
@@ -2438,7 +2438,7 @@ addFonts(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+					url: "/fonts/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
 					weight: "400",
 				},
 				{
@@ -2448,7 +2448,7 @@ addFonts(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+					url: "/fonts/b6Y37FthZeALduNqHicBT6FutY.woff2",
 					weight: "400",
 				},
 			],

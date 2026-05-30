@@ -86,7 +86,7 @@ var fonts4 = [
 				style: "normal",
 				unicodeRange:
 					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+				url: "/fonts/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
 				weight: "400",
 			},
 			{
@@ -94,7 +94,7 @@ var fonts4 = [
 				source: "framer",
 				style: "normal",
 				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+				url: "/fonts/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
 				weight: "400",
 			},
 			{
@@ -102,7 +102,7 @@ var fonts4 = [
 				source: "framer",
 				style: "normal",
 				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+				url: "/fonts/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
 				weight: "400",
 			},
 			{
@@ -110,7 +110,7 @@ var fonts4 = [
 				source: "framer",
 				style: "normal",
 				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+				url: "/fonts/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
 				weight: "400",
 			},
 			{
@@ -119,7 +119,7 @@ var fonts4 = [
 				style: "normal",
 				unicodeRange:
 					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+				url: "/fonts/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
 				weight: "400",
 			},
 			{
@@ -128,7 +128,7 @@ var fonts4 = [
 				style: "normal",
 				unicodeRange:
 					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+				url: "/fonts/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
 				weight: "400",
 			},
 			{
@@ -137,7 +137,7 @@ var fonts4 = [
 				style: "normal",
 				unicodeRange:
 					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+				url: "/fonts/b6Y37FthZeALduNqHicBT6FutY.woff2",
 				weight: "400",
 			},
 			{
@@ -146,7 +146,7 @@ var fonts4 = [
 				style: "normal",
 				unicodeRange:
 					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
+				url: "/fonts/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
 				weight: "700",
 			},
 			{
@@ -154,7 +154,7 @@ var fonts4 = [
 				source: "framer",
 				style: "normal",
 				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
+				url: "/fonts/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
 				weight: "700",
 			},
 			{
@@ -162,7 +162,7 @@ var fonts4 = [
 				source: "framer",
 				style: "normal",
 				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
+				url: "/fonts/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
 				weight: "700",
 			},
 			{
@@ -170,7 +170,7 @@ var fonts4 = [
 				source: "framer",
 				style: "normal",
 				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
+				url: "/fonts/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
 				weight: "700",
 			},
 			{
@@ -179,7 +179,7 @@ var fonts4 = [
 				style: "normal",
 				unicodeRange:
 					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+				url: "/fonts/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
 				weight: "700",
 			},
 			{
@@ -188,7 +188,7 @@ var fonts4 = [
 				style: "normal",
 				unicodeRange:
 					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/syRNPWzAMIrcJ3wIlPIP43KjQs.woff2",
+				url: "/fonts/syRNPWzAMIrcJ3wIlPIP43KjQs.woff2",
 				weight: "700",
 			},
 			{
@@ -197,7 +197,7 @@ var fonts4 = [
 				style: "normal",
 				unicodeRange:
 					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
+				url: "/fonts/GIryZETIX4IFypco5pYZONKhJIo.woff2",
 				weight: "700",
 			},
 			{
@@ -206,7 +206,7 @@ var fonts4 = [
 				style: "italic",
 				unicodeRange:
 					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
+				url: "/fonts/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
 				weight: "700",
 			},
 			{
@@ -214,7 +214,7 @@ var fonts4 = [
 				source: "framer",
 				style: "italic",
 				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
+				url: "/fonts/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
 				weight: "700",
 			},
 			{
@@ -222,7 +222,7 @@ var fonts4 = [
 				source: "framer",
 				style: "italic",
 				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
+				url: "/fonts/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
 				weight: "700",
 			},
 			{
@@ -230,7 +230,7 @@ var fonts4 = [
 				source: "framer",
 				style: "italic",
 				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
+				url: "/fonts/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
 				weight: "700",
 			},
 			{
@@ -239,7 +239,7 @@ var fonts4 = [
 				style: "italic",
 				unicodeRange:
 					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
+				url: "/fonts/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
 				weight: "700",
 			},
 			{
@@ -248,7 +248,7 @@ var fonts4 = [
 				style: "italic",
 				unicodeRange:
 					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/ia3uin3hQWqDrVloC1zEtYHWw.woff2",
+				url: "/fonts/ia3uin3hQWqDrVloC1zEtYHWw.woff2",
 				weight: "700",
 			},
 			{
@@ -257,7 +257,7 @@ var fonts4 = [
 				style: "italic",
 				unicodeRange:
 					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
+				url: "/fonts/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
 				weight: "700",
 			},
 			{
@@ -266,7 +266,7 @@ var fonts4 = [
 				style: "italic",
 				unicodeRange:
 					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2",
+				url: "/fonts/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2",
 				weight: "400",
 			},
 			{
@@ -274,7 +274,7 @@ var fonts4 = [
 				source: "framer",
 				style: "italic",
 				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/867QObYax8ANsfX4TGEVU9YiCM.woff2",
+				url: "/fonts/867QObYax8ANsfX4TGEVU9YiCM.woff2",
 				weight: "400",
 			},
 			{
@@ -282,7 +282,7 @@ var fonts4 = [
 				source: "framer",
 				style: "italic",
 				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2",
+				url: "/fonts/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2",
 				weight: "400",
 			},
 			{
@@ -290,7 +290,7 @@ var fonts4 = [
 				source: "framer",
 				style: "italic",
 				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2",
+				url: "/fonts/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2",
 				weight: "400",
 			},
 			{
@@ -299,7 +299,7 @@ var fonts4 = [
 				style: "italic",
 				unicodeRange:
 					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/DOfvtmE1UplCq161m6Hj8CSQYg.woff2",
+				url: "/fonts/DOfvtmE1UplCq161m6Hj8CSQYg.woff2",
 				weight: "400",
 			},
 			{
@@ -308,7 +308,7 @@ var fonts4 = [
 				style: "italic",
 				unicodeRange:
 					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/pKRFNWFoZl77qYCAIp84lN1h944.woff2",
+				url: "/fonts/pKRFNWFoZl77qYCAIp84lN1h944.woff2",
 				weight: "400",
 			},
 			{
@@ -317,7 +317,7 @@ var fonts4 = [
 				style: "italic",
 				unicodeRange:
 					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2",
+				url: "/fonts/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2",
 				weight: "400",
 			},
 		],
@@ -647,7 +647,7 @@ addFonts(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+					url: "/fonts/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
 					weight: "400",
 				},
 				{
@@ -656,7 +656,7 @@ addFonts(
 					style: "normal",
 					uiFamilyName: "Inter",
 					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+					url: "/fonts/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
 					weight: "400",
 				},
 				{
@@ -665,7 +665,7 @@ addFonts(
 					style: "normal",
 					uiFamilyName: "Inter",
 					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+					url: "/fonts/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
 					weight: "400",
 				},
 				{
@@ -674,7 +674,7 @@ addFonts(
 					style: "normal",
 					uiFamilyName: "Inter",
 					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+					url: "/fonts/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
 					weight: "400",
 				},
 				{
@@ -684,7 +684,7 @@ addFonts(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+					url: "/fonts/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
 					weight: "400",
 				},
 				{
@@ -694,7 +694,7 @@ addFonts(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+					url: "/fonts/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
 					weight: "400",
 				},
 				{
@@ -704,7 +704,7 @@ addFonts(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+					url: "/fonts/b6Y37FthZeALduNqHicBT6FutY.woff2",
 					weight: "400",
 				},
 			],
@@ -1247,7 +1247,7 @@ addFonts2(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+					url: "/fonts/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
 					weight: "400",
 				},
 				{
@@ -1256,7 +1256,7 @@ addFonts2(
 					style: "normal",
 					uiFamilyName: "Inter",
 					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+					url: "/fonts/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
 					weight: "400",
 				},
 				{
@@ -1265,7 +1265,7 @@ addFonts2(
 					style: "normal",
 					uiFamilyName: "Inter",
 					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+					url: "/fonts/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
 					weight: "400",
 				},
 				{
@@ -1274,7 +1274,7 @@ addFonts2(
 					style: "normal",
 					uiFamilyName: "Inter",
 					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+					url: "/fonts/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
 					weight: "400",
 				},
 				{
@@ -1284,7 +1284,7 @@ addFonts2(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+					url: "/fonts/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
 					weight: "400",
 				},
 				{
@@ -1294,7 +1294,7 @@ addFonts2(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+					url: "/fonts/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
 					weight: "400",
 				},
 				{
@@ -1304,7 +1304,7 @@ addFonts2(
 					uiFamilyName: "Inter",
 					unicodeRange:
 						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+					url: "/fonts/b6Y37FthZeALduNqHicBT6FutY.woff2",
 					weight: "400",
 				},
 			],

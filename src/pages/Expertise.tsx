@@ -57,19 +57,19 @@ const methodology = [
 ]
 
 const partnerLogos = [
-  'https://framerusercontent.com/images/6blXjB6orGNl5HuJTGaWZazTTk.png',
-  'https://framerusercontent.com/images/uJFmh1ReohVM6IkQqSNtKAGtygI.png',
-  'https://framerusercontent.com/images/ApXjjP0iUUbkUDwZm3cdLvIka5I.png',
-  'https://framerusercontent.com/images/2BtnXE1PMp0IgIySJAQdU9n7Lq0.png',
-  'https://framerusercontent.com/images/tIDQ8Daek1PshKehwLHfqc3lOmg.png',
-  'https://framerusercontent.com/images/oUHwyG7R7IVcQkiLWgq4OtZnmU.png',
-  'https://framerusercontent.com/images/OGfW7RHqKGtMEaVqNy5OtUZ7dsk.png',
-  'https://framerusercontent.com/images/Pyk3ZKfsd4HhZqFzP93815nMk.png',
-  'https://framerusercontent.com/images/V0nZeK5cPymB0wIHDC9ZYsWmRCA.png',
-  'https://framerusercontent.com/images/lMH1ZAr2RvpuhuhjziVh8Jl07M.png',
-  'https://framerusercontent.com/images/HIA2J8PcSyJpQGPCOOKmVmr6E.png',
-  'https://framerusercontent.com/images/4X27eq8U0piuPjXzhuo6EkPII.png',
-  'https://framerusercontent.com/images/6A0esCRiUbJT4OdFzZo7cjP8Ipo.png',
+  '/images/framer/6blXjB6orGNl5HuJTGaWZazTTk.png',
+  '/images/framer/uJFmh1ReohVM6IkQqSNtKAGtygI.png',
+  '/images/framer/ApXjjP0iUUbkUDwZm3cdLvIka5I.png',
+  '/images/framer/2BtnXE1PMp0IgIySJAQdU9n7Lq0.png',
+  '/images/framer/tIDQ8Daek1PshKehwLHfqc3lOmg.png',
+  '/images/framer/oUHwyG7R7IVcQkiLWgq4OtZnmU.png',
+  '/images/framer/OGfW7RHqKGtMEaVqNy5OtUZ7dsk.png',
+  '/images/framer/Pyk3ZKfsd4HhZqFzP93815nMk.png',
+  '/images/framer/V0nZeK5cPymB0wIHDC9ZYsWmRCA.png',
+  '/images/framer/lMH1ZAr2RvpuhuhjziVh8Jl07M.png',
+  '/images/framer/HIA2J8PcSyJpQGPCOOKmVmr6E.png',
+  '/images/framer/4X27eq8U0piuPjXzhuo6EkPII.png',
+  '/images/framer/6A0esCRiUbJT4OdFzZo7cjP8Ipo.png',
 ]
 
 export default function Expertise() {

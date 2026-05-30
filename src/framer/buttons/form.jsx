@@ -402,9 +402,9 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 								layoutDependency={layoutDependency}
 								layoutId={"CYTUFhgCz"}
 								style={{
-									mask: "url('https://framerusercontent.com/images/pGiXYozQ3mE4cilNOItfe2L2fUA.svg?width=20&height=20') alpha no-repeat center / cover add",
+									mask: "url('/images/framer/pGiXYozQ3mE4cilNOItfe2L2fUA.svg?width=20&height=20') alpha no-repeat center / cover add",
 									WebkitMask:
-										"url('https://framerusercontent.com/images/pGiXYozQ3mE4cilNOItfe2L2fUA.svg?width=20&height=20') alpha no-repeat center / cover add",
+										"url('/images/framer/pGiXYozQ3mE4cilNOItfe2L2fUA.svg?width=20&height=20') alpha no-repeat center / cover add",
 								}}
 							>
 								<MotionDivWithFX
@@ -428,9 +428,9 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 									}}
 									variants={{
 										FicfZskJZ: {
-											mask: "url('https://framerusercontent.com/images/pGiXYozQ3mE4cilNOItfe2L2fUA.svg?width=20&height=20') alpha no-repeat center / cover add",
+											mask: "url('/images/framer/pGiXYozQ3mE4cilNOItfe2L2fUA.svg?width=20&height=20') alpha no-repeat center / cover add",
 											WebkitMask:
-												"url('https://framerusercontent.com/images/pGiXYozQ3mE4cilNOItfe2L2fUA.svg?width=20&height=20') alpha no-repeat center / cover add",
+												"url('/images/framer/pGiXYozQ3mE4cilNOItfe2L2fUA.svg?width=20&height=20') alpha no-repeat center / cover add",
 										},
 									}}
 								>
@@ -494,7 +494,7 @@ addFonts(
 					source: "google",
 					style: "normal",
 					uiFamilyName: "DM Mono",
-					url: "https://fonts.gstatic.com/s/dmmono/v16/aFTR7PB1QTsUX8KYvumzIYGnbKX9Rlk.woff2",
+					url: "/fonts/aFTR7PB1QTsUX8KYvumzIYGnbKX9Rlk.woff2",
 					weight: "500",
 				},
 				{
@@ -502,7 +502,7 @@ addFonts(
 					source: "google",
 					style: "normal",
 					uiFamilyName: "Geist",
-					url: "https://fonts.gstatic.com/s/geist/v4/gyBhhwUxId8gMGYQMKR3pzfaWI_RruM4mJPby1QNtA.woff2",
+					url: "/fonts/gyBhhwUxId8gMGYQMKR3pzfaWI_RruM4mJPby1QNtA.woff2",
 					weight: "500",
 				},
 			],

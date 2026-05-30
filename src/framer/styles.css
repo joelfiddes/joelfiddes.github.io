@@ -120,28 +120,28 @@
 
 @font-face {
     font-family: 'DM Mono';
-    src: url('https://fonts.gstatic.com/s/dmmono/v16/aFTR7PB1QTsUX8KYvrGyIYGnbKX9Rlk.woff2');
+    src: url('/fonts/aFTR7PB1QTsUX8KYvrGyIYGnbKX9Rlk.woff2');
     font-style: normal;
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'DM Mono';
-    src: url('https://fonts.gstatic.com/s/dmmono/v16/aFTT7PB1QTsUX8KYth-orYatbYf4VllXuA.woff2');
+    src: url('/fonts/aFTT7PB1QTsUX8KYth-orYatbYf4VllXuA.woff2');
     font-style: italic;
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'DM Mono';
-    src: url('https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYhhiaBYyMcKw.woff2');
+    src: url('/fonts/aFTU7PB1QTsUX8KYhhiaBYyMcKw.woff2');
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'DM Mono';
-    src: url('https://fonts.gstatic.com/s/dmmono/v16/aFTW7PB1QTsUX8KYth-QBK6JYKzkXw.woff2');
+    src: url('/fonts/aFTW7PB1QTsUX8KYth-QBK6JYKzkXw.woff2');
     font-style: italic;
     font-weight: 400;
 }
@@ -150,14 +150,14 @@
 
 @font-face {
     font-family: 'DM Mono';
-    src: url('https://fonts.gstatic.com/s/dmmono/v16/aFTR7PB1QTsUX8KYvumzIYGnbKX9Rlk.woff2');
+    src: url('/fonts/aFTR7PB1QTsUX8KYvumzIYGnbKX9Rlk.woff2');
     font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Geist';
-    src: url('https://fonts.gstatic.com/s/geist/v4/gyBhhwUxId8gMGYQMKR3pzfaWI_RruM4mJPby1QNtA.woff2');
+    src: url('/fonts/gyBhhwUxId8gMGYQMKR3pzfaWI_RruM4mJPby1QNtA.woff2');
     font-style: normal;
     font-weight: 500;
 }
@@ -166,7 +166,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/05KsVHGDmqXSBXM4yRZ65P8i0s.woff2');
+    src: url('/fonts/05KsVHGDmqXSBXM4yRZ65P8i0s.woff2');
     font-style: italic;
     font-weight: 900;
     unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -174,7 +174,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/3ZmXbBKToJifDV9gwcifVd1tEY.woff2');
+    src: url('/fonts/3ZmXbBKToJifDV9gwcifVd1tEY.woff2');
     font-style: italic;
     font-weight: 900;
     unicodeRange: U+0370-03FF;
@@ -182,7 +182,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/5HcVoGak8k5agFJSaKa4floXVu0.woff2');
+    src: url('/fonts/5HcVoGak8k5agFJSaKa4floXVu0.woff2');
     font-style: normal;
     font-weight: 900;
     unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
@@ -190,7 +190,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/cugnVhSraaRyANCaUtI5FV17wk.woff2');
+    src: url('/fonts/cugnVhSraaRyANCaUtI5FV17wk.woff2');
     font-style: normal;
     font-weight: 900;
     unicodeRange: U+0370-03FF;
@@ -198,7 +198,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/efTfQcBJ53kM2pB1hezSZ3RDUFs.woff2');
+    src: url('/fonts/efTfQcBJ53kM2pB1hezSZ3RDUFs.woff2');
     font-style: italic;
     font-weight: 900;
     unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
@@ -206,7 +206,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/FNfhX3dt4ChuLJq2PwdlxHO7PU.woff2');
+    src: url('/fonts/FNfhX3dt4ChuLJq2PwdlxHO7PU.woff2');
     font-style: italic;
     font-weight: 900;
     unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
@@ -214,7 +214,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/gcnfba68tfm7qAyrWRCf9r34jg.woff2');
+    src: url('/fonts/gcnfba68tfm7qAyrWRCf9r34jg.woff2');
     font-style: italic;
     font-weight: 900;
     unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -222,7 +222,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/gQhNpS3tN86g8RcVKYUUaKt2oMQ.woff2');
+    src: url('/fonts/gQhNpS3tN86g8RcVKYUUaKt2oMQ.woff2');
     font-style: normal;
     font-weight: 900;
     unicodeRange: U+1F00-1FFF;
@@ -230,7 +230,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/ky8ovPukK4dJ1Pxq74qGhOqCYI.woff2');
+    src: url('/fonts/ky8ovPukK4dJ1Pxq74qGhOqCYI.woff2');
     font-style: italic;
     font-weight: 900;
     unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -238,7 +238,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/mkY5Sgyq51ik0AMrSBwhm9DJg.woff2');
+    src: url('/fonts/mkY5Sgyq51ik0AMrSBwhm9DJg.woff2');
     font-style: normal;
     font-weight: 900;
     unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -246,7 +246,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/P2Bw01CtL0b9wqygO0sSVogWbo.woff2');
+    src: url('/fonts/P2Bw01CtL0b9wqygO0sSVogWbo.woff2');
     font-style: normal;
     font-weight: 900;
     unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
@@ -254,7 +254,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/rZ5DdENNqIdFTIyQQiP5isO7M.woff2');
+    src: url('/fonts/rZ5DdENNqIdFTIyQQiP5isO7M.woff2');
     font-style: normal;
     font-weight: 900;
     unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -262,7 +262,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/vvNSqIj42qeQ2bvCRBIWKHscrc.woff2');
+    src: url('/fonts/vvNSqIj42qeQ2bvCRBIWKHscrc.woff2');
     font-style: italic;
     font-weight: 900;
     unicodeRange: U+1F00-1FFF;
@@ -270,7 +270,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/X5hj6qzcHUYv7h1390c8Rhm6550.woff2');
+    src: url('/fonts/X5hj6qzcHUYv7h1390c8Rhm6550.woff2');
     font-style: normal;
     font-weight: 900;
     unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -280,7 +280,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2');
+    src: url('/fonts/1K3W8DizY3v4emK8Mb08YHxTbs.woff2');
     font-style: normal;
     font-weight: 700;
     unicodeRange: U+1F00-1FFF;
@@ -288,7 +288,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2');
+    src: url('/fonts/2A4Xx7CngadFGlVV4xrO06OBHY.woff2');
     font-style: italic;
     font-weight: 700;
     unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
@@ -296,7 +296,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2');
+    src: url('/fonts/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2');
     font-style: italic;
     font-weight: 700;
     unicodeRange: U+1F00-1FFF;
@@ -304,7 +304,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2');
+    src: url('/fonts/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2');
     font-style: normal;
     font-weight: 700;
     unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -312,7 +312,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/867QObYax8ANsfX4TGEVU9YiCM.woff2');
+    src: url('/fonts/867QObYax8ANsfX4TGEVU9YiCM.woff2');
     font-style: italic;
     font-weight: 400;
     unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -320,7 +320,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2');
+    src: url('/fonts/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2');
     font-style: italic;
     font-weight: 400;
     unicodeRange: U+0370-03FF;
@@ -328,7 +328,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2');
+    src: url('/fonts/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2');
     font-style: italic;
     font-weight: 400;
     unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -336,7 +336,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/DOfvtmE1UplCq161m6Hj8CSQYg.woff2');
+    src: url('/fonts/DOfvtmE1UplCq161m6Hj8CSQYg.woff2');
     font-style: italic;
     font-weight: 400;
     unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
@@ -344,7 +344,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2');
+    src: url('/fonts/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2');
     font-style: normal;
     font-weight: 700;
     unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -352,7 +352,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2');
+    src: url('/fonts/GIryZETIX4IFypco5pYZONKhJIo.woff2');
     font-style: normal;
     font-weight: 700;
     unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
@@ -360,7 +360,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2');
+    src: url('/fonts/H89BbHkbHDzlxZzxi8uPzTsp90.woff2');
     font-style: italic;
     font-weight: 700;
     unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -368,7 +368,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/ia3uin3hQWqDrVloC1zEtYHWw.woff2');
+    src: url('/fonts/ia3uin3hQWqDrVloC1zEtYHWw.woff2');
     font-style: italic;
     font-weight: 700;
     unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -376,7 +376,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2');
+    src: url('/fonts/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2');
     font-style: italic;
     font-weight: 400;
     unicodeRange: U+1F00-1FFF;
@@ -384,7 +384,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/pKRFNWFoZl77qYCAIp84lN1h944.woff2');
+    src: url('/fonts/pKRFNWFoZl77qYCAIp84lN1h944.woff2');
     font-style: italic;
     font-weight: 400;
     unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -392,7 +392,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/syRNPWzAMIrcJ3wIlPIP43KjQs.woff2');
+    src: url('/fonts/syRNPWzAMIrcJ3wIlPIP43KjQs.woff2');
     font-style: normal;
     font-weight: 700;
     unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -400,7 +400,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2');
+    src: url('/fonts/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2');
     font-style: italic;
     font-weight: 400;
     unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
@@ -408,7 +408,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2');
+    src: url('/fonts/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2');
     font-style: normal;
     font-weight: 700;
     unicodeRange: U+0370-03FF;
@@ -416,7 +416,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2');
+    src: url('/fonts/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2');
     font-style: italic;
     font-weight: 700;
     unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -424,7 +424,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2');
+    src: url('/fonts/VgYFWiwsAC5OYxAycRXXvhze58.woff2');
     font-style: normal;
     font-weight: 700;
     unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
@@ -432,7 +432,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2');
+    src: url('/fonts/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2');
     font-style: italic;
     font-weight: 700;
     unicodeRange: U+0370-03FF;
@@ -440,7 +440,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2');
+    src: url('/fonts/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2');
     font-style: italic;
     font-weight: 700;
     unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
@@ -450,7 +450,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/5A3Ce6C9YYmCjpQx9M4inSaKU.woff2');
+    src: url('/fonts/5A3Ce6C9YYmCjpQx9M4inSaKU.woff2');
     font-style: normal;
     font-weight: 500;
     unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -458,7 +458,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/6mJuEAguuIuMog10gGvH5d3cl8.woff2');
+    src: url('/fonts/6mJuEAguuIuMog10gGvH5d3cl8.woff2');
     font-style: normal;
     font-weight: 500;
     unicodeRange: U+1F00-1FFF;
@@ -466,7 +466,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/DolVirEGb34pEXEp8t8FQBSK4.woff2');
+    src: url('/fonts/DolVirEGb34pEXEp8t8FQBSK4.woff2');
     font-style: normal;
     font-weight: 500;
     unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
@@ -474,7 +474,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/otTaNuNpVK4RbdlT7zDDdKvQBA.woff2');
+    src: url('/fonts/otTaNuNpVK4RbdlT7zDDdKvQBA.woff2');
     font-style: normal;
     font-weight: 500;
     unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
@@ -482,7 +482,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/Qx95Xyt0Ka3SGhinnbXIGpEIyP4.woff2');
+    src: url('/fonts/Qx95Xyt0Ka3SGhinnbXIGpEIyP4.woff2');
     font-style: normal;
     font-weight: 500;
     unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -490,7 +490,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/UjlFhCnUjxhNfep4oYBPqnEssyo.woff2');
+    src: url('/fonts/UjlFhCnUjxhNfep4oYBPqnEssyo.woff2');
     font-style: normal;
     font-weight: 500;
     unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -498,7 +498,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/xYYWaj7wCU5zSQH0eXvSaS19wo.woff2');
+    src: url('/fonts/xYYWaj7wCU5zSQH0eXvSaS19wo.woff2');
     font-style: normal;
     font-weight: 500;
     unicodeRange: U+0370-03FF;
@@ -508,7 +508,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2');
+    src: url('/fonts/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2');
     font-style: normal;
     font-weight: 400;
     unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -516,7 +516,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2');
+    src: url('/fonts/b6Y37FthZeALduNqHicBT6FutY.woff2');
     font-style: normal;
     font-weight: 400;
     unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
@@ -524,7 +524,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2');
+    src: url('/fonts/EOr0mi4hNtlgWNn9if640EZzXCo.woff2');
     font-style: normal;
     font-weight: 400;
     unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -532,7 +532,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2');
+    src: url('/fonts/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2');
     font-style: normal;
     font-weight: 400;
     unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
@@ -540,7 +540,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2');
+    src: url('/fonts/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2');
     font-style: normal;
     font-weight: 400;
     unicodeRange: U+0370-03FF;
@@ -548,7 +548,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2');
+    src: url('/fonts/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2');
     font-style: normal;
     font-weight: 400;
     unicodeRange: U+1F00-1FFF;
@@ -558,7 +558,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/A0Wcc7NgXMjUuFdquHDrIZpzZw0.woff2');
+    src: url('/fonts/A0Wcc7NgXMjUuFdquHDrIZpzZw0.woff2');
     font-style: normal;
     font-weight: 600;
     unicodeRange: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
@@ -566,7 +566,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/cRJyLNuTJR5jbyKzGi33wU9cqIQ.woff2');
+    src: url('/fonts/cRJyLNuTJR5jbyKzGi33wU9cqIQ.woff2');
     font-style: normal;
     font-weight: 600;
     unicodeRange: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
@@ -574,7 +574,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/hyOgCu0Xnghbimh0pE8QTvtt2AU.woff2');
+    src: url('/fonts/hyOgCu0Xnghbimh0pE8QTvtt2AU.woff2');
     font-style: normal;
     font-weight: 600;
     unicodeRange: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -582,7 +582,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/lEJLP4R0yuCaMCjSXYHtJw72M.woff2');
+    src: url('/fonts/lEJLP4R0yuCaMCjSXYHtJw72M.woff2');
     font-style: normal;
     font-weight: 600;
     unicodeRange: U+0370-03FF;
@@ -590,7 +590,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/NeGmSOXrPBfEFIy5YZeHq17LEDA.woff2');
+    src: url('/fonts/NeGmSOXrPBfEFIy5YZeHq17LEDA.woff2');
     font-style: normal;
     font-weight: 600;
     unicodeRange: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -598,7 +598,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/oYaAX5himiTPYuN8vLWnqBbfD2s.woff2');
+    src: url('/fonts/oYaAX5himiTPYuN8vLWnqBbfD2s.woff2');
     font-style: normal;
     font-weight: 600;
     unicodeRange: U+1F00-1FFF;
@@ -606,7 +606,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2');
+    src: url('/fonts/yDtI2UI8XcEg1W2je9XPN3Noo.woff2');
     font-style: normal;
     font-weight: 600;
     unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -616,7 +616,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2');
+    src: url('/fonts/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2');
     font-style: normal;
     font-weight: 400;
     unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -626,7 +626,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2');
+    src: url('/fonts/vQyevYAyHtARFwPqUzQGpnDs.woff2');
     font-style: normal;
     font-weight: 400;
     unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;

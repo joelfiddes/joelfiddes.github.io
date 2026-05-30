@@ -206,9 +206,9 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 									positionX: "center",
 									positionY: "center",
 									sizes: `max(${componentViewport?.width || "100vw"}, 1px)`,
-									src: "https://framerusercontent.com/images/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?width=1100&height=570",
+									src: "/images/framer/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?width=1100&height=570",
 									srcSet:
-										"https://framerusercontent.com/images/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?scale-down-to=512&width=1100&height=570 512w,https://framerusercontent.com/images/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?scale-down-to=1024&width=1100&height=570 1024w,https://framerusercontent.com/images/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?width=1100&height=570 1100w",
+										"/images/framer/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?scale-down-to=512&width=1100&height=570 512w,/images/framer/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?scale-down-to=1024&width=1100&height=570 1024w,/images/framer/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?width=1100&height=570 1100w",
 								}}
 								className={"framer-x2vd0z"}
 								data-highlight={true}
@@ -237,9 +237,9 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												positionX: "center",
 												positionY: "center",
 												sizes: `max(${componentViewport?.width || "100vw"}, 1px)`,
-												src: "https://framerusercontent.com/images/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?width=1100&height=570",
+												src: "/images/framer/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?width=1100&height=570",
 												srcSet:
-													"https://framerusercontent.com/images/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?scale-down-to=512&width=1100&height=570 512w,https://framerusercontent.com/images/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?scale-down-to=1024&width=1100&height=570 1024w,https://framerusercontent.com/images/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?width=1100&height=570 1100w",
+													"/images/framer/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?scale-down-to=512&width=1100&height=570 512w,/images/framer/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?scale-down-to=1024&width=1100&height=570 1024w,/images/framer/owZBfJ3AnDKaW81Gb4WoW1kL1WA.png?width=1100&height=570 1100w",
 											},
 										},
 									},
