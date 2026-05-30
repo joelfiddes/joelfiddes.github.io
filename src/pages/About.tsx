@@ -292,6 +292,7 @@ export default function About() {
               cv: '',
               linkedin: '',
             },
+            /* Temporarily hidden — re-enable to show on the About page
             {
               name: 'Sultanbek Belekov',
               role: 'Regional Expert',
@@ -312,6 +313,7 @@ export default function About() {
               cv: '',
               linkedin: '',
             },
+            */
           ].map((member) => (
             <div
               key={member.name}
