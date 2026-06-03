@@ -1,0 +1,87 @@
+{
+  "_comment": "Canonical app registry for apps.mountainfutures.ch. Drives both the index.html listing and the Caddy basic_auth gate (via /etc/caddy/gen-apps-auth.sh). 'protected': require the shared password. 'listed': false hides the card from the index but the app is still served + gated.",
+  "apps": [
+    {
+      "slug": "ops-dashboard",
+      "title": "Ops Dashboard",
+      "desc": "Live status of all operational pipelines. Step-by-step progress, durations, and failure alerts.",
+      "tag": "ops",
+      "tagLabel": "Ops",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"1\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"1\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"1\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"1\"/></svg>",
+      "protected": true
+    },
+    {
+      "slug": "kaz-forecast",
+      "title": "Kazakhstan Snow Forecast",
+      "desc": "10-day operational snow forecast for Kazakhstan. ERA5 + IFS forcing, FSM snow physics, MODIS/station data assimilation.",
+      "tag": "forecast",
+      "tagLabel": "Forecast",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 21l4-10 4 10\"/><path d=\"M2 21l6-16 4 8\"/><path d=\"M14 13l4-8 4 16\"/></svg>",
+      "protected": false
+    },
+    {
+      "slug": "snow-explorer",
+      "title": "Central Asian Snow Database",
+      "desc": "Interactive explorer for snow station data across Central Asia. Time series, maps, and station metadata.",
+      "tag": "data",
+      "tagLabel": "Data Explorer",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"22\"/><path d=\"M20 6l-8 4-8-4\"/><path d=\"M20 18l-8-4-8 4\"/><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"/></svg>",
+      "protected": false
+    },
+    {
+      "slug": "drone-map",
+      "title": "Drone Archive Map",
+      "desc": "Leaflet map of all CROMO-ADAPT drone survey missions in Kyrgyzstan. Flight footprints, snow depth probes, and SWE pit data.",
+      "tag": "map",
+      "tagLabel": "Map",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg>",
+      "protected": false
+    },
+    {
+      "slug": "benchmark-snow",
+      "title": "benchmarkSnow",
+      "desc": "Compare snow model implementations (FSM, fsm-rs, SNOWPACK, snowpack-rs) across datasets. Metrics, performance, and time series.",
+      "tag": "data",
+      "tagLabel": "Benchmark",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 3v18h18\"/><path d=\"M7 17l4-8 4 4 5-9\"/></svg>",
+      "protected": false
+    },
+    {
+      "slug": "taj-glaciers",
+      "title": "Tajikistan Glacier Stations",
+      "desc": "Downscaled ERA5 forcing (2000-2025) for 5 glaciers and 6 ground stations. QM bias correction, obs overlay.",
+      "tag": "data",
+      "tagLabel": "Downscaling",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 21l4-10 4 10\"/><path d=\"M2 21l6-16 4 8\"/><path d=\"M14 13l4-8 4 16\"/></svg>",
+      "protected": false
+    },
+    {
+      "slug": "unesco-snow-scenarios",
+      "title": "21st Century Snow Scenarios",
+      "desc": "CMIP6 snow climate scenarios for Central Asia. Near-future (2021-2040) and far-future (2081-2100) projections of SWE, snow depth, runoff, and more across major river basins.",
+      "tag": "data",
+      "tagLabel": "Scenarios",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2v20\"/><path d=\"M2 12h20\"/><path d=\"M5 5l14 14\"/><path d=\"M19 5L5 19\"/></svg>",
+      "protected": false
+    },
+    {
+      "slug": "../avaframe",
+      "title": "AvaFrame Hazard Tool",
+      "desc": "Avalanche hazard simulation pipeline. Copernicus DEM, ERA5 snow climatology, com1DFA dense flow simulation, interactive hazard dashboards.",
+      "tag": "ops",
+      "tagLabel": "Simulation",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 21l4-10 4 10\"/><path d=\"M2 21l6-16 4 8\"/><path d=\"M14 13l4-8 4 16\"/></svg>",
+      "protected": false
+    },
+    {
+      "slug": "network-monitor",
+      "title": "Network Monitor",
+      "desc": "Internal sensor-network monitoring dashboard.",
+      "tag": "ops",
+      "tagLabel": "Ops",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"/></svg>",
+      "protected": true,
+      "listed": false
+    }
+  ]
+}
