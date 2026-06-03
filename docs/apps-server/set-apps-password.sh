@@ -37,7 +37,7 @@ PY
 bash "$GEN" >/dev/null
 if caddy validate --config "$CADDYFILE" --adapter caddyfile >/dev/null 2>&1; then
     systemctl reload caddy
-    echo "Password updated and Caddy reloaded (HTTP user: karteam)."
+    echo "Password updated and Caddy reloaded (HTTP user: mf)."
 else
     echo "ERROR: Caddy validation failed — NOT reloaded. Check $CADDYFILE" >&2
     exit 1

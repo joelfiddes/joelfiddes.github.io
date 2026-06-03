@@ -61,6 +61,6 @@ else
 fi
 
 echo
-echo "Done. Protected apps will now prompt for the password (user: karteam)."
+echo "Done. Protected apps will now prompt for the password (user: mf)."
 echo "Toggle protection later by editing $APPS_DIR/apps.json, then:"
 echo "  sudo bash /etc/caddy/gen-apps-auth.sh && sudo caddy validate --config $CADDYFILE --adapter caddyfile && sudo systemctl reload caddy"

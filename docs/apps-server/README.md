@@ -12,7 +12,7 @@ client-side JS gate.
 
 ## Credentials
 
-- **HTTP username:** `karteam`
+- **HTTP username:** `mf`
 - **Password:** `<password>` — stored on the server only as a **bcrypt hash**; not recoverable, only resettable (see below). Keep the plaintext in a password manager.
 
 ## How it works
@@ -101,5 +101,74 @@ before reloading, and rolls the Caddyfile back automatically if validation fails
 B=https://apps.mountainfutures.ch
 curl -s -o /dev/null -w '%{http_code}\n' $B/ops-dashboard/                       # 401
 curl -s -o /dev/null -w '%{http_code}\n' $B/snow-explorer/                       # 200
-curl -s -o /dev/null -w '%{http_code}\n' -u 'karteam:<password>' $B/ops-dashboard/ # 200
+curl -s -o /dev/null -w '%{http_code}\n' -u 'mf:<password>' $B/ops-dashboard/ # 200
 ```
+
+## Future: per-app user access (not yet implemented)
+
+The current model is one shared user (`mf`) that unlocks **every** protected
+app. To support **different users for different apps** (e.g. a partner who can
+see only `taj-glaciers`, an ops user who can see `ops-dashboard` +
+`network-monitor`), the same config-driven pattern extends cleanly — Caddy
+supports one `basic_auth` block per matcher, each with its own user list and
+realm. Nothing about the current setup blocks this; it's an additive change.
+
+### Proposed schema
+
+Replace the per-app `protected: true` boolean with an `access` list of
+usernames (absent/empty ⇒ open), and keep usernames→hashes in a **separate,
+non-public** file (hashes must never enter this repo):
+
+`/var/www/apps/apps.json` (public-safe — usernames only, no hashes):
+```jsonc
+{
+  "apps": [
+    { "slug": "ops-dashboard",   "access": ["mf", "ops"] },
+    { "slug": "network-monitor", "access": ["ops"] },
+    { "slug": "taj-glaciers",    "access": ["partner-tj"] },
+    { "slug": "snow-explorer" }                              // no "access" ⇒ open
+  ]
+}
+```
+
+`/etc/caddy/apps_users.json` (root-only, **stays on the server**):
+```json
+{ "mf": "$2a$14$…", "ops": "$2a$14$…", "partner-tj": "$2a$14$…" }
+```
+
+### Generated Caddy output
+
+`gen-apps-auth.sh` would emit one block per restricted app, looking up each
+listed user's hash in `apps_users.json`:
+
+```
+@ops-dashboard path /ops-dashboard*
+basic_auth @ops-dashboard bcrypt "Ops Dashboard" {
+    mf  $2a$14$…
+    ops $2a$14$…
+}
+
+@network-monitor path /network-monitor*
+basic_auth @network-monitor bcrypt "Network Monitor" {
+    ops $2a$14$…
+}
+```
+
+(The optional `bcrypt "<realm>"` args set a per-app login prompt label so the
+browser distinguishes them and re-prompts when switching apps.)
+
+### Helpers to add
+
+- `add-app-user.sh <username> <password>` — hash the password, upsert the user
+  into `apps_users.json`. (`set-apps-password.sh` becomes per-user:
+  `set-apps-password.sh <username> <password>`.)
+- The generator's `jq` query changes from `select(.protected==true)` to
+  iterating apps with a non-empty `access`, emitting a matcher + block each.
+
+### Migration note
+
+The present setup is the degenerate case of this design: a single user `mf`
+whose `access` is every protected app. Switching is backward-compatible —
+introduce `apps_users.json`, rewrite `apps.json` entries to `access: ["mf"]`,
+and update `gen-apps-auth.sh`; the live behaviour is unchanged until you add
+more users.
