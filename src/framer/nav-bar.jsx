@@ -1480,7 +1480,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 														layoutId: "EWi2T7jkl",
 														r6RvIcK3K:
 															"var(--token-425d5885-8b67-4657-91de-de73d3d0dc86, rgb(0, 0, 0))",
-														sfse768LG: "mailto:joel.fiddes@slf.ch",
+														sfse768LG: "mailto:joel.fiddes@mountainfutures.ch",
 														UXzOZZMPJ: true,
 														variant: matchVariant("HB5NH2WSL"),
 														width: "100%",
@@ -1524,7 +1524,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 														layoutId: "QJdT7Lp7u",
 														r6RvIcK3K:
 															"var(--token-425d5885-8b67-4657-91de-de73d3d0dc86, rgb(0, 0, 0))",
-														sfse768LG: "mailto:simon.allen@geo.uzh.ch",
+														sfse768LG: "mailto:simon.allen@mountainfutures.ch",
 														UXzOZZMPJ: true,
 														variant: matchVariant("HB5NH2WSL"),
 														width: "100%",

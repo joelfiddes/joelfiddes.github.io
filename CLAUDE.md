@@ -118,6 +118,6 @@ All colors are defined as CSS custom properties (`--unframer-*`). Visual referen
 ## Manual Framer edits (preserve on re-sync)
 
 If `npm run framer` is run, these manual changes will be overwritten and need to be re-applied:
-1. `nav-bar.jsx` — Projects + News nav items, reordered items
+1. `nav-bar.jsx` — Projects + News nav items, reordered items; team mailto links changed to `firstname.lastname@mountainfutures.ch`
 2. `global/footer.jsx` — WSL spinoff logo, dynamic copyright year
 3. `map.jsx` — backgroundColor changed from blue to #F5F5F5
