@@ -121,3 +121,4 @@ If `npm run framer` is run, these manual changes will be overwritten and need to
 1. `nav-bar.jsx` — Projects + News nav items, reordered items; team mailto links changed to `firstname.lastname@mountainfutures.ch`
 2. `global/footer.jsx` — WSL spinoff logo, dynamic copyright year
 3. `map.jsx` — backgroundColor changed from blue to #F5F5F5
+- **Test site**: `npm run deploy:test` builds + rsyncs `dist/` to `https://test-site.mountainfutures.ch` (myserver, Caddy basic_auth, user `mf`). Use it to preview features before pushing to `main`. See `docs/test-site.md`. Password is NOT in the repo (repo is public).

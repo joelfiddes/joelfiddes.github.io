@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && cp dist/index.html dist/404.html",
-    "framer": "unframer c005e0105870bbbc --outDir src/framer"
+    "framer": "unframer c005e0105870bbbc --outDir src/framer",
+    "deploy:test": "bash scripts/deploy-test.sh"
   },
   "dependencies": {
     "react": "latest",
