@@ -150,7 +150,7 @@ export default function About() {
               <div className="flex gap-[12px] items-center md:pl-[12px]">
                 <PrimaryFramerComponent.Responsive
                   BYNIrUSxY="Contact"
-                  hYruqSCKG="mailto:joel.fiddes@slf.ch"
+                  hYruqSCKG="mailto:joel.fiddes@mountainfutures.ch"
                 />
                 <PrimaryFramerComponent.Responsive
                   BYNIrUSxY="CV"
@@ -256,7 +256,7 @@ export default function About() {
               <div className="flex gap-[12px] items-center md:pl-[12px]">
                 <PrimaryFramerComponent.Responsive
                   BYNIrUSxY="Contact"
-                  hYruqSCKG="mailto:simon.allen@geo.uzh.ch"
+                  hYruqSCKG="mailto:simon.allen@mountainfutures.ch"
                 />
                 <PrimaryFramerComponent.Responsive
                   BYNIrUSxY="CV"
