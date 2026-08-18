@@ -283,17 +283,28 @@ export default function About() {
           */}
 
           {[
-            /* Temporarily hidden — re-enable to show on the About page
+            /* Main team — rendered after Joel & Simon with the same layout */
+            {
+              name: 'Inés Dussaillant',
+              role: 'Regional Expert, South America',
+              image: '/images/ines.png',
+              bio: 'Expert in global and regional cryosphere change and related impacts on mountain hydrology. Based in the Andes, with research and field experience spanning mountain regions worldwide. Extensive experience integrating satellite and field observations to monitor glacier mass change, develop large-scale cryosphere datasets, and assess their implications for water resources and climate change. Brings strong international collaboration and teamwork skills, with extensive experience working across disciplines and cultures to connect global-scale science with local knowledge and applications in mountain regions.',
+              expertise: ['Glacier mass change', 'Cryosphere datasets', 'Mountain hydrology'],
+              email: 'ines.dussaillant@mountainfutures.ch',
+              cv: '/docs/CV_InesDUSSAILLANT.pdf',
+              linkedin: 'https://www.linkedin.com/in/in%C3%A9s-dussaillant-8731661b5/',
+            },
             {
               name: 'Tomas Saks',
-              role: 'Regional Director, Central Asia',
+              role: 'Regional Expert, Central Asia',
               image: '/images/tomas.png',
-              bio: 'Bio placeholder — add Tomas\'s background, experience, and focus areas here.',
-              expertise: ['Glaciology', 'Central Asia', 'Field research'],
-              email: '',
-              cv: '',
+              bio: 'Glaciologist with long-standing experience in Central Asia, where he has helped re-establish and sustain the region\'s glacier monitoring network across Kyrgyzstan, Uzbekistan, Kazakhstan and Tajikistan through close partnerships with local institutions. Extensive field and research experience linking glacier, snow and permafrost observations to water resources and climate adaptation, with a strong track record in training and capacity building for Central Asian scientists and agencies. Senior Researcher at the Department of Geosciences, University of Fribourg.',
+              expertise: ['Glacier monitoring', 'Central Asia', 'Cryosphere & water resources'],
+              email: 'tomas.saks@mountainfutures.ch',
+              cv: '/docs/CV_TomasSAKS.pdf',
               linkedin: '',
             },
+            /* Temporarily hidden — re-enable to show on the About page
             {
               name: 'Sultanbek Belekov',
               role: 'Regional Expert',
@@ -349,7 +360,7 @@ export default function About() {
                 <img
                   src={member.image}
                   alt={member.name}
-                  style={{ width: '100%', height: '285px', objectFit: 'cover', backgroundColor: 'var(--unframer-neutral-200)' }}
+                  style={{ width: '100%', height: '285px', objectFit: 'cover' }}
                 />
               </div>
               <div className="md:flex-1 pt-4 md:pt-0">
