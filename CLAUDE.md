@@ -115,10 +115,18 @@ All colors are defined as CSS custom properties (`--unframer-*`). Visual referen
 - **Projects page** supports `?sector=` URL param for filtering from Expertise page links.
 - Mountain Futures was founded in **2025**. Projects before that date are team track record, not MF contracts.
 
+## Test site (password-protected preview)
+
+- **URL**: https://test-site.mountainfutures.ch — for previewing features and sharing with the team before pushing live.
+- **Deploy**: `npm run deploy:test` (`scripts/deploy-test.sh`: `vite build` + rsync `dist/` → `joel@myserver:/var/www/test-site/`). Works from any branch, even with uncommitted changes. No sudo needed.
+- **Auth**: Caddy `basic_auth`, user `mf`. Password is NOT in this repo (repo is PUBLIC) — see the MF operating manual (admin.mountainfutures.ch → Operations → Website & test site) or Joel's password manager.
+- **Banner**: `TestSiteBanner` in `src/components/Layout.tsx` renders a "TEST SITE — NOT LIVE" strip only when the hostname starts with `test-site`; it's a no-op on the live site and localhost.
+- **Server details**: `docs/test-site.md` (Caddy vhost, SPA fallback, password rotation, one-time install). DNS: A record `test-site` → 85.2.53.131 at Hostpoint (reused from the retired `hr` record, 2026-08-19).
+- The live site still deploys ONLY via `git push` to `main` (GitHub Pages).
+
 ## Manual Framer edits (preserve on re-sync)
 
 If `npm run framer` is run, these manual changes will be overwritten and need to be re-applied:
 1. `nav-bar.jsx` — Projects + News nav items, reordered items; team mailto links changed to `firstname.lastname@mountainfutures.ch`
 2. `global/footer.jsx` — WSL spinoff logo, dynamic copyright year
 3. `map.jsx` — backgroundColor changed from blue to #F5F5F5
-- **Test site**: `npm run deploy:test` builds + rsyncs `dist/` to `https://test-site.mountainfutures.ch` (myserver, Caddy basic_auth, user `mf`). Use it to preview features before pushing to `main`. See `docs/test-site.md`. Password is NOT in the repo (repo is public).
