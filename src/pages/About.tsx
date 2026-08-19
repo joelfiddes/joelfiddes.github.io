@@ -86,7 +86,7 @@ export default function About() {
               />
             </div>
             <div
-              className="md:flex-1 pt-4 md:pt-0"
+              className="md:flex-1 pt-4 md:pt-0 md:pr-[15px]"
               style={{
                 borderLeft: 'none',
                 padding: '0 0 0 0',
@@ -207,7 +207,7 @@ export default function About() {
               />
             </div>
             <div
-              className="md:flex-1 pt-4 md:pt-0"
+              className="md:flex-1 pt-4 md:pt-0 md:pr-[15px]"
             >
               <div className="md:border-l md:border-[var(--unframer-neutral-300)] md:pl-[15px]">
                 <p
@@ -298,7 +298,7 @@ export default function About() {
               name: 'Tomas Saks',
               role: 'Regional Expert, Central Asia',
               image: '/images/tomas.png',
-              bio: 'Glaciologist with long-standing experience in Central Asia, where he has helped re-establish and sustain the region\'s glacier monitoring network across Kyrgyzstan, Uzbekistan, Kazakhstan and Tajikistan through close partnerships with local institutions. Extensive field and research experience linking glacier, snow and permafrost observations to water resources and climate adaptation, with a strong track record in training and capacity building for Central Asian scientists and agencies. Senior Researcher at the Department of Geosciences, University of Fribourg.',
+              bio: 'Glaciologist with long-standing experience in Central Asia, where he has helped re-establish and sustain the region\'s glacier monitoring network across Kyrgyzstan, Uzbekistan, Kazakhstan and Tajikistan through close partnerships with local institutions. Experienced in working with international donors and development agencies, shaping and delivering donor-funded programmes in the region. Extensive field and research experience linking glacier, snow and permafrost observations to water resources and climate adaptation, with a strong track record in training and capacity building for Central Asian scientists and agencies. Senior Researcher at the Department of Geosciences, University of Fribourg.',
               expertise: ['Glacier monitoring', 'Central Asia', 'Cryosphere & water resources'],
               email: 'tomas.saks@mountainfutures.ch',
               cv: '/docs/CV_TomasSAKS.pdf',
@@ -363,7 +363,7 @@ export default function About() {
                   style={{ width: '100%', height: '285px', objectFit: 'cover' }}
                 />
               </div>
-              <div className="md:flex-1 pt-4 md:pt-0">
+              <div className="md:flex-1 pt-4 md:pt-0 md:pr-[15px]">
                 <div className="md:border-l md:border-[var(--unframer-neutral-300)] md:pl-[15px]">
                   <p
                     style={{
