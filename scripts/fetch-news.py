@@ -21,6 +21,7 @@ import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 
@@ -169,39 +170,78 @@ def search_openalex(authors, since_date):
 # ---------------------------------------------------------------------------
 # Source: Google News RSS (web search from glossary terms)
 # ---------------------------------------------------------------------------
-def search_google_news(search_terms):
-    """Search Google News RSS for recent mentions."""
+def _google_news_items(query, limit=5):
+    """Fetch and parse Google News RSS items for one query string."""
+    encoded = urllib.parse.quote(query)
+    url = f"https://news.google.com/rss/search?q={encoded}&hl=en&gl=CH&ceid=CH:en"
+    root = fetch_xml(url)
+    if root is None:
+        return []
+    channel = root.find("channel")
+    if channel is None:
+        return []
+    out = []
+    for item in channel.findall("item")[:limit]:
+        pub_date = item.findtext("pubDate", "")
+        date_str = datetime.now().strftime("%Y-%m-%d")
+        if pub_date:
+            try:
+                dt = parsedate_to_datetime(pub_date)
+                date_str = dt.strftime("%Y-%m-%d")
+            except Exception:
+                pass
+        out.append({
+            "title": item.findtext("title", ""),
+            "date": date_str,
+            "link": item.findtext("link", ""),
+            "raw_abstract": item.findtext("description", ""),
+        })
+    return out
+
+
+def search_google_news(search_terms, since_date):
+    """Search Google News RSS for recent mentions, newer than since_date."""
     candidates = []
+    skipped_old = 0
     for term in search_terms:
         print(f"  Google News: searching for '{term}'...", file=sys.stderr)
-        encoded = urllib.parse.quote(term)
-        url = f"https://news.google.com/rss/search?q={encoded}&hl=en&gl=CH&ceid=CH:en"
-        root = fetch_xml(url)
-        if root is None:
-            continue
-        channel = root.find("channel")
-        if channel is None:
-            continue
-        for item in channel.findall("item")[:5]:  # Top 5 per term
-            title = item.findtext("title", "")
-            link = item.findtext("link", "")
-            pub_date = item.findtext("pubDate", "")
-            # Parse RSS date to YYYY-MM-DD
-            date_str = datetime.now().strftime("%Y-%m-%d")
-            if pub_date:
-                try:
-                    from email.utils import parsedate_to_datetime
-                    dt = parsedate_to_datetime(pub_date)
-                    date_str = dt.strftime("%Y-%m-%d")
-                except Exception:
-                    pass
-            candidates.append({
-                "title": title,
-                "date": date_str,
-                "link": link,
-                "source": f"Google News ({term})",
-                "raw_abstract": item.findtext("description", ""),
-            })
+        for item in _google_news_items(term):
+            # Google News RSS has no date filter of its own, so apply the
+            # same lookback the other sources get. Without this, items years
+            # old are re-fetched on every run and re-shown to the filter.
+            if item["date"] < since_date:
+                skipped_old += 1
+                continue
+            item["source"] = f"Google News ({term})"
+            candidates.append(item)
+    if skipped_old:
+        print(f"  Google News: skipped {skipped_old} items older than {since_date}",
+              file=sys.stderr)
+    return candidates
+
+
+# ---------------------------------------------------------------------------
+# Source: Google News RSS, searched by MF person name
+# ---------------------------------------------------------------------------
+def search_person_mentions(person_terms, since_date):
+    """Search Google News for press that quotes or names an MF person.
+
+    The press almost never names the company, but it does quote Joel and
+    Simon by name, so these are the terms that actually catch coverage.
+    Hits are tagged with mf_mention so the filter can treat them like the
+    ORCID-verified mf_author items rather than as generic climate news.
+    """
+    candidates = []
+    for entry in person_terms:
+        name = entry["name"]
+        query = entry["query"]
+        print(f"  Google News: searching for mentions of {name}...", file=sys.stderr)
+        for item in _google_news_items(query):
+            if item["date"] < since_date:
+                continue
+            item["source"] = f"Google News mention ({name})"
+            item["mf_mention"] = name
+            candidates.append(item)
     return candidates
 
 
@@ -250,7 +290,9 @@ def main():
     all_candidates += search_openalex(glossary["authors"], since_date)
 
     print("\nSearching web...", file=sys.stderr)
-    all_candidates += search_google_news(glossary["search_terms"])
+    all_candidates += search_google_news(glossary["search_terms"], since_date)
+    all_candidates += search_person_mentions(
+        glossary.get("person_search_terms", []), since_date)
 
     print("\nChecking GitHub releases...", file=sys.stderr)
     all_candidates += search_github_releases(glossary.get("github_repos", []), since_date)

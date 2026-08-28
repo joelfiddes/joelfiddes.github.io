@@ -13,6 +13,20 @@ set -euo pipefail
 # Allow running from cron or from within Claude Code
 unset CLAUDECODE 2>/dev/null || true
 
+# cron runs with a minimal PATH (/usr/bin:/bin) — claude and gh are not on it.
+# Without this the script dies at Step 2 with "claude: command not found".
+export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
+
+echo "=== Run started $(date '+%Y-%m-%d %H:%M:%S') ==="
+
+# Fail loudly and early if a required tool is missing
+for cmd in claude gh git python3; do
+    if ! command -v "$cmd" >/dev/null 2>&1; then
+        echo "Error: required command '$cmd' not found in PATH ($PATH)" >&2
+        exit 1
+    fi
+done
+
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_DIR"
 
@@ -64,10 +78,17 @@ INSTRUCTIONS:
    team member — ACCEPT these by default unless the title is clearly off-topic
    (e.g. unrelated domain like marine biology or pathogens, which can occur due
    to OpenAlex author-merging errors).
-3. REJECT generic climate/mountain news and papers by unrelated authors when
-   "mf_author" is not present.
-4. For accepted items, write a clean 1-2 sentence summary. Mention the MF author
-   by name in the summary when "mf_author" is set.
+3. Items with an "mf_mention" field came from a name search and are press
+   coverage that quotes or names that MF person. ACCEPT these when the article
+   is in the cryosphere / glacier / mountain-hazard domain AND the person is
+   plausibly the MF researcher rather than a namesake (Simon Allen especially
+   is a common name — check the subject matter fits). These are press mentions,
+   not publications: tag them "media" and say in the summary that the person
+   commented on or was quoted about the event.
+4. REJECT generic climate/mountain news and papers by unrelated authors when
+   neither "mf_author" nor "mf_mention" is present.
+5. For accepted items, write a clean 1-2 sentence summary. Mention the MF person
+   by name in the summary when "mf_author" or "mf_mention" is set.
 
 CRITICAL: When in doubt, EXCLUDE. Do NOT fabricate information.
 
