@@ -33,11 +33,9 @@ cd "$REPO_DIR"
 # Note: macOS BSD mktemp only randomizes trailing X's — no suffix after them.
 CANDIDATES_FILE=$(mktemp /tmp/news-candidates.XXXXXX)
 FILTERED_FILE=$(mktemp /tmp/news-filtered.XXXXXX)
-CLAUDE_ERR=$(mktemp /tmp/news-claude-err.XXXXXX)
-PROMPT_FILE=""
 NEWS_JSON="$REPO_DIR/src/data/news.json"
 
-cleanup() { rm -f "$CANDIDATES_FILE" "$FILTERED_FILE" "$CLAUDE_ERR" ${PROMPT_FILE:+"$PROMPT_FILE"}; }
+cleanup() { rm -f "$CANDIDATES_FILE" "$FILTERED_FILE"; }
 trap cleanup EXIT
 
 echo "=== Step 1: Fetching candidates ==="
@@ -52,104 +50,15 @@ if [ "$NUM_CANDIDATES" = "0" ]; then
 fi
 
 echo ""
-echo "=== Step 2: Claude Code filtering and post generation ==="
+echo "=== Step 2: Filtering candidates ==="
 
-# Build prompt file (avoids shell escaping issues with large JSON)
-PROMPT_FILE=$(mktemp /tmp/news-prompt.XXXXXX)
-cat > "$PROMPT_FILE" <<PROMPT
-You are curating a news feed for Mountain Futures (mountainfutures.ch), a Swiss
-consultancy by Joel Fiddes and Simon Allen focused on cryosphere science, mountain
-hazards, and climate adaptation.
-
-Key topics: snow monitoring (SnowMapper), glacial lake outburst floods (GLOFs),
-cryosphere observation (CROMO-ADAPT), climate downscaling (TopoPyScale),
-mountain hazard assessment, Central Asia, Himalaya, Andes.
-
-EXISTING news posts (do NOT duplicate):
-$(cat "$NEWS_JSON")
-
-NEW candidates from automated search:
-$(cat "$CANDIDATES_FILE")
-
-INSTRUCTIONS:
-1. STRICTLY filter: only include items directly about Mountain Futures' work, their
-   named people (Joel Fiddes, Simon Allen — the cryosphere researchers, not other
-   people with the same name), or their specific projects/topics.
-2. Items with an "mf_author" field are ORCID-verified to be authored by that MF
-   team member — ACCEPT these by default unless the title is clearly off-topic
-   (e.g. unrelated domain like marine biology or pathogens, which can occur due
-   to OpenAlex author-merging errors).
-3. Items with an "mf_mention" field came from a name search and are press
-   coverage that quotes or names that MF person. ACCEPT these when the article
-   is in the cryosphere / glacier / mountain-hazard domain AND the person is
-   plausibly the MF researcher rather than a namesake (Simon Allen especially
-   is a common name — check the subject matter fits). These are press mentions,
-   not publications: tag them "media" and say in the summary that the person
-   commented on or was quoted about the event.
-4. REJECT generic climate/mountain news and papers by unrelated authors when
-   neither "mf_author" nor "mf_mention" is present.
-5. For accepted items, write a clean 1-2 sentence summary. Mention the MF person
-   by name in the summary when "mf_author" or "mf_mention" is set.
-
-CRITICAL: When in doubt, EXCLUDE. Do NOT fabricate information.
-
-Output ONLY a valid JSON array. Each item:
-{"title": "<clean title>", "date": "<YYYY-MM-DD>", "summary": "<factual summary>", "link": "<URL>", "tags": ["tag1", "tag2"]}
-
-If nothing is relevant, output: []
-PROMPT
-
-# Capture the exit code and BOTH streams. claude writes its own errors
-# (e.g. "Not logged in") to stdout, which lands in FILTERED_FILE and would
-# otherwise be deleted by the cleanup trap, leaving no trace of the failure.
-set +e
-claude -p "$(cat "$PROMPT_FILE")" --output-format text > "$FILTERED_FILE" 2> "$CLAUDE_ERR"
-CLAUDE_EXIT=$?
-set -e
-rm -f "$PROMPT_FILE"
-
-if [ "$CLAUDE_EXIT" -ne 0 ]; then
-    echo "Error: 'claude -p' exited $CLAUDE_EXIT" >&2
-    echo "--- claude stderr ---" >&2
-    cat "$CLAUDE_ERR" >&2
-    echo "--- claude stdout (first 20 lines) ---" >&2
-    head -20 "$FILTERED_FILE" >&2
-    echo "---" >&2
-    echo "If this says 'Not logged in', the job cannot reach the login keychain." >&2
-    echo "Scheduled runs must go through the launchd agent, not cron." >&2
-    exit 1
-fi
-
-# Extract JSON array from Claude output (may contain extra text)
-python3 -c "
-import re, json, sys
-text = open('$FILTERED_FILE').read().strip()
-# Try to find a JSON array in the output
-match = re.search(r'\[.*\]', text, re.DOTALL)
-if match:
-    # Validate it's actual JSON
-    try:
-        parsed = json.loads(match.group())
-        open('$FILTERED_FILE', 'w').write(json.dumps(parsed, indent=2))
-    except json.JSONDecodeError:
-        sys.stderr.write('Claude output contained no parseable JSON array:\n' + text[:800] + '\n')
-        raise SystemExit(2)
-else:
-    # An empty result is spelled '[]' by the prompt. No array at all means
-    # something went wrong — do not mistake it for a quiet news day.
-    sys.stderr.write('Claude produced no JSON array at all:\n' + text[:800] + '\n')
-    raise SystemExit(2)
-"
-
-# Validate JSON output
-if ! python3 -c "import json; json.load(open('$FILTERED_FILE'))" 2>/dev/null; then
-    echo "Error: Claude output is not valid JSON:"
-    cat "$FILTERED_FILE"
-    exit 1
-fi
+# The prompt and both backends (Anthropic API when ANTHROPIC_API_KEY is set,
+# otherwise the local claude CLI) live in filter-news.py, shared with the
+# GitHub Action so the two cannot drift apart.
+python3 scripts/filter-news.py "$CANDIDATES_FILE" "$NEWS_JSON" > "$FILTERED_FILE"
 
 NUM_POSTS=$(python3 -c "import json; print(len(json.load(open('$FILTERED_FILE'))))")
-echo "Claude approved $NUM_POSTS items"
+echo "Approved $NUM_POSTS items"
 
 if [ "$NUM_POSTS" = "0" ]; then
     echo "No relevant items. Nothing to do."
@@ -158,24 +67,9 @@ fi
 
 echo ""
 echo "=== Step 3: Merging into news.json ==="
+python3 scripts/merge-news.py "$FILTERED_FILE" "$NEWS_JSON" || true
 
-python3 -c "
-import json
-existing = json.load(open('$NEWS_JSON'))
-new_posts = json.load(open('$FILTERED_FILE'))
-existing_links = {item['link'] for item in existing}
-added = [p for p in new_posts if p['link'] not in existing_links]
-merged = added + existing
-merged.sort(key=lambda x: x['date'], reverse=True)
-with open('$NEWS_JSON', 'w') as f:
-    json.dump(merged, f, indent=2, ensure_ascii=False)
-    f.write('\n')
-print(f'Added {len(added)} new items. Total: {len(merged)}')
-for p in added:
-    print(f'  + {p[\"title\"]}')
-"
 
-# Check if anything actually changed
 if git diff --quiet src/data/news.json; then
     echo "No new items after dedup. Nothing to do."
     exit 0

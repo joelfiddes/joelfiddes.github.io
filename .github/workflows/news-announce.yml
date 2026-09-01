@@ -1,0 +1,63 @@
+name: Announce published news
+
+# Emails the team when a news item actually goes live, i.e. when news.json
+# gains an entry on main. Runs after the merge, so the link to the news page
+# works by the time anyone clicks it.
+#
+# Requires repository secrets: SMTP_HOST, SMTP_USER, SMTP_PASSWORD
+# Optional: SMTP_PORT (default 587), MAIL_FROM (default SMTP_USER),
+#           MAIL_TO (default joel.fiddes + simon.allen @mountainfutures.ch)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/data/news.json"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: news-announce
+  cancel-in-progress: false
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Need the previous commit too, to diff news.json against it.
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Extract the previous version of news.json
+        run: |
+          # github.event.before is 000... for a branch's first push; fall back
+          # to the first parent of the pushed commit.
+          BEFORE="${{ github.event.before }}"
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            BEFORE=$(git rev-parse "${{ github.sha }}^" 2>/dev/null || echo "")
+          fi
+          if [ -n "$BEFORE" ] && git cat-file -e "$BEFORE:src/data/news.json" 2>/dev/null; then
+            git show "$BEFORE:src/data/news.json" > /tmp/news-old.json
+          else
+            echo "[]" > /tmp/news-old.json
+          fi
+          echo "compared against: ${BEFORE:-<none>}"
+
+      - name: Wait for the site to finish deploying
+        run: sleep 90
+
+      - name: Send announcement
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: python3 scripts/announce-news.py /tmp/news-old.json src/data/news.json
