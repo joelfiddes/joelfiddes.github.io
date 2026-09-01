@@ -33,10 +33,11 @@ cd "$REPO_DIR"
 # Note: macOS BSD mktemp only randomizes trailing X's — no suffix after them.
 CANDIDATES_FILE=$(mktemp /tmp/news-candidates.XXXXXX)
 FILTERED_FILE=$(mktemp /tmp/news-filtered.XXXXXX)
+CLAUDE_ERR=$(mktemp /tmp/news-claude-err.XXXXXX)
 PROMPT_FILE=""
 NEWS_JSON="$REPO_DIR/src/data/news.json"
 
-cleanup() { rm -f "$CANDIDATES_FILE" "$FILTERED_FILE" ${PROMPT_FILE:+"$PROMPT_FILE"}; }
+cleanup() { rm -f "$CANDIDATES_FILE" "$FILTERED_FILE" "$CLAUDE_ERR" ${PROMPT_FILE:+"$PROMPT_FILE"}; }
 trap cleanup EXIT
 
 echo "=== Step 1: Fetching candidates ==="
@@ -98,12 +99,30 @@ Output ONLY a valid JSON array. Each item:
 If nothing is relevant, output: []
 PROMPT
 
-claude -p "$(cat "$PROMPT_FILE")" --output-format text > "$FILTERED_FILE"
+# Capture the exit code and BOTH streams. claude writes its own errors
+# (e.g. "Not logged in") to stdout, which lands in FILTERED_FILE and would
+# otherwise be deleted by the cleanup trap, leaving no trace of the failure.
+set +e
+claude -p "$(cat "$PROMPT_FILE")" --output-format text > "$FILTERED_FILE" 2> "$CLAUDE_ERR"
+CLAUDE_EXIT=$?
+set -e
 rm -f "$PROMPT_FILE"
+
+if [ "$CLAUDE_EXIT" -ne 0 ]; then
+    echo "Error: 'claude -p' exited $CLAUDE_EXIT" >&2
+    echo "--- claude stderr ---" >&2
+    cat "$CLAUDE_ERR" >&2
+    echo "--- claude stdout (first 20 lines) ---" >&2
+    head -20 "$FILTERED_FILE" >&2
+    echo "---" >&2
+    echo "If this says 'Not logged in', the job cannot reach the login keychain." >&2
+    echo "Scheduled runs must go through the launchd agent, not cron." >&2
+    exit 1
+fi
 
 # Extract JSON array from Claude output (may contain extra text)
 python3 -c "
-import re, json
+import re, json, sys
 text = open('$FILTERED_FILE').read().strip()
 # Try to find a JSON array in the output
 match = re.search(r'\[.*\]', text, re.DOTALL)
@@ -113,9 +132,13 @@ if match:
         parsed = json.loads(match.group())
         open('$FILTERED_FILE', 'w').write(json.dumps(parsed, indent=2))
     except json.JSONDecodeError:
-        open('$FILTERED_FILE', 'w').write('[]')
+        sys.stderr.write('Claude output contained no parseable JSON array:\n' + text[:800] + '\n')
+        raise SystemExit(2)
 else:
-    open('$FILTERED_FILE', 'w').write('[]')
+    # An empty result is spelled '[]' by the prompt. No array at all means
+    # something went wrong — do not mistake it for a quiet news day.
+    sys.stderr.write('Claude produced no JSON array at all:\n' + text[:800] + '\n')
+    raise SystemExit(2)
 "
 
 # Validate JSON output

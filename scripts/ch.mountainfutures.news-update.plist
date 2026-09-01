@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Daily news feed check for mountainfutures.ch.
+
+  This replaces the old crontab entry. cron runs outside the user's login
+  session and therefore cannot read the login keychain, so `claude -p` failed
+  with "Not logged in" on every scheduled run. A LaunchAgent runs inside the
+  user session, so the keychain is available.
+
+  It also re-fires a missed run when the Mac wakes, which cron does not do.
+
+  Install:   cp scripts/ch.mountainfutures.news-update.plist ~/Library/LaunchAgents/
+             launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/ch.mountainfutures.news-update.plist
+  Run now:   launchctl kickstart -p gui/$(id -u)/ch.mountainfutures.news-update
+  Uninstall: launchctl bootout gui/$(id -u)/ch.mountainfutures.news-update
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>ch.mountainfutures.news-update</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/joel/src/mountainfutures-site/scripts/update-news.sh</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- Persistent, unlike /tmp which is cleared on reboot. -->
+    <key>StandardOutPath</key>
+    <string>/Users/joel/Library/Logs/mountainfutures-news.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/joel/Library/Logs/mountainfutures-news.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>
