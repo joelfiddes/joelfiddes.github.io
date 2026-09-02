@@ -122,10 +122,18 @@ def filter_via_cli(prompt):
     """Use the local Claude Code CLI, which reads credentials from the keychain."""
     env = dict(os.environ)
     env.pop("CLAUDECODE", None)  # allow nesting inside a Claude Code session
-    proc = subprocess.run(
-        ["claude", "-p", prompt, "--output-format", "text"],
-        capture_output=True, text=True, env=env,
-    )
+    try:
+        proc = subprocess.run(
+            ["claude", "-p", prompt, "--output-format", "text"],
+            capture_output=True, text=True, env=env,
+        )
+    except FileNotFoundError:
+        sys.stderr.write(
+            "Error: the 'claude' CLI is not installed, and ANTHROPIC_API_KEY is\n"
+            "not set, so there is no way to run the filter.\n"
+            "Set ANTHROPIC_API_KEY to use the API backend instead.\n"
+        )
+        raise SystemExit(1)
     if proc.returncode != 0:
         sys.stderr.write(
             f"'claude -p' exited {proc.returncode}\n"
@@ -163,9 +171,19 @@ def main():
 
     prompt = build_prompt(news_json_text, candidates_text)
 
-    if os.environ.get("ANTHROPIC_API_KEY"):
+    # GitHub sets an unset secret to the empty string rather than omitting it.
+    api_key = os.environ.get("ANTHROPIC_API_KEY") or None
+
+    if api_key:
         sys.stderr.write(f"  Filtering via Anthropic API ({MODEL})...\n")
         items = filter_via_api(prompt)
+    elif os.environ.get("GITHUB_ACTIONS") == "true":
+        # There is no keychain and no CLI on a runner; the fallback cannot work.
+        sys.stderr.write(
+            "Error: ANTHROPIC_API_KEY is not set.\n"
+            "Add it under Settings -> Secrets and variables -> Actions.\n"
+        )
+        raise SystemExit(1)
     else:
         sys.stderr.write("  Filtering via local claude CLI...\n")
         items = filter_via_cli(prompt)
