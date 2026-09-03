@@ -91,8 +91,17 @@ INSTRUCTIONS:
    neither "mf_author" nor "mf_mention" is present.
 5. For accepted items, write a clean 1-2 sentence summary. Mention the MF person
    by name in the summary when "mf_author" or "mf_mention" is set.
+6. Propose EVERY qualifying article as its own separate item. Several outlets
+   covering the same event (wire syndication of one story) is normal and is NOT
+   a reason to drop any of them - return one item per article, naming the outlet
+   in the title so they can be told apart. The human reviewer picks which to
+   keep, so do not pre-select on their behalf. "Do not duplicate" above means
+   do not re-propose something already in the EXISTING list (same link); it does
+   NOT mean collapsing separate articles about one event.
 
-CRITICAL: When in doubt, EXCLUDE. Do NOT fabricate information.
+CRITICAL: When in doubt about RELEVANCE, EXCLUDE - especially namesakes.
+But when an article is relevant, always include it, even if you have already
+included another article about the same event. Do NOT fabricate information.
 
 Return a JSON object with a single key "items", holding an array of accepted
 posts. Each post: title, date (YYYY-MM-DD), summary, link, tags.

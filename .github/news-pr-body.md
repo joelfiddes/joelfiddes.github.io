@@ -1,7 +1,10 @@
 New items found by the automated search.
 
-Review the diff below and **edit or remove anything that shouldn't go out**.
-Merging publishes them and emails the team.
+Every qualifying article is proposed as its own item, including several outlets
+covering the same story — **the list is deliberately over-inclusive so you can
+choose**. Delete the ones you don't want, keep the rest.
+
+Merging publishes what's left and emails the team.
 
 > [!IMPORTANT]
 > **Check the links on `media` items.** Press items found by name search arrive
