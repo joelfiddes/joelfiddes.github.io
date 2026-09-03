@@ -1,11 +1,23 @@
 {
   "authors": [
-    {"name": "Joel Fiddes", "orcid": "0000-0003-2870-6972"},
-    {"name": "Simon Allen", "orcid": "0000-0002-4809-649X"}
+    {
+      "name": "Joel Fiddes",
+      "orcid": "0000-0003-2870-6972"
+    },
+    {
+      "name": "Simon Allen",
+      "orcid": "0000-0002-4809-649X"
+    }
   ],
   "person_search_terms": [
-    {"name": "Joel Fiddes", "query": "\"Joel Fiddes\""},
-    {"name": "Simon Allen", "query": "\"Simon Allen\" (glacier OR GLOF OR cryosphere OR permafrost)"}
+    {
+      "name": "Joel Fiddes",
+      "query": "\"Joel Fiddes\""
+    },
+    {
+      "name": "Simon Allen",
+      "query": "\"Simon Allen\""
+    }
   ],
   "search_terms": [
     "\"Mountain Futures\" (glacier OR cryosphere OR snow OR GLOF)",

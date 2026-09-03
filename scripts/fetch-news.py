@@ -170,7 +170,7 @@ def search_openalex(authors, since_date):
 # ---------------------------------------------------------------------------
 # Source: Google News RSS (web search from glossary terms)
 # ---------------------------------------------------------------------------
-def _google_news_items(query, limit=5):
+def _google_news_items(query, limit=10):
     """Fetch and parse Google News RSS items for one query string."""
     encoded = urllib.parse.quote(query)
     url = f"https://news.google.com/rss/search?q={encoded}&hl=en&gl=CH&ceid=CH:en"
@@ -236,7 +236,10 @@ def search_person_mentions(person_terms, since_date):
         name = entry["name"]
         query = entry["query"]
         print(f"  Google News: searching for mentions of {name}...", file=sys.stderr)
-        for item in _google_news_items(query):
+        # Press coverage is the high-value source and the feed is ranked by
+        # relevance, not date, so read deep enough that recent syndicated
+        # coverage is not truncated away behind older, more "relevant" hits.
+        for item in _google_news_items(query, limit=40):
             if item["date"] < since_date:
                 continue
             item["source"] = f"Google News mention ({name})"
