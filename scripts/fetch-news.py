@@ -223,29 +223,46 @@ def search_google_news(search_terms, since_date):
 # ---------------------------------------------------------------------------
 # Source: Google News RSS, searched by MF person name
 # ---------------------------------------------------------------------------
+def _search_mentions(terms, since_date, tag_key, label):
+    """Search Google News for named mentions, tagging each hit.
+
+    Press coverage is the high-value source and the feed is ranked by
+    relevance rather than date, so read deep enough that recent syndicated
+    coverage is not truncated away behind older, more "relevant" hits.
+    """
+    candidates = []
+    for entry in terms:
+        name = entry["name"]
+        print(f"  Google News: searching for {label} of {name}...", file=sys.stderr)
+        for item in _google_news_items(entry["query"], limit=40):
+            if item["date"] < since_date:
+                continue
+            item["source"] = f"Google News {label} ({name})"
+            item[tag_key] = name
+            candidates.append(item)
+    return candidates
+
+
 def search_person_mentions(person_terms, since_date):
-    """Search Google News for press that quotes or names an MF person.
+    """Press that quotes or names an MF person.
 
     The press almost never names the company, but it does quote Joel and
     Simon by name, so these are the terms that actually catch coverage.
-    Hits are tagged with mf_mention so the filter can treat them like the
-    ORCID-verified mf_author items rather than as generic climate news.
+    Tagged mf_mention so the filter treats them like ORCID-verified items
+    rather than generic climate news.
     """
-    candidates = []
-    for entry in person_terms:
-        name = entry["name"]
-        query = entry["query"]
-        print(f"  Google News: searching for mentions of {name}...", file=sys.stderr)
-        # Press coverage is the high-value source and the feed is ranked by
-        # relevance, not date, so read deep enough that recent syndicated
-        # coverage is not truncated away behind older, more "relevant" hits.
-        for item in _google_news_items(query, limit=40):
-            if item["date"] < since_date:
-                continue
-            item["source"] = f"Google News mention ({name})"
-            item["mf_mention"] = name
-            candidates.append(item)
-    return candidates
+    return _search_mentions(person_terms, since_date, "mf_mention", "mentions")
+
+
+def search_tool_mentions(tool_terms, since_date):
+    """Third parties using MF tools, e.g. SnowMapper or TopoPyScale.
+
+    Uptake of a tool is not tied to anyone's name, so it is invisible to
+    every other source here. Tagged mf_tool. Note that "SnowMapper" is an
+    ambiguous term -- an unrelated Python/GEE snow-cover package of the same
+    name exists -- so the filter has to disambiguate these.
+    """
+    return _search_mentions(tool_terms, since_date, "mf_tool", "tool mentions")
 
 
 # ---------------------------------------------------------------------------
@@ -296,6 +313,8 @@ def main():
     all_candidates += search_google_news(glossary["search_terms"], since_date)
     all_candidates += search_person_mentions(
         glossary.get("person_search_terms", []), since_date)
+    all_candidates += search_tool_mentions(
+        glossary.get("tool_search_terms", []), since_date)
 
     print("\nChecking GitHub releases...", file=sys.stderr)
     all_candidates += search_github_releases(glossary.get("github_repos", []), since_date)

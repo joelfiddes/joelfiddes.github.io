@@ -87,11 +87,23 @@ INSTRUCTIONS:
    is a common name - check the subject matter fits). These are press mentions,
    not publications: tag them "media" and say in the summary that the person
    commented on or was quoted about the event.
-4. REJECT generic climate/mountain news and papers by unrelated authors when
-   neither "mf_author" nor "mf_mention" is present.
-5. For accepted items, write a clean 1-2 sentence summary. Mention the MF person
+4. Items with an "mf_tool" field came from a search for one of MF's tools
+   (SnowMapper, TopoPyScale, CROMO-ADAPT). ACCEPT these when a third party is
+   actually using or citing the MF tool - that is evidence of uptake and is
+   valuable. Tag them "media".
+   BEWARE a name collision on "SnowMapper": an unrelated Python/Google Earth
+   Engine package for snow-cover mapping, by Konstantis Alexopoulos of the
+   Scott Polar Research Institute, shares the name. His work is NOT Mountain
+   Futures'. REJECT anything about that package, about Greek mountain snow
+   cover, or about snow-cover reconstruction from Earth Engine imagery.
+   Mountain Futures' SnowMapper is an operational snow model and dashboard for
+   Central Asia (Kyrgyzstan, Kazakhstan, Tajikistan), run with partners such as
+   hydrosolutions and CAIAG - accept only items matching that description.
+5. REJECT generic climate/mountain news and papers by unrelated authors when
+   none of "mf_author", "mf_mention" or "mf_tool" is present.
+6. For accepted items, write a clean 1-2 sentence summary. Mention the MF person
    by name in the summary when "mf_author" or "mf_mention" is set.
-6. Propose EVERY qualifying article as its own separate item. Several outlets
+7. Propose EVERY qualifying article as its own separate item. Several outlets
    covering the same event (wire syndication of one story) is normal and is NOT
    a reason to drop any of them - return one item per article, naming the outlet
    in the title so they can be told apart. The human reviewer picks which to
