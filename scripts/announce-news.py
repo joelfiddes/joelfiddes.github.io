@@ -39,6 +39,14 @@ def env(name, default=None):
     return v if v else default
 
 
+def url(item):
+    """Where an item points. Articles on this site carry a slug; the rest
+    link out to someone else's coverage."""
+    if item.get("slug"):
+        return f"{NEWS_URL}/{item['slug']}"
+    return item.get("link", NEWS_URL)
+
+
 def load(path):
     try:
         return json.loads(Path(path).read_text())
@@ -61,7 +69,7 @@ def render(items):
             it["title"],
             f"  {it['date']}",
             f"  {it['summary']}",
-            f"  Source: {it['link']}",
+            f"  {url(it)}",
             "",
         ]
     lines += [f"Read them on the site: {NEWS_URL}", ""]
@@ -80,9 +88,11 @@ def render(items):
             f'<p style="margin:0 0 12px;font:15px/1.6 '
             f'-apple-system,Segoe UI,sans-serif;color:#122023;">'
             f'{escape(it["summary"])}</p>'
-            f'<a href="{escape(it["link"])}" '
+            f'<a href="{escape(url(it))}" '
             f'style="font:14px/1.4 -apple-system,Segoe UI,sans-serif;'
-            f'color:#272E3F;">Read the source &rarr;</a>'
+            f'color:#272E3F;">'
+            f'{"Read the article" if it.get("slug") else "Read the source"}'
+            f' &rarr;</a>'
             "</div>"
         )
 
@@ -108,8 +118,8 @@ def main():
         return 2
 
     old, new = load(sys.argv[1]), load(sys.argv[2])
-    old_links = {i["link"] for i in old}
-    added = [i for i in new if i["link"] not in old_links]
+    seen = {url(i) for i in old}
+    added = [i for i in new if url(i) not in seen]
 
     if not added:
         print("No newly published items - nothing to announce.")
