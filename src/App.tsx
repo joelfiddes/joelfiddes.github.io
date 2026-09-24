@@ -9,6 +9,7 @@ import Resources from './pages/Resources'
 import Careers from './pages/Careers'
 import Contact from './pages/Contact'
 import News from './pages/News'
+import Article from './pages/Article'
 import Publications from './pages/Publications'
 import Media from './pages/Media'
 
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/resources" element={<Resources />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news/:slug" element={<Article />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/media" element={<Media />} />
           <Route path="/contact" element={<Contact />} />

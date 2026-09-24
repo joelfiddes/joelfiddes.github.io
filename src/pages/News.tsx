@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom'
 import Label from '../components/Label'
 import SectionContactFramerComponent from '../framer/section-contact'
 import news from '../data/news.json'
 
-const sorted = [...news].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+type Item = { title: string; date: string; summary: string; tags: string[]; slug?: string; link?: string }
+
+const sorted = ([...news] as Item[]).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
 function formatDate(dateStr: string) {
   return new Date(dateStr).toLocaleDateString('en-GB', {
@@ -53,12 +56,16 @@ export default function News() {
 
           {/* News List */}
           <div className="flex flex-col">
-            {sorted.map((item, i) => (
-              <a
+            {sorted.map((item, i) => {
+              // Items with a slug are articles on this site; the rest link out.
+              const Card: any = item.slug ? Link : 'a'
+              const target = item.slug
+                ? { to: `/news/${item.slug}` }
+                : { href: item.link, target: '_blank', rel: 'noopener noreferrer' }
+              return (
+              <Card
                 key={i}
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
+                {...target}
                 className="group flex flex-col md:flex-row gap-[12px] md:gap-[32px] md:items-baseline"
                 style={{
                   textDecoration: 'none',
@@ -140,8 +147,9 @@ export default function News() {
                     ))}
                   </div>
                 </div>
-              </a>
-            ))}
+              </Card>
+              )
+            })}
           </div>
         </div>
       </section>
