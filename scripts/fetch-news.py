@@ -34,13 +34,23 @@ GLOSSARY_JSON = SCRIPT_DIR / "glossary.json"
 LOOKBACK_DAYS = int(os.environ.get("LOOKBACK_DAYS", "30"))
 
 
+def item_key(item):
+    """Dedup key for a news item.
+
+    The link when there is one, otherwise title+date -- Mountain Futures' own
+    announcements have no external article to point at, and assuming a link
+    exists crashed the whole pipeline the first time one was added.
+    """
+    return item.get("link") or item.get("slug") or f"{item.get('title', '')}|{item.get('date', '')}"
+
+
 def load_existing_news():
     """Load existing news.json and return set of link URLs for dedup."""
     if not NEWS_JSON.exists():
         return [], set()
     with open(NEWS_JSON) as f:
         items = json.load(f)
-    urls = {item["link"] for item in items}
+    urls = {item_key(item) for item in items}
     # Also create fingerprints from titles for fuzzy dedup
     titles = {fingerprint(item["title"]) for item in items}
     return items, urls | titles

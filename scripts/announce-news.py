@@ -39,6 +39,12 @@ def env(name, default=None):
     return v if v else default
 
 
+def item_key(item):
+    """Dedup key. url() is for display and falls back to the news page, so
+    two link-less items would collide there; this stays unique."""
+    return item.get("link") or item.get("slug") or f"{item.get('title', '')}|{item.get('date', '')}"
+
+
 def url(item):
     """Where an item points. Articles on this site carry a slug; the rest
     link out to someone else's coverage."""
@@ -118,8 +124,8 @@ def main():
         return 2
 
     old, new = load(sys.argv[1]), load(sys.argv[2])
-    seen = {url(i) for i in old}
-    added = [i for i in new if url(i) not in seen]
+    seen = {item_key(i) for i in old}
+    added = [i for i in new if item_key(i) not in seen]
 
     if not added:
         print("No newly published items - nothing to announce.")

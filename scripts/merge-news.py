@@ -19,6 +19,16 @@ REPO_ROOT = SCRIPT_DIR.parent
 DEFAULT_NEWS_JSON = REPO_ROOT / "src" / "data" / "news.json"
 
 
+def item_key(item):
+    """Dedup key for a news item.
+
+    The link when there is one, otherwise title+date -- Mountain Futures' own
+    announcements have no external article to point at, and assuming a link
+    exists crashed the whole pipeline the first time one was added.
+    """
+    return item.get("link") or item.get("slug") or f"{item.get('title', '')}|{item.get('date', '')}"
+
+
 def main():
     if len(sys.argv) < 2:
         sys.stderr.write(__doc__)
@@ -28,8 +38,8 @@ def main():
     news_path = Path(sys.argv[2]) if len(sys.argv) > 2 else DEFAULT_NEWS_JSON
     existing = json.loads(news_path.read_text())
 
-    existing_links = {item["link"] for item in existing}
-    added = [p for p in new_posts if p["link"] not in existing_links]
+    existing_links = {item_key(item) for item in existing}
+    added = [p for p in new_posts if item_key(p) not in existing_links]
 
     if not added:
         print("No new items after dedup.")
