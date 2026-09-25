@@ -34,7 +34,7 @@ export default function Article() {
           <h1 style={{ fontFamily: "'Inter', sans-serif", fontSize: '28px', letterSpacing: '-0.03em', color: 'var(--unframer-forrest)' }}>
             Article not found
           </h1>
-          <Link to="/news" style={{ fontFamily: "'DM Mono', monospace", fontSize: '13px', color: 'var(--unframer-mf-cyan)' }}>
+          <Link to="/news" style={{ fontFamily: "'DM Mono', monospace", fontSize: '13px', color: '#0E7A7A' }}>
             ← All news
           </Link>
         </div>
@@ -80,7 +80,7 @@ export default function Article() {
 const ARTICLE_CSS = `
 .article-back{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:-0.02em;
   color:var(--unframer-neutral-400);text-decoration:none;display:inline-block;margin-bottom:28px}
-.article-back:hover{color:var(--unframer-mf-cyan)}
+.article-back:hover{color:#0E7A7A}
 .article-title{font-family:'Inter',sans-serif;font-size:clamp(28px,4.2vw,42px);line-height:1.12em;
   letter-spacing:-0.035em;font-weight:500;color:var(--unframer-forrest);max-width:22ch}
 .article-meta{display:flex;gap:16px;align-items:center;flex-wrap:wrap;
@@ -97,8 +97,11 @@ const ARTICLE_CSS = `
   letter-spacing:-0.03em;margin-bottom:32px}
 .article-body h2{font-family:'Inter',sans-serif;font-size:20px;line-height:1.3em;
   letter-spacing:-0.03em;font-weight:500;margin:44px 0 14px}
-.article-body a{color:var(--unframer-mf-cyan);text-decoration:none}
-.article-body a:hover{text-decoration:underline}
+/* The project defines no mf-cyan variable, and the brand cyan #35E4E4 sits at
+   1.4:1 on the #F5F5F5 ground. This is that hue taken down to 4.7:1. */
+.article-body a{color:#0E7A7A;text-decoration:underline;text-underline-offset:2px;
+  text-decoration-thickness:1px;text-decoration-color:rgba(14,122,122,.4)}
+.article-body a:hover{text-decoration-color:#0E7A7A}
 
 .article-body .figs{display:grid;gap:1px;background:var(--unframer-neutral-300);
   grid-template-columns:repeat(auto-fit,minmax(160px,1fr));margin:0 0 36px;
