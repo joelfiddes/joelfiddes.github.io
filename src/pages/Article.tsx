@@ -3,11 +3,13 @@ import Label from '../components/Label'
 import SectionContactFramerComponent from '../framer/section-contact'
 import news from '../data/news.json'
 import nepalStorm from '../content/news/nepal-storm.html?raw'
+import topopyscale2 from '../content/news/topopyscale2.html?raw'
 
 // Articles written by Mountain Futures, as opposed to the link-out items that
 // make up most of the news list. Keyed by the `slug` field in news.json.
 const BODIES: Record<string, string> = {
   'nepal-storm-september-2026': nepalStorm,
+  'topopyscale2-v0-1-0': topopyscale2,
 }
 
 type Item = { title: string; date: string; summary: string; tags: string[]; slug?: string; link?: string }
