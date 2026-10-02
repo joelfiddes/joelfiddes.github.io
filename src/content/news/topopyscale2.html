@@ -1,0 +1,74 @@
+<p class="lead">Mountain Futures has released TopoPyScale 2, an open-source tool that turns coarse
+global climate data into weather for real mountain terrain. Version 0.1.0 is free to use under
+the MIT licence, with prebuilt installers for Linux and macOS.</p>
+
+<div class="figs">
+  <div class="fig-box"><span class="fig-v">31<i>km</i></span>
+    <span class="fig-k">ERA5 grid cell</span>
+    <span class="fig-d">One cell can span valleys and summits more than 2,000 m apart</span></div>
+  <div class="fig-box"><span class="fig-v">150</span>
+    <span class="fig-k">Terrain units</span>
+    <span class="fig-d">From a single ERA5 cell in the worked example above Davos</span></div>
+  <div class="fig-box"><span class="fig-v">1041<i>–3097 m</i></span>
+    <span class="fig-k">Elevation range</span>
+    <span class="fig-d">Covered by those units, each with its own hourly forcing</span></div>
+  <div class="fig-box"><span class="fig-v">MIT</span>
+    <span class="fig-k">Licence</span>
+    <span class="fig-d">Open source, free to use and modify</span></div>
+</div>
+
+<h2>Why it matters</h2>
+<p>Global reanalysis such as ERA5 describes the weather in grid cells about 31 km across. In the
+mountains, one cell can span valleys and summits more than 2,000 m apart, but the reanalysis sees
+smooth ground at a single elevation. Snow, water, ecology and hazard studies need the conditions
+on the actual slopes: how cold it is at 3,000 m, how much sun a north face gets, whether the
+precipitation falls as rain or snow.</p>
+
+<p>TopoPyScale 2 bridges that gap. It groups the terrain from a 30–90 m elevation model into
+units of similar elevation, slope, aspect and sky view, and gives each unit its own hourly
+temperature, humidity, wind, shortwave and longwave radiation, and precipitation split into rain
+and snow.</p>
+
+<h2>What is in this release</h2>
+<p>A downscaling engine for ERA5, with the physics written in Python and in Rust for speed. A
+local web page (<code>tps2 ui</code>) to choose an area on a map, set the period and the
+downscaling options, run, and view the result, without editing configuration files. A results
+page (<code>tps2 view</code>) for any run: each variable on the terrain, against elevation, and
+through the season, in a single file that works offline.</p>
+
+<p>It ships with a worked example — a full season above Davos, Switzerland, where one ERA5 grid
+cell becomes 150 terrain units between 1,041 and 3,097 m. It can be opened without installing
+anything, and rebuilt or re-run step by step. Measured limitations are published with numbers, so
+users can judge a result before relying on it.</p>
+
+<p>TopoPyScale 2 runs on Linux and macOS with Python 3.11 to 3.13, and ERA5 is read from Google's
+public archive, so no account is needed. Installers are on the
+<a href="https://github.com/joelfiddes/topopyscale2/releases/tag/v0.1.0">v0.1.0 release page</a>;
+the documentation lives in the repository.</p>
+
+<h2>Built on a decade of research</h2>
+<p>TopoPyScale 2 is a ground-up rewrite of
+<a href="https://doi.org/10.21105/joss.05059">TopoPyScale</a> (Filhol, Fiddes and Aalstad, 2023),
+and implements methods published as
+<a href="https://doi.org/10.5194/gmd-7-387-2014">TopoSCALE</a> (Fiddes and Gruber, 2014) and
+<a href="https://doi.org/10.5194/gmd-5-1245-2012">TopoSUB</a> (Fiddes and Gruber, 2012). It is
+developed by Joel Fiddes (Mountain Futures) and Simon Filhol (Météo-France).</p>
+
+<h2>In operation</h2>
+<p>The same engine already drives
+<a href="https://apps.mountainfutures.ch/snowmapper/">SnowMapper</a>, Mountain Futures' daily snow
+forecasts for several mountain regions.</p>
+
+<p>Snow modelling, station validation, data assimilation, forecasts and climate scenarios exist in
+development and will be released as they mature; the repository's roadmap lists them.</p>
+
+<h2>Get involved</h2>
+<p>Questions, bug reports and feature requests are welcome as
+<a href="https://github.com/joelfiddes/topopyscale2/issues">GitHub issues</a>. Researchers using
+TopoPyScale 2 are asked to cite it using the citation file in the repository, and to get in touch
+about collaboration where it is central to their work.</p>
+
+<p><em>Mountain Futures is a science-based consulting company focused on delivering innovative,
+data-driven solutions for climate resilience in mountain regions. We work at the intersection of
+research, technology, and policy to support communities and institutions facing rapid
+environmental change.</em></p>
