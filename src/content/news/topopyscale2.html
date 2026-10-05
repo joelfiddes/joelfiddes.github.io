@@ -1,5 +1,5 @@
 <p class="lead">Mountain Futures has released TopoPyScale 2, an open-source tool that turns coarse
-global climate data into weather for real mountain terrain. Version 0.1.0 is free to use under
+global climate data into weather for real mountain terrain. Version 0.1.1 is free to use under
 the MIT licence, with prebuilt installers for Linux and macOS.</p>
 
 <div class="figs">
@@ -36,6 +36,10 @@ downscaling options, run, and view the result, without editing configuration fil
 page (<code>tps2 view</code>) for any run: each variable on the terrain, against elevation, and
 through the season, in a single file that works offline.</p>
 
+<p>Alongside whole areas, TPS2 can downscale to <strong>named points</strong> such as weather
+stations or field sites. Each point gets its own forcing, with slope, aspect, horizon and sky view
+taken from the terrain around it.</p>
+
 <p>It ships with a worked example — a full season above Davos, Switzerland, where one ERA5 grid
 cell becomes 150 terrain units between 1,041 and 3,097 m. It can be opened without installing
 anything, and rebuilt or re-run step by step. Measured limitations are published with numbers, so
@@ -43,7 +47,7 @@ users can judge a result before relying on it.</p>
 
 <p>TopoPyScale 2 runs on Linux and macOS with Python 3.11 to 3.13, and ERA5 is read from Google's
 public archive, so no account is needed. Installers are on the
-<a href="https://github.com/joelfiddes/topopyscale2/releases/tag/v0.1.0">v0.1.0 release page</a>;
+<a href="https://github.com/joelfiddes/topopyscale2/releases/latest">latest release page</a>;
 the documentation lives in the repository.</p>
 
 <h2>Built on a decade of research</h2>
