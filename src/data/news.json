@@ -1,5 +1,17 @@
 [
   {
+    "title": "TopoPyScale 2 released as open source",
+    "date": "2026-10-06",
+    "summary": "Mountain Futures has released TopoPyScale 2 (v0.1.2) under the MIT licence — an open-source tool that downscales ERA5 reanalysis onto real mountain terrain, for whole areas or for named points such as weather stations, giving each its own hourly temperature, wind, radiation and rain/snow split. Developed by Joel Fiddes with Simon Filhol (Météo-France); the same engine drives SnowMapper.",
+    "slug": "topopyscale2-release",
+    "tags": [
+      "release",
+      "TopoPyScale",
+      "open source",
+      "downscaling"
+    ]
+  },
+  {
     "title": "Climate change adaptation in the Andes: Key lessons and recommendations",
     "date": "2026-10-01",
     "summary": "Simon Allen co-authored a new publication on Zenodo setting out key lessons and recommendations for climate change adaptation in the Andes.",
