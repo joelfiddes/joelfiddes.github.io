@@ -67,7 +67,8 @@ const allPublications: Publication[] = [
   { authors: 'Keller, M., Hungerbuehler, G., Knecht, O., Sheikh, S., Beutel, J., Gubler, S., Fiddes, J., & Gruber, S.', year: 2010, title: 'iAssist: rapid deployment and maintenance of tiny sensing systems', venue: 'Proceedings of the 8th ACM Conference on Embedded Networked Sensor Systems (SenSys \'10)', type: 'peer-reviewed', link: 'https://doi.org/10.1145/1869983.1870043' },
   { authors: 'Fiddes, J.', year: 2010, title: 'Climbs and expeditions: Asia, Afghanistan, Hindu Kush, Koh-i-Beefy', venue: 'American Alpine Journal, 52(84)', type: 'report', link: 'https://publications.americanalpineclub.org/articles/12201025500/Koh-i-Beefy-ca-5400m' },
   // 2007
-  { authors: 'Fiddes, J.', year: 2007, title: 'Afghanistan: Implications Of Climate Change For Water Resources In The Kunduz River Basin', venue: 'Climate Challenges: Bridging the Knowledge Gap, Mercy Corps', type: 'report', link: 'https://www.mercycorps.org/files/file1198714955.pdf' },
+  { authors: 'Fiddes, J.', year: 2007, title: 'Implications of climate change for water resources in the Kunduz River Basin, Afghanistan', venue: 'MSc thesis, University of Edinburgh (summarised in Mercy Corps, Climate Challenges: Bridging the Knowledge Gap)', type: 'thesis', link: 'https://www.unisdr.org/files/9060_file11987149551.pdf' },
+  { authors: 'Fiddes, J.', year: 2007, title: 'Afghanistan: Implications Of Climate Change For Water Resources In The Kunduz River Basin', venue: 'Climate Challenges: Bridging the Knowledge Gap, Mercy Corps', type: 'report', link: 'https://www.unisdr.org/files/9060_file11987149551.pdf' },
 
   // === Simon Allen publications ===
   // 2025
