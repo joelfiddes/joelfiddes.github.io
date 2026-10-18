@@ -13,6 +13,9 @@ type Publication = {
 
 const allPublications: Publication[] = [
   // 2026
+  { authors: 'Barandun, M., Fiddes, J., Atanov, S., Saks, T., Mathys, T., Pohl, E., Kenzhebaev, R., Navruzshoev, H., et al.', year: 2026, title: 'Cryosphere Monitoring in Central Asia', venue: 'Towards Sustainable Future of Central Asia: Analysis of Climate, Resources and Human Security, Advances in Global Change Research, Springer, pp. 117–147', type: 'book', link: 'https://doi.org/10.1007/978-3-032-29989-5_5' },
+  { authors: 'Barandun, M., Saks, T., Atanov, S., Azisov, E., Bektursunov, Z., Esenaman Uulu, M., Fiddes, J., et al.', year: 2026, title: 'The State of the Central Asian Cryosphere', venue: 'Towards Sustainable Future of Central Asia: Analysis of Climate, Resources and Human Security, Advances in Global Change Research, Springer, pp. 79–116', type: 'book', link: 'https://doi.org/10.1007/978-3-032-29989-5_4' },
+  { authors: 'Van Tricht, L., Kneib, M., Huss, M., Zekollari, H., Azisov, E., Barandun, M., et al. (incl. Fiddes, J.)', year: 2026, title: 'Record-breaking glacier mass loss in Central Asia in 2025', venue: 'Environmental Research Letters, 21', type: 'peer-reviewed', link: 'https://doi.org/10.1088/1748-9326/ae6712' },
   { authors: 'Pokhrel, P., Griffioen, J., Bogaard, T.A., Kraaijenbrink, P.D.A., Fiddes, J., & Immerzeel, W.W.', year: 2026, title: 'Upstream hydrology and the importance of snowmelt in buffering droughts in the Karnali basin in Nepal', venue: 'Frontiers in Water, 7', type: 'peer-reviewed', link: 'https://doi.org/10.3389/frwa.2025.1720178' },
   // 2025
   { authors: 'Khanal, S., Faezeh, N., Fiddes, J., Kraaijenbrink, P., Immerzeel, W., et al.', year: 2025, title: 'Guidelines for Glacio-hydrological Modelling in High Mountain Asia', venue: 'FutureWater Report 265', type: 'report', link: 'https://www.futurewater.eu/projects/development-of-a-glacio-hydrological-model-and-iwrm-plan-for-the-uttarakhand-subbasin-in-india/' },
@@ -67,7 +70,7 @@ const allPublications: Publication[] = [
   { authors: 'Keller, M., Hungerbuehler, G., Knecht, O., Sheikh, S., Beutel, J., Gubler, S., Fiddes, J., & Gruber, S.', year: 2010, title: 'iAssist: rapid deployment and maintenance of tiny sensing systems', venue: 'Proceedings of the 8th ACM Conference on Embedded Networked Sensor Systems (SenSys \'10)', type: 'peer-reviewed', link: 'https://doi.org/10.1145/1869983.1870043' },
   { authors: 'Fiddes, J.', year: 2010, title: 'Climbs and expeditions: Asia, Afghanistan, Hindu Kush, Koh-i-Beefy', venue: 'American Alpine Journal, 52(84)', type: 'report', link: 'https://publications.americanalpineclub.org/articles/12201025500/Koh-i-Beefy-ca-5400m' },
   // 2007
-  { authors: 'Fiddes, J.', year: 2007, title: 'Implications of climate change for water resources in the Kunduz River Basin, Afghanistan', venue: 'MSc thesis, University of Edinburgh (summarised in Mercy Corps, Climate Challenges: Bridging the Knowledge Gap)', type: 'thesis', link: 'https://www.unisdr.org/files/9060_file11987149551.pdf' },
+  { authors: 'Fiddes, J.', year: 2007, title: 'Implications of Climate Change for Water Resources in the Kunduz River Basin, Afghanistan', venue: 'MSc dissertation, University of Edinburgh', type: 'thesis', link: '/docs/Fiddes_2007_MSc_Kunduz_River_Basin.pdf' },
   { authors: 'Fiddes, J.', year: 2007, title: 'Afghanistan: Implications Of Climate Change For Water Resources In The Kunduz River Basin', venue: 'Climate Challenges: Bridging the Knowledge Gap, Mercy Corps', type: 'report', link: 'https://www.unisdr.org/files/9060_file11987149551.pdf' },
 
   // === Simon Allen publications ===
