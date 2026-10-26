@@ -80,6 +80,15 @@ INSTRUCTIONS:
    team member - ACCEPT these by default unless the title is clearly off-topic
    (e.g. unrelated domain like marine biology or pathogens, which can occur due
    to OpenAlex author-merging errors).
+2b. Items with an "mf_author_candidate" field came from a CrossRef search by
+   SURNAME ONLY and are NOT verified. The surname and first initial matched;
+   the person may be someone else entirely. There is a known collision on
+   "Fiddes": a J.C. Fiddes published extensively on chorionic gonadotropin,
+   fibroblast growth factor and bacteriophage genomes - that is molecular
+   biology, not Joel Fiddes. ACCEPT only when the subject matter is clearly in
+   the cryosphere / snow / glacier / permafrost / mountain-hydrology / climate
+   domain. REJECT anything in an unrelated field no matter how well the name
+   matches. Treat an accepted one as a publication, as in rule 2.
 3. Items with an "mf_mention" field came from a name search and are press
    coverage that quotes or names that MF person. ACCEPT these when the article
    is in the cryosphere / glacier / mountain-hazard domain AND the person is
@@ -100,7 +109,8 @@ INSTRUCTIONS:
    Central Asia (Kyrgyzstan, Kazakhstan, Tajikistan), run with partners such as
    hydrosolutions and CAIAG - accept only items matching that description.
 5. REJECT generic climate/mountain news and papers by unrelated authors when
-   none of "mf_author", "mf_mention" or "mf_tool" is present.
+   none of "mf_author", "mf_author_candidate", "mf_mention" or "mf_tool" is
+   present.
 6. For accepted items, write a clean 1-2 sentence summary. Mention the MF person
    by name in the summary when "mf_author" or "mf_mention" is set.
 7. Propose EVERY qualifying article as its own separate item. Several outlets

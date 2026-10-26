@@ -92,6 +92,28 @@ def fetch_xml(url):
         return None
 
 
+
+def _crossref_date(item, fallback):
+    """Best publication date for a CrossRef record, as YYYY-MM-DD.
+
+    Prefers the online date: a book chapter issued with a year and no month
+    would otherwise be stamped 1 January and sort months below its real
+    appearance. Note that .get("date-parts", [[]]) returns a truthy [[]] when
+    the key is absent, so each candidate has to be tested for real content
+    rather than chained with `or`.
+    """
+    for key in ("published-online", "published-print", "issued"):
+        parts = (item.get(key) or {}).get("date-parts") or [[]]
+        p = parts[0]
+        if not p or not p[0]:
+            continue
+        if len(p) >= 3:
+            return f"{p[0]}-{p[1]:02d}-{p[2]:02d}"
+        if len(p) >= 2:
+            return f"{p[0]}-{p[1]:02d}-01"
+        return f"{p[0]}-01-01"
+    return fallback
+
 # ---------------------------------------------------------------------------
 # Source: CrossRef (publications by author ORCID)
 # ---------------------------------------------------------------------------
@@ -116,16 +138,7 @@ def search_crossref(authors, since_date):
             title = item.get("title", [""])[0]
             doi = item.get("DOI", "")
             link = f"https://doi.org/{doi}" if doi else ""
-            # Get publication date
-            date_parts = (
-                item.get("published-print", {}).get("date-parts", [[]])
-                or item.get("published-online", {}).get("date-parts", [[]])
-            )
-            if date_parts and date_parts[0]:
-                parts = date_parts[0]
-                date_str = f"{parts[0]}-{parts[1]:02d}-{parts[2]:02d}" if len(parts) >= 3 else f"{parts[0]}-{parts[1]:02d}-01" if len(parts) >= 2 else f"{parts[0]}-01-01"
-            else:
-                date_str = since_date
+            date_str = _crossref_date(item, since_date)
             candidates.append({
                 "title": title,
                 "date": date_str,
@@ -176,6 +189,103 @@ def search_openalex(authors, since_date):
             })
     return candidates
 
+
+
+# ---------------------------------------------------------------------------
+# Source: CrossRef by author NAME (catches deposits that carry no ORCID)
+# ---------------------------------------------------------------------------
+# Large multi-author collaborations routinely deposit no ORCID, so the
+# ORCID-filtered search above cannot see them at any lookback. Searching by
+# name instead needs two guards, both established by testing against the live
+# API: CrossRef's "query.author" is a relevance search, not a filter, so it
+# returns other people entirely (a J.C. Fiddes published on chorionic
+# gonadotropin in the 1980s); and "from-index-date" matches RE-indexing, so a
+# bare name query floods with decades-old records. Requiring the issued year to
+# be the current one removes both classes at once.
+def search_crossref_by_name(authors, since_date):
+    """Search CrossRef by author surname for works it indexed recently."""
+    candidates = []
+    this_year = datetime.now().year
+    for author in authors:
+        name = author["name"]
+        parts = name.split()
+        family, initial = parts[-1], parts[0][:1].upper()
+        print(f"  CrossRef: searching name {family}, {initial}* ({name})...",
+              file=sys.stderr)
+        query = urllib.parse.urlencode({
+            "filter": f"from-index-date:{since_date}",
+            "query.author": family,
+            "rows": 100,
+            "sort": "indexed",
+            "order": "desc",
+            "select": "DOI,title,author,issued,published-online,container-title,abstract",
+        })
+        data = fetch_json(f"https://api.crossref.org/works?{query}")
+        if not data or "message" not in data:
+            continue
+        for item in data["message"].get("items", []):
+            issued = (item.get("issued", {}).get("date-parts") or [[None]])[0]
+            if not issued or not issued[0] or issued[0] < this_year:
+                continue
+            if not any(
+                a.get("family", "").lower() == family.lower()
+                and a.get("given", "").upper().startswith(initial)
+                for a in item.get("author", [])
+            ):
+                continue
+            doi = item.get("DOI", "")
+            candidates.append({
+                "title": item.get("title", [""])[0],
+                "date": _crossref_date(item, since_date),
+                "link": f"https://doi.org/{doi}" if doi else "",
+                "source": "CrossRef (name)",
+                # NOT mf_author: the surname matched, the person did not.
+                "mf_author_candidate": name,
+                "venue": (item.get("container-title") or [""])[0],
+                "raw_abstract": item.get("abstract", ""),
+            })
+    return candidates
+
+
+# ---------------------------------------------------------------------------
+# Source: OpenAlex, the 1 January bucket (catches year-only publication dates)
+# ---------------------------------------------------------------------------
+# A book chapter issued with a year and no month lands in OpenAlex as
+# <year>-01-01 regardless of when it actually appeared, so any rolling lookback
+# window excludes it for all but the first days of January. OpenAlex's
+# from_created_date would be the honest filter but is a paid feature, so query
+# that one date directly instead. The set is small and dedup handles repeats.
+def search_openalex_year_start(authors):
+    """Search OpenAlex for this year's works dated 1 January (year-only dates)."""
+    candidates = []
+    jan_first = f"{datetime.now().year}-01-01"
+    for author in authors:
+        name = author["name"]
+        orcid = author["orcid"]
+        print(f"  OpenAlex: checking {jan_first} bucket for {name}...", file=sys.stderr)
+        orcid_filter = urllib.parse.quote(f"https://orcid.org/{orcid}", safe="")
+        url = (
+            "https://api.openalex.org/works"
+            f"?filter=authorships.author.orcid:{orcid_filter}"
+            f",from_publication_date:{jan_first},to_publication_date:{jan_first}"
+            "&per-page=50&mailto=info@mountainfutures.ch"
+        )
+        data = fetch_json(url)
+        if not data:
+            continue
+        for item in data.get("results", []):
+            link = item.get("doi") or item.get("id", "")
+            if link and not link.startswith("http"):
+                link = f"https://doi.org/{link}"
+            candidates.append({
+                "title": item.get("title", ""),
+                "date": item.get("publication_date", jan_first),
+                "link": link,
+                "source": "OpenAlex (year-start)",
+                "mf_author": name,
+                "raw_abstract": "",
+            })
+    return candidates
 
 # ---------------------------------------------------------------------------
 # Source: Google News RSS (web search from glossary terms)
@@ -317,7 +427,9 @@ def main():
 
     print("Searching academic sources...", file=sys.stderr)
     all_candidates += search_crossref(glossary["authors"], since_date)
+    all_candidates += search_crossref_by_name(glossary["authors"], since_date)
     all_candidates += search_openalex(glossary["authors"], since_date)
+    all_candidates += search_openalex_year_start(glossary["authors"])
 
     print("\nSearching web...", file=sys.stderr)
     all_candidates += search_google_news(glossary["search_terms"], since_date)
