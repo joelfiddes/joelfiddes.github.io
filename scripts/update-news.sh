@@ -30,6 +30,22 @@ done
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_DIR"
 
+# A run that dies between `git checkout -b` and the checkout back to main leaves
+# the clone on its news branch. The cron's `git pull` then fails before this
+# script even starts, so one transient failure becomes a permanent silent one.
+# Recover instead: the only local change is a half-merged news.json, which the
+# next run regenerates from scratch anyway.
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+case "$CURRENT_BRANCH" in
+    news-update-*)
+        echo "Clone was left on $CURRENT_BRANCH by an earlier run; returning to main"
+        git checkout -q -- src/data/news.json 2>/dev/null || true
+        git checkout -q main
+        git pull -q --ff-only
+        CURRENT_BRANCH=main
+        ;;
+esac
+
 # Note: macOS BSD mktemp only randomizes trailing X's — no suffix after them.
 CANDIDATES_FILE=$(mktemp /tmp/news-candidates.XXXXXX)
 FILTERED_FILE=$(mktemp /tmp/news-filtered.XXXXXX)
@@ -37,7 +53,21 @@ NEWS_BEFORE=$(mktemp /tmp/news-before.XXXXXX)
 PR_BODY_FILE=$(mktemp /tmp/news-pr-body.XXXXXX)
 NEWS_JSON="$REPO_DIR/src/data/news.json"
 
-cleanup() { rm -f "$CANDIDATES_FILE" "$FILTERED_FILE" "$NEWS_BEFORE" "$PR_BODY_FILE"; }
+# Only the branch this run created is ever undone. Running the script by hand
+# from a feature branch must not switch the branch out from under you, so the
+# trap restores where we started rather than hardcoding main.
+STARTING_BRANCH="$CURRENT_BRANCH"
+CREATED_BRANCH=""
+
+cleanup() {
+    rm -f "$CANDIDATES_FILE" "$FILTERED_FILE" "$NEWS_BEFORE" "$PR_BODY_FILE"
+    # A failure between `git checkout -b` and the checkout back leaves the clone
+    # on the news branch, which breaks every later run. See the note above.
+    if [ -n "$CREATED_BRANCH" ] && [ "$(git rev-parse --abbrev-ref HEAD)" = "$CREATED_BRANCH" ]; then
+        git checkout -q -- src/data/news.json 2>/dev/null || true
+        git checkout -q "$STARTING_BRANCH" 2>/dev/null || true
+    fi
+}
 trap cleanup EXIT
 
 # Kept so the PR body can list exactly what the merge added.
@@ -85,11 +115,12 @@ echo "=== Step 4: Creating PR ==="
 
 BRANCH="news-update-$(date +%Y%m%d-%H%M)"
 git checkout -b "$BRANCH"
+CREATED_BRANCH="$BRANCH"
 git add src/data/news.json
 git commit -m "$(cat <<'EOF'
 Add new items to news feed
 
-Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
 EOF
 )"
 git push origin "$BRANCH"
@@ -114,8 +145,8 @@ if [ "$(uname)" = "Darwin" ] && [ -t 1 ]; then
     osascript -e "display notification \"$NUM_POSTS new items ready for review\" with title \"Mountain Futures News\" sound name \"Glass\"" || true
 fi
 
-# Switch back to main
-git checkout main
+# Switch back (the trap would also do this, but keep the happy path explicit)
+git checkout "$STARTING_BRANCH"
 
 echo ""
 echo "Done! Review the PR on GitHub, edit if needed, then merge to publish."

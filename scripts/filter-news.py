@@ -150,12 +150,19 @@ def filter_via_api(prompt):
 
 
 def filter_via_cli(prompt):
-    """Use the local Claude Code CLI, which reads credentials from the keychain."""
+    """Use the local Claude Code CLI.
+
+    Credentials come from whichever of these the machine has: the login
+    keychain (a Mac where you have run `claude /login`), or
+    CLAUDE_CODE_OAUTH_TOKEN in the environment (the headless myserver run,
+    where cron sources it from ~/.config/mountainfutures-news.env). Either
+    way it bills against the subscription, not the metered API.
+    """
     env = dict(os.environ)
     env.pop("CLAUDECODE", None)  # allow nesting inside a Claude Code session
     try:
         proc = subprocess.run(
-            ["claude", "-p", prompt, "--output-format", "text"],
+            ["claude", "-p", prompt, "--output-format", "text", "--model", MODEL],
             capture_output=True, text=True, env=env,
         )
     except FileNotFoundError:
@@ -173,9 +180,10 @@ def filter_via_cli(prompt):
         )
         if "Not logged in" in proc.stdout or "Not logged in" in proc.stderr:
             sys.stderr.write(
-                "The CLI could not reach the login keychain. Scheduled runs must go\n"
-                "through the launchd agent, not cron. Or set ANTHROPIC_API_KEY to\n"
-                "use the API backend instead.\n"
+                "No usable credential. On a Mac, cron cannot read the login\n"
+                "keychain (`security` exits 44) -- schedule through the launchd\n"
+                "agent instead. On a headless host, export CLAUDE_CODE_OAUTH_TOKEN\n"
+                "(from `claude setup-token`); note it expires after one year.\n"
             )
         raise SystemExit(1)
 
