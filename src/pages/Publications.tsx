@@ -75,6 +75,10 @@ const allPublications: Publication[] = [
   { authors: 'Fiddes, J.', year: 2007, title: 'Afghanistan: Implications Of Climate Change For Water Resources In The Kunduz River Basin', venue: 'Climate Challenges: Bridging the Knowledge Gap, Mercy Corps', type: 'report', link: 'https://www.unisdr.org/files/9060_file11987149551.pdf' },
 
   // === Simon Allen publications ===
+  // 2026
+  { authors: 'Huggel, C., Allen, S.K., Mark, E., Shugar, D.H., Steiner, J., & Upadhyay, K.', year: 2026, title: 'Nepal\'s disaster is an urgent wake-up call', venue: 'Nature, 658, 868–871 (Comment)', type: 'policy', link: 'https://doi.org/10.1038/d41586-026-03314-6' },
+  { authors: 'Zhu, J., Zheng, G., Zhang, G., Chen, W., Zhong, Y., Allen, S., Li, D., Yuan, Y., et al.', year: 2026, title: 'From Hazard to Resource: A Screening-Level Assessment of Glacial Lake Hydropower Potential and Development Suitability in the Poiqu River Basin, Central Himalaya', venue: 'Water Resources Research, 62(10)', type: 'peer-reviewed', link: 'https://doi.org/10.1029/2025wr041374' },
+  { authors: 'Mani, P., Allen, S., Bavay, M., Hählen, N., & Stoffel, M.', year: 2026, title: 'Disposition Model for Permafrost Degradation in Mountainous Regions', venue: 'Permafrost and Periglacial Processes, 37(4), 592–609', type: 'peer-reviewed', link: 'https://doi.org/10.1002/ppp.70049' },
   // 2025
   { authors: 'Niggli, L., Frey, H., Allen, S., Alybaeva, N., Huggel, C., Moldobekov, B., & Zaginaev, V.', year: 2025, title: 'Modelling the effectiveness of GLOF DRM measures – a case study from the Ala-Archa valley, Kyrgyz Republic', venue: 'EGUsphere [preprint]', type: 'peer-reviewed', link: 'https://doi.org/10.5194/egusphere-2025-290' },
   { authors: 'Sattar, A., Cook, K., Rai, S.K., Berthier, E., Allen, S.K., Rinzen, S., et al.', year: 2025, title: 'The Sikkim flood of October 2023: Drivers, causes and impacts of a multihazard cascade', venue: 'Science', type: 'peer-reviewed', link: 'https://doi.org/10.1126/science.ads2659' },
