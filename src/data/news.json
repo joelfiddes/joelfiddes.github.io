@@ -1,5 +1,30 @@
 [
   {
+    "title": "Cryosphere Monitoring in Central Asia",
+    "date": "2026-10-10",
+    "summary": "Joel Fiddes co-authored a book chapter in Advances in Global Change Research on cryosphere monitoring in the Tien Shan and Pamir. It traces how the glacier monitoring network was rebuilt from around 2010 and later extended to snow, permafrost and automated weather stations. It also argues for bringing the data into operational use by national hydrometeorological services, and for monitoring funded by governments that can be sustained over time.",
+    "link": "https://doi.org/10.1007/978-3-032-29989-5_5",
+    "tags": [
+      "publication",
+      "cryosphere",
+      "monitoring",
+      "Central Asia"
+    ]
+  },
+  {
+    "title": "The State of the Central Asian Cryosphere",
+    "date": "2026-10-10",
+    "summary": "Joel Fiddes co-authored a book chapter in Advances in Global Change Research reviewing climate-driven change in snow, glaciers and permafrost across the Tien Shan and Pamir. It projects that Central Asian glaciers will lose 58–85% of their volume by 2100, and finds that peak runoff will come sooner in the Tien Shan than in the Pamir.",
+    "link": "https://doi.org/10.1007/978-3-032-29989-5_4",
+    "tags": [
+      "publication",
+      "cryosphere",
+      "glaciers",
+      "snow",
+      "Central Asia"
+    ]
+  },
+  {
     "title": "TopoPyScale 2 released as open source",
     "date": "2026-10-06",
     "summary": "Mountain Futures has released TopoPyScale 2 (v0.1.2) under the MIT licence — an open-source tool that downscales ERA5 reanalysis onto real mountain terrain, for whole areas or for named points such as weather stations, giving each its own hourly temperature, wind, radiation and rain/snow split. Developed by Joel Fiddes with Simon Filhol (Météo-France); the same engine drives SnowMapper.",
