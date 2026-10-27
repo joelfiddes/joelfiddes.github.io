@@ -212,12 +212,16 @@ def search_crossref_by_name(authors, since_date):
         family, initial = parts[-1], parts[0][:1].upper()
         print(f"  CrossRef: searching name {family}, {initial}* ({name})...",
               file=sys.stderr)
+        # No sort: CrossRef's default is relevance, and sorting by index date
+        # instead discards it, which turns the 100-row window into a lottery
+        # over everything indexed since `since_date`. Measured 2026-10-27 for
+        # "Allen" over 45,761 matching works: sort=indexed returned 100 rows of
+        # which 1 had an author actually called Allen, S*; relevance returned 4;
+        # relevance with the full name returned 23.
         query = urllib.parse.urlencode({
             "filter": f"from-index-date:{since_date}",
-            "query.author": family,
+            "query.author": name,
             "rows": 100,
-            "sort": "indexed",
-            "order": "desc",
             "select": "DOI,title,author,issued,published-online,container-title,abstract",
         })
         data = fetch_json(f"https://api.crossref.org/works?{query}")
@@ -243,6 +247,79 @@ def search_crossref_by_name(authors, since_date):
                 "mf_author_candidate": name,
                 "venue": (item.get("container-title") or [""])[0],
                 "raw_abstract": item.get("abstract", ""),
+            })
+    return candidates
+
+
+# ---------------------------------------------------------------------------
+# Source: OpenAlex by raw author name (catches works with no ORCID deposited)
+# ---------------------------------------------------------------------------
+# The ORCID filters miss anything whose publisher deposited no ORCID, and the
+# CrossRef name search cannot rescue it for a common surname: a relevance query
+# for "Simon Allen" has 164,701 recently-indexed matches, so the one we want is
+# nowhere near the first 100.
+#
+# OpenAlex searches the raw author strings instead, which narrows the same
+# window to a handful. Measured 2026-10-27, since 2026-09-27:
+#
+#   raw_author_name.search:allen         1,994 works
+#   raw_author_name.search:"simon allen"    19 works, 6 surviving the name test
+#   raw_author_name.search:"joel fiddes"     1 work,  1 surviving
+#
+# This is what found Huggel et al., "Nepal's disaster is an urgent wake-up
+# call" (Nature 658, 868-871) and Zhu et al. in Water Resources Research, both
+# of which every other source here missed.
+#
+# Note it cannot be an author-id filter: with no ORCID on the record, OpenAlex's
+# disambiguator gave that Nature comment a brand-new author entity for Simon
+# Allen (A5159099228) rather than his established one (A5070988903), so
+# filtering on the known id misses it just as surely.
+def search_openalex_by_name(authors, since_date):
+    """Search OpenAlex by raw author name, for works that deposited no ORCID."""
+    candidates = []
+    for author in authors:
+        name = author["name"]
+        parts = name.split()
+        family, initial = parts[-1], parts[0][:1].upper()
+        print(f"  OpenAlex: searching name {name}...", file=sys.stderr)
+        name_filter = urllib.parse.quote(name.lower(), safe="")
+        url = (
+            "https://api.openalex.org/works"
+            f"?filter=raw_author_name.search:{name_filter}"
+            f",from_publication_date:{since_date}"
+            "&per-page=100&mailto=info@mountainfutures.ch"
+        )
+        data = fetch_json(url)
+        if not data:
+            continue
+        for item in data.get("results", []):
+            # The name search matches the tokens anywhere in the author list, so
+            # a paper with some other Simon and some other Allen also comes back.
+            # Require one author whose surname and given initial both match.
+            names = [
+                (a.get("author") or {}).get("display_name", "") or ""
+                for a in item.get("authorships", [])
+            ]
+            if not any(
+                n.split() and n.split()[-1].lower() == family.lower()
+                and n.split()[0][:1].upper() == initial
+                for n in names
+            ):
+                continue
+            link = item.get("doi") or item.get("id", "")
+            if link and not link.startswith("http"):
+                link = f"https://doi.org/{link}"
+            source = ((item.get("primary_location") or {}).get("source") or {})
+            candidates.append({
+                "title": item.get("title", "") or "",
+                "date": item.get("publication_date", since_date),
+                "link": link,
+                "source": "OpenAlex (name)",
+                # NOT mf_author: the name matched, the person is unconfirmed.
+                # Simon J. Allen (dolphins) and S. Allen (astronomy) both land here.
+                "mf_author_candidate": name,
+                "venue": source.get("display_name") or "",
+                "raw_abstract": "",
             })
     return candidates
 
@@ -429,6 +506,7 @@ def main():
     all_candidates += search_crossref(glossary["authors"], since_date)
     all_candidates += search_crossref_by_name(glossary["authors"], since_date)
     all_candidates += search_openalex(glossary["authors"], since_date)
+    all_candidates += search_openalex_by_name(glossary["authors"], since_date)
     all_candidates += search_openalex_year_start(glossary["authors"])
 
     print("\nSearching web...", file=sys.stderr)
