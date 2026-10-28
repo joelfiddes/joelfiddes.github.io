@@ -1,5 +1,17 @@
 [
   {
+    "title": "Nepal's disaster is an urgent wake-up call",
+    "date": "2026-10-20",
+    "summary": "Simon Allen co-authored a Comment in Nature, led by Christian Huggel, arguing that the Rasuwa disaster of 26 August 2026 shows mountain hazard assessment built on the historical record is no longer adequate. Recent record-breaking events in Nepal, India, Sikkim, Switzerland and Alaska have little precedent in the records used to anticipate them. The authors call for using several complementary approaches together — probabilistic risk analysis, plausible worst-case scenarios, storylines of cascading effects, and risk-network analysis of who is exposed — rather than relying on any one of them.",
+    "link": "https://doi.org/10.1038/d41586-026-03314-6",
+    "tags": [
+      "publication",
+      "hazards",
+      "Nepal",
+      "Himalaya"
+    ]
+  },
+  {
     "title": "Cryosphere Monitoring in Central Asia",
     "date": "2026-10-10",
     "summary": "Joel Fiddes co-authored a book chapter in Advances in Global Change Research on cryosphere monitoring in the Tien Shan and Pamir. It traces how the glacier monitoring network was rebuilt from around 2010 and later extended to snow, permafrost and automated weather stations. It also argues for bringing the data into operational use by national hydrometeorological services, and for monitoring funded by governments that can be sustained over time.",
@@ -34,6 +46,18 @@
       "TopoPyScale",
       "open source",
       "downscaling"
+    ]
+  },
+  {
+    "title": "From hazard to resource: glacial lake hydropower potential in the Poiqu basin, Central Himalaya",
+    "date": "2026-10-01",
+    "summary": "Simon Allen co-authored a study in Water Resources Research providing a screening-level assessment of the hydropower potential of glacial lakes in the Poiqu River basin of the Central Himalaya, and of how suitable such development would be. It reframes lakes usually treated purely as an outburst-flood hazard as a possible water resource.",
+    "link": "https://doi.org/10.1029/2025wr041374",
+    "tags": [
+      "publication",
+      "GLOF",
+      "Himalaya",
+      "hydropower"
     ]
   },
   {
@@ -178,6 +202,18 @@
       "publication",
       "glaciers",
       "Third Pole"
+    ]
+  },
+  {
+    "title": "A disposition model for permafrost degradation in mountainous regions",
+    "date": "2026-07-05",
+    "summary": "Simon Allen co-authored a paper in Permafrost and Periglacial Processes presenting a virtual monitoring framework that simulates the hydrothermal state of mountain permafrost continuously, driven by the SNOWPACK energy-balance model and forced either with station data or with medium-range forecast ensembles. Tested at two sites in the Bernese Oberland, it reproduced borehole temperatures well in massive bedrock at Rottal but struggled in the heterogeneous ground at Schilthorn, pointing to seasonal permafrost forecasting for hazard assessment as feasible but limited by subsurface parameterisations.",
+    "link": "https://doi.org/10.1002/ppp.70049",
+    "tags": [
+      "publication",
+      "permafrost",
+      "hazards",
+      "Alps"
     ]
   },
   {
