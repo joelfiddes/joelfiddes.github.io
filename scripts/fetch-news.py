@@ -17,6 +17,8 @@ import json
 import os
 import sys
 import hashlib
+import re
+import subprocess
 import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
@@ -54,6 +56,37 @@ def load_existing_news():
     # Also create fingerprints from titles for fuzzy dedup
     titles = {fingerprint(item["title"]) for item in items}
     return items, urls | titles
+
+
+def load_pending_pr_keys():
+    """Dedup keys for items already proposed in OPEN news-update PRs.
+
+    Dedup against main alone meant an unmerged item was re-proposed every
+    morning: PRs #40-#45 (2026-10-31..11-05) were six copies of one paper.
+    Reads the added "title"/"link" lines from each open PR's diff. Fails soft:
+    without gh (or without auth) this only costs a possible duplicate PR,
+    which must never stop the run.
+    """
+    keys = set()
+    try:
+        out = subprocess.run(
+            ["gh", "pr", "list", "--state", "open", "--json", "number,headRefName"],
+            capture_output=True, text=True, timeout=60, cwd=REPO_ROOT, check=True,
+        ).stdout
+        prs = [p for p in json.loads(out) if p["headRefName"].startswith("news-update-")]
+        for pr in prs:
+            diff = subprocess.run(
+                ["gh", "pr", "diff", str(pr["number"])],
+                capture_output=True, text=True, timeout=60, cwd=REPO_ROOT, check=True,
+            ).stdout
+            for m in re.finditer(r'^\+\s*"(title|link)":\s*"(.*)",?\s*$', diff, re.M):
+                value = json.loads(f'"{m.group(2)}"')
+                keys.add(fingerprint(value) if m.group(1) == "title" else value)
+        print(f"  Open news PRs: {len(prs)} ({len(keys)} pending keys)", file=sys.stderr)
+    except Exception as e:  # noqa: BLE001 -- see docstring
+        print(f"  Warning: could not read open news PRs ({e}); "
+              "an unmerged item may be proposed again", file=sys.stderr)
+    return keys
 
 
 def fingerprint(text):
@@ -102,16 +135,22 @@ def _crossref_date(item, fallback):
     the key is absent, so each candidate has to be tested for real content
     rather than chained with `or`.
     """
-    for key in ("published-online", "published-print", "issued"):
+    today = datetime.now().strftime("%Y-%m-%d")
+    for key in ("published-online", "published-print", "issued", "created"):
         parts = (item.get(key) or {}).get("date-parts") or [[]]
         p = parts[0]
         if not p or not p[0]:
             continue
         if len(p) >= 3:
-            return f"{p[0]}-{p[1]:02d}-{p[2]:02d}"
-        if len(p) >= 2:
-            return f"{p[0]}-{p[1]:02d}-01"
-        return f"{p[0]}-01-01"
+            d = f"{p[0]}-{p[1]:02d}-{p[2]:02d}"
+        elif len(p) >= 2:
+            d = f"{p[0]}-{p[1]:02d}-01"
+        else:
+            d = f"{p[0]}-01-01"
+        # A print issue dated ahead (e.g. "2026-12" seen in November) is not
+        # when the work appeared; fall through to `created`, the deposit date.
+        if d <= today:
+            return d
     return fallback
 
 # ---------------------------------------------------------------------------
@@ -497,6 +536,7 @@ def main():
 
     glossary = load_glossary()
     existing_items, existing_keys = load_existing_news()
+    existing_keys |= load_pending_pr_keys()
     since_date = (datetime.now() - timedelta(days=LOOKBACK_DAYS)).strftime("%Y-%m-%d")
 
     # Gather candidates from all sources
@@ -521,7 +561,14 @@ def main():
 
     print(f"\nFound {len(all_candidates)} raw candidates", file=sys.stderr)
 
-    # Deduplicate against existing news
+    # No source may stamp a date in the future: a forward-dated item sits at
+    # the top of the feed until the calendar catches up with it.
+    today = datetime.now().strftime("%Y-%m-%d")
+    for c in all_candidates:
+        if c.get("date", "") > today:
+            c["date"] = today
+
+    # Deduplicate against existing news and open news PRs
     new_candidates = []
     seen = set()
     for c in all_candidates:
