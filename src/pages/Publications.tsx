@@ -76,6 +76,7 @@ const allPublications: Publication[] = [
 
   // === Simon Allen publications ===
   // 2026
+  { authors: 'Basnyat, A., Huggel, C., Allen, S., et al.', year: 2026, title: 'Mountains, multi-hazards, and their management: Disaster risk governance in Nepal and Switzerland', venue: 'University of Zurich policy brief / PreventionWeb', type: 'policy', link: 'https://www.preventionweb.net/publication/documents-and-publications/mountains-multi-hazards-and-their-management-disaster-risk' },
   { authors: 'Huggel, C., Allen, S.K., Mark, E., Shugar, D.H., Steiner, J., & Upadhyay, K.', year: 2026, title: 'Nepal\'s disaster is an urgent wake-up call', venue: 'Nature, 658, 868–871 (Comment)', type: 'policy', link: 'https://doi.org/10.1038/d41586-026-03314-6' },
   { authors: 'Zhu, J., Zheng, G., Zhang, G., Chen, W., Zhong, Y., Allen, S., Li, D., Yuan, Y., et al.', year: 2026, title: 'From Hazard to Resource: A Screening-Level Assessment of Glacial Lake Hydropower Potential and Development Suitability in the Poiqu River Basin, Central Himalaya', venue: 'Water Resources Research, 62(10)', type: 'peer-reviewed', link: 'https://doi.org/10.1029/2025wr041374' },
   { authors: 'Mani, P., Allen, S., Bavay, M., Hählen, N., & Stoffel, M.', year: 2026, title: 'Disposition Model for Permafrost Degradation in Mountainous Regions', venue: 'Permafrost and Periglacial Processes, 37(4), 592–609', type: 'peer-reviewed', link: 'https://doi.org/10.1002/ppp.70049' },
